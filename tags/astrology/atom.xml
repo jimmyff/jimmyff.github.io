@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - astrology</title>
+    <subtitle>Coder, Maker, Gamer (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/astrology/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-06-14T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/astrology/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Decoding the Stars with AI</title>
+        <published>2024-06-14T00:00:00+00:00</published>
+        <updated>2024-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/building-a-cosmic-app/"/>
+        <id>https://www.jimmyff.co.uk/blog/building-a-cosmic-app/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/building-a-cosmic-app/">&lt;p&gt;Ever since I heard about the Gemini &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;competition&quot;&gt;AI competition&lt;&#x2F;a&gt; my brain has been whirring. I knew I wanted to build something for it, and I have &lt;em&gt;lots&lt;&#x2F;em&gt; ideas so the problem has been which idea to choose. Earlier this week I finally landed on my idea and I&#x27;m feeling super fired up about it. A couple of months back I bought a lovely little Astrology book (as content and inspiration for &lt;a href=&quot;&#x2F;projects&#x2F;quest&#x2F;&quot;&gt;a game I&#x27;m working on&lt;&#x2F;a&gt;), astrology is totally new to me but I quite liked the idea of exploring birth chart astrology further. I think a great way to explore a subject is to build an app about it (I did this with &lt;a href=&quot;&#x2F;projects&#x2F;eurovision-app&#x2F;&quot;&gt;my Eurovision app&lt;&#x2F;a&gt; back in 2018). I also think it&#x27;s a great fit for the Gemini competition, not only is the clue is in the name but after running a few tests I&#x27;ve found Gemini to provide some really interesting observations on birth chart data. I think I can offer people a much more personal interpretation of their birth chart using the power of generative AI.&lt;&#x2F;p&gt;
+&lt;div class=&quot;youtube portrait&quot;&gt;&lt;div class=&quot;inner&quot;&gt;
+    &lt;iframe  src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;cXfPvt9oHpg&quot;
+    webkitallowfullscreen
+    mozallowfullscreen
+    allowfullscreen&gt;
+    &lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;&lt;h2 id=&quot;the-cosmic-black-rabbit-hole&quot;&gt;The cosmic &lt;del&gt;black&lt;&#x2F;del&gt; rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve been down a bit of a rabbit hole for the last couple of days, learning all about space. From transforming geocentric positions (planetary positions as observed from the centre of earth) to topocentric positions (as observed from a point on earth&#x27;s surface), dealing with parallax correction and atmospheric bending of observed positions! It&#x27;s been a lot, but lots of fun.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-astrology-rabbit-hole&quot;&gt;The Astrology rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve digested a huge amount of Astrology information over the last few days learning everything from the significance of planets, zodiac signs, houses, house systems, zodiac systems, transits, house rulers, placement conditions and we&#x27;re only touching the surface! Throwing myself in to coding an astrology app means no stone can be left unturned! One of the areas that has really caught my interest is that being born in February I&#x27;ve always been told I was an Aquarius, so I assumed I the sun was in the Aquarius sign at the time of my birth, whilst exploring Sidereal Astrology (which is based on the exact placement of stars) I realised the sun was in fact in the Capricorn sign! I&#x27;ve used astrology software to rewind and confirm that this is true! To my current understanding (disclaimer: I&#x27;m now expert -in fact I was a total Astrology novice 3 days ago!) is that Ancient Astrology was based on the stars, a system first created by Babylonian Astrologers. Later Greek Astrologers decided to change the system to ensure that the Sun was at the top of the chart at the Spring Equinox not realising that due to the Earth&#x27;s &amp;quot;wobble&amp;quot;, every 71.6 years the degree the sun appears shifts by 1 degree.  Western Astrology is based on that system (now known as Tropical Astrology) and over the last 2000 years that 1 degree every 70 odd years has added up to around 27 degrees! A 360 degree chart is broken in to 12 segments for each of the Zodiac signs (&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ophiuchus_(astrology)&quot;&gt;Ignoring the 13th zodiac sign&lt;&#x2F;a&gt; 😅) so each segment is 30 degrees - the Western system is now almost an entire constellation out of sync with the actual stars! Anyway, I could rabbit on about this and numerous other interesting things I&#x27;ve discovered but I&#x27;ll save that waffle for pub chat.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Cosmic map - showing the planets at my birth time and location&quot; title=&quot;Cosmic map - showing the planets at my birth time and location&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.2c3c3fb11003b2ed.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.afa4cf3db7c3daa8.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.2c3c3fb11003b2ed.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;gemini-my-ai-coworker&quot;&gt;Gemini: My AI coworker&lt;&#x2F;h2&gt;
+&lt;p&gt;The huge surprise for me is the role that AI has played in this project before I&#x27;;&#x27;ve even started implementing it in to the app. Gemini has been my astronomy &amp;amp; astrology mentor. I&#x27;ve fed it 200+ page documentation PDFs and had it expertly clearing any roadblocks I&#x27;ve come up against. I&#x27;ve been using Gen AI more and more, but never to this extent, I feel like Popeye and Gemini is my Spinach! I can&#x27;t wait actually start implementing the chart interpretation stuff next. Feels like I&#x27;ve made a heap of progress in super short time -I can&#x27;t wait see where this goes!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
