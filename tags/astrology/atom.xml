@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - astrology</title>
+    <subtitle>Coder, Maker, Gamer (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/astrology/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-07-24T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/astrology/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Announcing Kosmos! &#x2F;&#x2F; Dev Log 2</title>
+        <published>2024-07-24T00:00:00+00:00</published>
+        <updated>2024-07-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/cosmic-app-update/"/>
+        <id>https://www.jimmyff.co.uk/blog/cosmic-app-update/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/cosmic-app-update/">&lt;p&gt;&lt;em&gt;Hey stargazers! 🔭 I had hoped to do regular dev logs for my Gemini AI competition entry project, but life (and building this app) has been keeping me super busy! But anyway, late is better than never right? And the good news is, the app has come on a ton and I&#x27;m really excited about how it&#x27;s shaping up!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;youtube&quot;&gt;&lt;div class=&quot;inner&quot;&gt;
+    &lt;iframe  src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;Pb3UwpWO0aY&quot;
+    webkitallowfullscreen
+    mozallowfullscreen
+    allowfullscreen&gt;
+    &lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Check out the video above for a walkthrough&#x2F;wafflethrough of the app so far. (Apologies for the rough edges with the vid– I&#x27;m determined not to do any scripting or post-editing!)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;here-s-what-i-ve-been-up-to&quot;&gt;Here&#x27;s what I&#x27;ve been up to&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A buttery smooth interface: You can now shuttle&#x2F;animate through time, location, and even settings (though I turned that off in the video because there&#x27;s a little quirk I need to fix). It feels really tactile with some nice haptic feedback as your rotate the charts.&lt;&#x2F;li&gt;
+&lt;li&gt;Interpolation and custom tweens: These make everything super fast and my custom tween sequence keeps the animation calculations nice and accurate.&lt;&#x2F;li&gt;
+&lt;li&gt;Ecliptic and Equatorial positions: Exposing all the data I can such as their coordinates, their sign, house, speed, and distance.&lt;&#x2F;li&gt;
+&lt;li&gt;Aspects: The app now shows 11 different aspect types, with intensity calculated based on type, accuracy, speed, and celestial body pairings. (To be fully configurable by the user)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;bonus-stuff-i-didn-t-mention-forgot-to-mention-in-the-video&quot;&gt;Bonus stuff I didn&#x27;t mention&#x2F;forgot to mention in the video&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Map Projections: After initially using GeoJSON maps I&#x27;ve switched to D3&#x27;s TopoJSON maps and plan to do some really cool stuff with these in the future.&lt;&#x2F;li&gt;
+&lt;li&gt;Astrology accuracy tests: I&#x27;m making sure all the data that the app is generating is accurate by benchmarking it against external services. I also have an interpolation accuracy test which allows me to understand how far I can interpolate astrological data whilst animating before the accuracy drops below acceptable tolerance levels&lt;&#x2F;li&gt;
+&lt;li&gt;Custom font: I&#x27;ve drawn a set of astrological symbols (on my tablet) which really help give the app a distinctive look. I plan to write a blog post in the future detailing process and tools used (as a reminder for my future self!)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+&lt;img alt=&quot;Cosmic Symbols&quot; title=&quot;Cosmic Symbols&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.82b8aae3f348b66a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.4ad00cff3c59ff6e.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.82b8aae3f348b66a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.1ae82ba8277c300e.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h3 id=&quot;app-availability&quot;&gt;App Availability&lt;&#x2F;h3&gt;
+&lt;p&gt;I&#x27;ll be uploading a web version soon and submitting to the app stores by the end of the week (hopefully). So next time you hear from me, you&#x27;ll be able to play with it yourself!&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m also considering doing a bit more of a technical deep-dive, let me know if you&#x27;d like to see some of the code behind the scenes. I&#x27;m happy to share a closer look at the Kosmos!&lt;&#x2F;p&gt;
+&lt;p&gt;Until then, keep looking up! ✨✌️&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Cosmic Vibes</title>
+        <published>2024-06-15T00:00:00+00:00</published>
+        <updated>2024-06-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/cosmic-vibes/"/>
+        <id>https://www.jimmyff.co.uk/gallery/cosmic-vibes/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/cosmic-vibes/">
+
+
+
+&lt;img alt=&quot;Cosmic Symbols&quot; title=&quot;Cosmic Symbols&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.84965623398a5764.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.39159ee73dd2c7d0.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.84965623398a5764.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.366b64588dfd8a30.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;This is a custom font (Cosmic Vibes) that I&#x27;ve created for an app that I&#x27;m working on. I intend to write a blog post detailing the process at some point (as I&#x27;m sure future me will forget how to do it!).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Decoding the Stars with AI &#x2F;&#x2F; Dev Log 1</title>
+        <published>2024-06-14T00:00:00+00:00</published>
+        <updated>2024-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/building-a-cosmic-app/"/>
+        <id>https://www.jimmyff.co.uk/blog/building-a-cosmic-app/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/building-a-cosmic-app/">&lt;p&gt;Ever since I heard about the Gemini &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;competition&quot;&gt;AI competition&lt;&#x2F;a&gt; my brain has been whirring. I knew I wanted to build something for it, and I have &lt;em&gt;lots&lt;&#x2F;em&gt; ideas so the problem has been which idea to choose. Earlier this week I finally landed on my idea and I&#x27;m feeling super fired up about it. A couple of months back I bought a lovely little Astrology book (as content and inspiration for &lt;a href=&quot;&#x2F;projects&#x2F;quest&#x2F;&quot;&gt;a game I&#x27;m working on&lt;&#x2F;a&gt;), astrology is totally new to me but I quite liked the idea of exploring birth chart astrology further. I think a great way to explore a subject is to build an app about it (I did this with &lt;a href=&quot;&#x2F;projects&#x2F;eurovision-app&#x2F;&quot;&gt;my Eurovision app&lt;&#x2F;a&gt; back in 2018). I also think it&#x27;s a great fit for the Gemini competition, not only is the clue is in the name but after running a few tests I&#x27;ve found Gemini to provide some really interesting observations on birth chart data. I think I can offer people a much more personal interpretation of their birth chart using the power of generative AI.&lt;&#x2F;p&gt;
+&lt;div class=&quot;youtube portrait&quot;&gt;&lt;div class=&quot;inner&quot;&gt;
+    &lt;iframe  src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;cXfPvt9oHpg&quot;
+    webkitallowfullscreen
+    mozallowfullscreen
+    allowfullscreen&gt;
+    &lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;&lt;h2 id=&quot;the-cosmic-black-rabbit-hole&quot;&gt;The cosmic &lt;del&gt;black&lt;&#x2F;del&gt; rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve been down a bit of a rabbit hole for the last couple of days, learning all about space. From transforming geocentric positions (planetary positions as observed from the centre of earth) to topocentric positions (as observed from a point on earth&#x27;s surface), dealing with parallax correction and atmospheric bending of observed positions! It&#x27;s been a lot, but lots of fun.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-astrology-rabbit-hole&quot;&gt;The Astrology rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve digested a huge amount of Astrology information over the last few days learning everything from the significance of planets, zodiac signs, houses, house systems, zodiac systems, transits, house rulers, placement conditions and we&#x27;re only touching the surface! Throwing myself in to coding an astrology app means no stone can be left unturned! One of the areas that has really caught my interest is that being born in February I&#x27;ve always been told I was an Aquarius, so I assumed I the sun was in the Aquarius sign at the time of my birth, whilst exploring Sidereal Astrology (which is based on the exact placement of stars) I realised the sun was in fact in the Capricorn sign! I&#x27;ve used astrology software to rewind and confirm that this is true! To my current understanding (disclaimer: I&#x27;m now expert -in fact I was a total Astrology novice 3 days ago!) is that Ancient Astrology was based on the stars, a system first created by Babylonian Astrologers. Later Greek Astrologers decided to change the system to ensure that the Sun was at the top of the chart at the Spring Equinox not realising that due to the Earth&#x27;s &quot;wobble&quot;, every 71.6 years the degree the sun appears shifts by 1 degree.  Western Astrology is based on that system (now known as Tropical Astrology) and over the last 2000 years that 1 degree every 70 odd years has added up to around 27 degrees! A 360 degree chart is broken in to 12 segments for each of the Zodiac signs (&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ophiuchus_(astrology)&quot;&gt;Ignoring the 13th zodiac sign&lt;&#x2F;a&gt; 😅) so each segment is 30 degrees - the Western system is now almost an entire constellation out of sync with the actual stars! Anyway, I could rabbit on about this and numerous other interesting things I&#x27;ve discovered but I&#x27;ll save that waffle for pub chat.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Cosmic map - showing the planets at my birth time and location&quot; title=&quot;Cosmic map - showing the planets at my birth time and location&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.2c3c3fb11003b2ed.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.afa4cf3db7c3daa8.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.2c3c3fb11003b2ed.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;gemini-my-ai-coworker&quot;&gt;Gemini: My AI coworker&lt;&#x2F;h2&gt;
+&lt;p&gt;The huge surprise for me is the role that AI has played in this project before I&#x27;;&#x27;ve even started implementing it in to the app. Gemini has been my astronomy &amp;amp; astrology mentor. I&#x27;ve fed it 200+ page documentation PDFs and had it expertly clearing any roadblocks I&#x27;ve come up against. I&#x27;ve been using Gen AI more and more, but never to this extent, I feel like Popeye and Gemini is my Spinach! I can&#x27;t wait actually start implementing the chart interpretation stuff next. Feels like I&#x27;ve made a heap of progress in super short time -I can&#x27;t wait see where this goes!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
