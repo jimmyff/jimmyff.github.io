@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - tabletop-gaming</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/tabletop-gaming/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-10-01T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/tabletop-gaming/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Deckorator</title>
+        <published>2023-10-01T00:00:00+00:00</published>
+        <updated>2023-10-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/projects/deckorator/"/>
+        <id>https://www.jimmyff.co.uk/projects/deckorator/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/projects/deckorator/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Quest</title>
+        <published>2023-10-01T00:00:00+00:00</published>
+        <updated>2023-10-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/projects/quest/"/>
+        <id>https://www.jimmyff.co.uk/projects/quest/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/projects/quest/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Traitor</title>
+        <published>2023-10-01T00:00:00+00:00</published>
+        <updated>2023-10-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/projects/traitor/"/>
+        <id>https://www.jimmyff.co.uk/projects/traitor/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/projects/traitor/"></content>
+        
+    </entry>
+</feed>

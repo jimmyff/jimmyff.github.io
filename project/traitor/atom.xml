@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - Traitor</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/project/traitor/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-04-05T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/project/traitor/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Fake cultists... A game of social deduction</title>
+        <published>2024-04-05T00:00:00+00:00</published>
+        <updated>2024-04-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/cultist-deduction-game/"/>
+        <id>https://www.jimmyff.co.uk/blog/cultist-deduction-game/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/cultist-deduction-game/">&lt;p&gt;I&#x27;ve always loved social deduction games like Avalon, love letter, Battlestar Galactica, Coup and Werewolf. After playing a load of them at Airecon I was inspired to have a go created my own!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Cards&quot; title=&quot;Cards&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cards1.c1743d4156a70c0b.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cards1.97640968d0aceea8.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cards1.c1743d4156a70c0b.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;game-settings-background&quot;&gt;Game Settings &#x2F; Background&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;In a daring escape, innocent prisoners slip in to the robes of cultists and join a procession marching out of the castle. They soon realise the cultists are marching to the crypt to resurrect the dark lord. If successful the dark lord will summon an unstoppable army of undead. Can the escapees maintain their disguise for long enough to thwart the resurrection and save humanity from the clutches of impending doom?&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;the-game&quot;&gt;The Game&lt;&#x2F;h2&gt;
+&lt;p&gt;The players follow a route on a map which will see them completing three tests of fealty and then interrogating two groups of cultists. In the last round they choose a final team of cultists to perform (or sabotage) the Resurrection! The escapees (fake cultists) will be trying to thwart the fealty tests attempts to earn holy relics to aid in the final resurrection -all whilst keeping their identities hidden. The real cultists will be trying to deduce who are the escapees and who their fellow loyal cultists are!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Cards&quot; title=&quot;Cards&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cards2.67bae6ff5a13ef0c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cards2.1f929210f94f1fff.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cards2.67bae6ff5a13ef0c.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;inspirations&quot;&gt;Inspirations&lt;&#x2F;h2&gt;
+&lt;p&gt;Avalon is one of my all time favourite games, with the right group it consistently results in a fantastic play. Avalon sees elected groups going on &#x27;quests&#x27;, my game has a similar concept in the form of the fealty tests although I add a twist in the form of skills and an overseer. The inspiration for skills comes from &#x27;Battlestar Galactica: The Board Game&#x27; (the daddy mac of social deduction games) but I simplified it so each character has access to 2 of the 3 skills: Life, Death &amp;amp; Faith. Skills add a nice and simple extra layer of depth to the game.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;imperfect-information&quot;&gt;Imperfect information&lt;&#x2F;h2&gt;
+&lt;p&gt;Games like &#x27;Feed the Kraken&#x27; fall down (for me) as they involve players having perfect information, in some situations players know if another player is telling the truth or not. In my game I want to avoid that making sure all the information is filtered through an elected player (the &#x27;Test Overseer&#x27; or the &#x27;Interrogator&#x27;). That player always receives results from two or more cultists so they never truly know how an individual acted -unless of course all the results were the same (In BSG a random card is added to the results which is their way of introducing a little chaos). That elected player might have reason to manipulate the results or not share the full information with the group - another juicy puzzle piece in the deduction game!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Making tokens&quot; title=&quot;Making tokens&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;tokens.fb9b766983f2662d.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;tokens.a7f6d20713530c83.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;tokens.fb9b766983f2662d.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;tokens.2c0c0352cd503762.webp 2048w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;the-first-playtest&quot;&gt;The first playtest&lt;&#x2F;h2&gt;
+&lt;p&gt;I took the game along to a group that I&#x27;ve played with for years, I fully expected us to only manage a round or two however everyone was having so much fun with it they insisted that we finish it! I got some great takeaways but most importantly everyone seemed to have lots of fun - this usually never happens with a first playtest (for me at least!). The game took about an hour and during each of the 6 rounds there was lots of discussions (sometimes a little too lively!). I hoped with the imperfect information it wouldn&#x27;t be confrontational but I think with that group being comfortable with each other they were happy to push the banter! I&#x27;ll be interested to monitor how confrontational it is with future groups. On the last round (the Resurrection), it could have gone ether way but the real cultists managed to deduce the escapees just in time! Overall I was really happy with how it played and everyone said they really enjoyed it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-s-next&quot;&gt;What&#x27;s next?&lt;&#x2F;h2&gt;
+&lt;p&gt;Lots and &lt;em&gt;lots&lt;&#x2F;em&gt; more playtesting. If it still holds up then I will consider how I can release it. I&#x27;m considering the possibility of it being a little print and play game. I think it fills a little bit of a gap of being a juicy little social deduction game, with more depth than Avalon but plays a &lt;em&gt;lot&lt;&#x2F;em&gt; quicker than Battlestar Galactica. It would also serve as a great way to raise awareness for my Ultimate Quest game!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ring</title>
+        <published>2024-03-29T00:00:00+00:00</published>
+        <updated>2024-03-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/ring/"/>
+        <id>https://www.jimmyff.co.uk/gallery/ring/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/ring/">
+
+
+
+&lt;img alt=&quot;Ring&quot; title=&quot;Ring&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;ring.a82f6690f8d029fa.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;ring.f3492662e14e2d25.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;ring.a82f6690f8d029fa.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;ring.cb1b2cbdc39c34e7.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Amulet</title>
+        <published>2024-03-28T00:00:00+00:00</published>
+        <updated>2024-03-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/amulet/"/>
+        <id>https://www.jimmyff.co.uk/gallery/amulet/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/amulet/">
+
+
+
+&lt;img alt=&quot;Amulet&quot; title=&quot;Amulet&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amulet.c727e5ae79f2b9f0.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amulet.59b5a7e62997c9fe.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amulet.c727e5ae79f2b9f0.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amulet.b70c43c02935de12.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Equipment</title>
+        <published>2024-03-26T00:00:00+00:00</published>
+        <updated>2024-03-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/equipment/"/>
+        <id>https://www.jimmyff.co.uk/gallery/equipment/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/equipment/">
+
+
+
+&lt;img alt=&quot;Equipment&quot; title=&quot;Equipment&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;equipment.8fbeff6534a8d8ca.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;equipment.91e33888be7743bc.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;equipment.8fbeff6534a8d8ca.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;equipment.55f837d43c4169cf.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Organs</title>
+        <published>2024-03-26T00:00:00+00:00</published>
+        <updated>2024-03-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/organs/"/>
+        <id>https://www.jimmyff.co.uk/gallery/organs/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/organs/">
+
+
+
+&lt;img alt=&quot;Organs&quot; title=&quot;Organs&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;organs.ebea04a4c7a27aea.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;organs.8933e78d383b05ba.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;organs.ebea04a4c7a27aea.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;organs.99f889e9b9fac4c8.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pure and corrupt hearts</title>
+        <published>2024-03-20T00:00:00+00:00</published>
+        <updated>2024-03-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/hearts/"/>
+        <id>https://www.jimmyff.co.uk/gallery/hearts/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/hearts/">
+
+
+
+&lt;img alt=&quot;Hearts&quot; title=&quot;Hearts&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hearts.1ebfa35a9ce75cb5.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hearts.1260bf756062c503.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hearts.1ebfa35a9ce75cb5.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hearts.92ecd4760996554e.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;The glowing golden pure heart of a fake cultist and the green rotten heart of a real cultist!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
