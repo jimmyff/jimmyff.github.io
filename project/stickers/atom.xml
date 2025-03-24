@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - Stickers</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/project/stickers/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-07-08T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/project/stickers/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Building a sticker app in 5 days</title>
+        <published>2022-07-08T00:00:00+00:00</published>
+        <updated>2022-07-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/building-a-sticker-app-in-5-days/"/>
+        <id>https://www.jimmyff.co.uk/blog/building-a-sticker-app-in-5-days/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/building-a-sticker-app-in-5-days/">&lt;p&gt;During London Pride I had a great selfie with some friends but the photo was spoilt by something in the foreground. I thought I&#x27;ll add a stiker over part of the photo so I turned to the Goolge play store to find an app. I quickly found that I was spoilt for choice but they were almost all terrible. Despite their quality the download numbers were mindblowing, some of the apps had tens of millions of downloads! I found one app doing it well but it they were trying to push me in to a £38.99 p&#x2F;year subscription! Who would pay that to stick some stickers on photos!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;building-a-sticker-app-in-5-days&#x2F;photo_that_started_it_all.gif&quot; alt=&quot;GIF&quot; title=&quot;The photo that started it all!&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The following day, on the very long &amp;amp; hungover jouney home, I set myself a challenge to try and build a sticker app by the time I got home. As we pulled in to my home city I had managed to create an app with very basical functionality of being able to drag some stickers around the screen, and I had decided on a name: Sticker Party. Armed with my prototype and inspired by the crazy download numbers I decided to give myself a week to have the app finished and launched.&lt;&#x2F;p&gt;
+&lt;p&gt;I worked like a trooper that week and on the 5th day I had the app submitted to the app store! My USP was I would offer really high quality stickers (hand picked by me and all vectors so super sharp no matter the zoom level). I would also differentiate myself in pricing - I would make all my stickers available for free however in free mode you get a Sticker Party logo at the bottom right. To remove this and unlocked the high quality export mode would be a one-time fee of £2.99, pay once &amp;amp; own forever. I&#x27;m sick of every app under ths sun trying to get me in to monthly subscription. I figured an retro buy to own model would be refeshingly modern, lol.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Sticker Party logo&quot; title=&quot;Sticker Party logo&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;sticker_party.78fb61e172f71cc5.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;sticker_party.37b1f643260560b0.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;sticker_party.78fb61e172f71cc5.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve got a load of improvements I want to make, and I need to add tons of stickers. I&#x27;ll be continuing the app as a litle hobby project on evenings and weekends. My goal is to have a genuine sale by the end of next month. I&#x27;ll try to remeber to write another post with how that went later!&lt;&#x2F;p&gt;
+&lt;p&gt;You can download Sticker Party on &lt;a href=&quot;https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=uk.rocketware.stickerparty&quot;&gt;Google Play&lt;&#x2F;a&gt; and on the &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;sticker-party&#x2F;id1634193331&quot;&gt;Apple App Store&lt;&#x2F;a&gt;. Please help get the ball rolling and give it a good rating! 😉&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
