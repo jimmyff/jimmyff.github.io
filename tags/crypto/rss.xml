@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - crypto</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/crypto/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Crypto Clock</title>
+          <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/projects/crypto-clock/</link>
+          <guid>https://www.jimmyff.co.uk/projects/crypto-clock/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/projects/crypto-clock/"></description>
+      </item>
+    </channel>
+</rss>
