@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - lang-python</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/lang-python/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 30 May 2012 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>SublimeRsyncer - Rsync Plugin for SublimeText 2</title>
+          <pubDate>Wed, 30 May 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/sublimersyncer-rsync-plugin-sublimetext2/</link>
+          <guid>https://www.jimmyff.co.uk/blog/sublimersyncer-rsync-plugin-sublimetext2/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/sublimersyncer-rsync-plugin-sublimetext2/">&lt;p&gt;Discovering SublimeText 2 was love at first sight. It&#x27;s the fastest &amp;amp; most extensible IDE I&#x27;ve come across. Most of my projects reside on local virtual machines, I do this for development &amp;amp; production environment consistency, development machine portability and I don&#x27;t want to clutter up OSX, my desktop OS. This setup always results in an IDE headache: how to develop on OSX and automagically sync my changes to my various Linux VMs. When using Eclipse (my previous IDE of choice), I&#x27;d use the RSE plugin, which would allow me to have remote projects via SSH. SublimeText2 doesn&#x27;t offer many features out of the box and it&#x27;s left to you to choose how to setup your IDE by adding plugins. The plugin API is pretty simple, all python based so I decided to create a simple tool which would rsync my projects to my Linux VMs.&lt;&#x2F;p&gt;
+&lt;p&gt;View&#x2F;Download Project: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;SublimeRsyncer&quot;&gt;SublimeRsyncer on GitHub&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve not too much experience with Python so if this is your area you&#x27;ll probably cringe at my sloppy syntax and dodgy use of threading so not to block the UI. If you do make changes please hit me up with a pull request so I can incorporate your updates! :-)&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

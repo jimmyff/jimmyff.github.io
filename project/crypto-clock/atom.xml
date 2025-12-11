@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - Crypto Clock</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/project/crypto-clock/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-07-22T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/project/crypto-clock/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Crypto Clock - the crypto currency ticker that runs on an old Kindle</title>
+        <published>2021-07-22T00:00:00+00:00</published>
+        <updated>2021-07-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/crypto-clock/"/>
+        <id>https://www.jimmyff.co.uk/blog/crypto-clock/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/crypto-clock/">
+
+
+
+&lt;img alt=&quot;Photo of the cyrpto-clock&quot; title=&quot;Photo of the cyrpto-clock&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock.965815847a9badd8.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock.cd2a79781f9049af.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock.965815847a9badd8.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;&lt;em&gt;(I&#x27;ve also posted this article &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;crypto-clock-the-crypto-currency-ticker-that-runs-on-a-kindle-2bc601244556&quot;&gt;over on Medium&lt;&#x2F;a&gt;)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I had a special birthday coming up and I wanted to make a cool gift to mark the occasion. As the recipient is interested in crypto currencies &amp;amp; blockchain tech, I thought a desk&#x2F;shelf crypto price ticker would be a cool present. I found a couple of products online but they were either not very good or prohibitively expensive so I decided to have a go at building one myself.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;TLDR: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;crypto-clock&quot;&gt;Code available on Github&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;jimmyff.github.io&#x2F;crypto-clock&#x2F;desktop.html&quot;&gt;try it in your browser&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;qPAcM4U1mio&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;concept&quot;&gt;Concept&lt;&#x2F;h2&gt;
+&lt;p&gt;I thought it would be cool if the device looked like a retro departures board, periodically cycling through various crypto prices. I wanted it to have low power consumption, always showing the latest prices, configurable &amp;amp; attractive.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;&#x2F;h2&gt;
+&lt;p&gt;At first I looked at split flap displays but it turns out they’re hard to come by &amp;amp; expensive. I decided to go for an eink display which I figured I could make to look like a split flap display. I’d heard about rooting Kindles and using them in DIY projects so I decided to go down that route, I managed to pick up a Kindle Paperwhite 2 on eBay for the bargain price of £18. Rooting the Kindle was easy enough; details on how to do that are out of the scope of this write up but I’m sure you’ll find all the information you need over on the ‘mobile read’ forum. I then got a Linux desktop running on the Kindle, ready to run my app.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Hardware progress&quot; title=&quot;Hardware progress&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hardware.8d6a2fddb2cb261a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hardware.9ac6f9966fd4dcb3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hardware.8d6a2fddb2cb261a.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;&#x2F;h2&gt;
+&lt;p&gt;Using my language of choice (Dart) I decided to make a web app that would run in a kiosk mode browser. I went for the Midori browser as it has way less overhead than Chromium or Firefox. I designed the UI to look like a 7x3 split flap display. I added a simple character by character transition as the display updates which flows across it just like the old departure boards. Also by setting each character black for a second as it transitions does a lovely job of resetting the eink to avoid any ghosting. For the data source I used the Binance API which was super easy to use. As the Kindle had a touch screen I made it so tapping the left or right side of the screen would cycle between the crypto symbol pairs. I also added a configuration screen which you can access by hitting the central column on the display. The configuration screen allows you to choose which symbol pairs to cycle through and the duration to rest on each. With it being an eink display, having a long time between updates results in much less power consumption. I decided on 60 seconds as the default update time.&lt;&#x2F;p&gt;
+&lt;p&gt;The final addition to the software was adding the clock mode. At the end of each hour it displays the time so you can watch the turning of the hour. One of my favourite features is I added a sun which rises on the left in the morning, and as each hour passes it moves up and over and sets on the right. When the sun sets the moon comes up and in the midst of the night, the stars come out and twinkle. It think it’s a really playful little addition to the crypto ticker and the concept reminds me of those fancy mechanical cuckoo clocks.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve made the code open source so you can grab it over on Github. If you don’t want the code but you just want to run it, there are two hosted versions: Mobile&#x2F;desktop version or dedicated device version.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;finishing-touches&quot;&gt;Finishing touches&lt;&#x2F;h2&gt;
+&lt;p&gt;As this is something designed to be seen often, it needed to look good. I commissioned an oak lacquered frame at my local carpenters. I detached the Kindle’s front panel and sprayed it white to make it look like an artwork’s border&#x2F;mount. Finally I did some shopping on eBay and I got a metal frame kick stand for the back and found a nice white power cable. A little homemade label with the serial number 001 completes the look.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Finishing touches&quot; title=&quot;Finishing touches&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;finishing.5f350284896131ab.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;finishing.a025a7dc2832540b.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;finishing.5f350284896131ab.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;possible-upgrades&quot;&gt;Possible upgrades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I may at some point port the code to flutter and compile a Linux desktop app and see how that runs on the Kindle. I imagine this would give cleaner letter transitions &amp;amp; run at a higher frame rate.&lt;&#x2F;li&gt;
+&lt;li&gt;I’ve also been playing around with the Rust language recently, and it would be fun to write a Rust version. It would actually be a really good fit as Rust can run on bare metal embedded systems.&lt;&#x2F;li&gt;
+&lt;li&gt;It would be cool to buy a dedicated eink display and drive it from a Raspberry Pi (probably a Pi Zero to keep it affordable); You can get single colour eink displays (black, white + red&#x2F;yellow) for around £50, having colour would open up new possibilities in terms of UI.&lt;&#x2F;li&gt;
+&lt;li&gt;I also thought about buying some individual 2-3&quot; eink displays (or 7-segment-displays) and using each one of those as a character. This would be quite similar to one of the inspirations of this project (the original block clock). I might order some and have a play around with them for some future project!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+&lt;img alt=&quot;Finished crypto-clock&quot; title=&quot;Finished crypto-clock&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock2.8e44711f3098ce85.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock2.cc9cc2277f1f4edf.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock2.8e44711f3098ce85.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;&#x2F;h2&gt;
+&lt;p&gt;I’ve had loads of fun making this project and I’m super happy with the way the Crypto Clock turned out! I’m sure it’s going to make an awesome gift.&lt;&#x2F;p&gt;
+&lt;p&gt;If you decide to make a crypto clock please let me know! I’d love to see photos of your creations! :)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

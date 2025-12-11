@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - ai</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/ai/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-17T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/ai/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Pop Snap Mega Update</title>
+        <published>2025-04-17T00:00:00+00:00</published>
+        <updated>2025-04-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/pop-snap-update/"/>
+        <id>https://www.jimmyff.co.uk/blog/pop-snap-update/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/pop-snap-update/">&lt;p&gt;So the latest version of Pop Snap has just hit the app stores so I figured it was the perfect time to add some deets about it to my blog. This is the result of about 2 weeks work totally revamping the client app. I&#x27;ve rewritten the editor itself which has big optimisation benefits and loads of scope for further development. I had an idea late last year that I would use Gemini LLM to categorise stickers for me. I implemented that back in September and I detailed the process with a youtube a dev log which is included below. I&#x27;ve since had some help loading SVG assets (stickers) in to the system for gemini to churn through and we now have almost 20k stickers in the system! Anyway, I&#x27;ll include more details below, but if you&#x27;re tight for time, just go and &lt;a href=&quot;&#x2F;apps&#x2F;&quot;&gt;download the app&lt;&#x2F;a&gt; and have a play!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;new-app-store-screenshots&quot;&gt;New App Store Screenshots&lt;&#x2F;h2&gt;
+
+
+
+
+&lt;img alt=&quot;App Screenshots&quot; title=&quot;App Screenshots&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.cc80d1b18163ea0a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.101651a22d8f566f.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.cc80d1b18163ea0a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.0b872c403b7c741f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+
+
+
+
+&lt;img alt=&quot;App Screenshots&quot; title=&quot;App Screenshots&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.128ee027ab1ff08f.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.ed7eb7fa3fba7aa3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.128ee027ab1ff08f.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.7fb1e7ff6ef99290.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;building-an-ai-super-powered-control-panel&quot;&gt;Building an AI super-powered control-panel&lt;&#x2F;h2&gt;
+&lt;p&gt;I built a CMS which allows me to bulk upload SVG assets in to the system, sanitize them, tag the colors and then process them by generating metadata with AI. I won&#x27;t go in to too much detail as I&#x27;ve gone through most of it in the devlog video below:&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;B9rZwdGQ47E &quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;new-features&quot;&gt;New Features&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;asset-pipeline-system&quot;&gt;Asset Pipeline System&lt;&#x2F;h3&gt;
+&lt;p&gt;One of the big optimisations of the new version is an asset pipeline system which rasterizes the SVG graphic (with the colors, styling options required) and then feeds the back to the flutter UI, it re-renders this as the user scales and manipulates the asset. It&#x27;s a pretty cool system and makes the UI buttery smooth!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;new-sticker-manipulation-toolbar&quot;&gt;New sticker manipulation toolbar&lt;&#x2F;h3&gt;
+&lt;p&gt;Now when you select a sticker a toolbar appears allowing you quick access to outline tool, recolor options, flip, arrange etc. It&#x27;s nothing fancy but makes the editor nice and easy to use.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;haptic-feedback&quot;&gt;Haptic Feedback&lt;&#x2F;h3&gt;
+&lt;p&gt;I loved the haptic feedback I added to my Kosmos app so I did something similar here, now as your manipulate the Stickers you can feel little haptic vibrations for every few degrees you rotate, or percentage you scale. It feels really good!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;revenue-cat&quot;&gt;Revenue Cat&lt;&#x2F;h3&gt;
+&lt;p&gt;I downloaded and implemented Revenue Cat a couple of days ago, I couldn&#x27;t believe how simple it made subscription integration. I&#x27;ve always handled subscriptions and in-app purchases myself and it all works fine, but with this I could delete a whole bunch of code, one less thing for me to maintain. It&#x27;s so good I&#x27;m considering shifting all my app to use it despite them taking a cut...&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;so-what-s-next-for-pop-snap&quot;&gt;So what&#x27;s Next for Pop Snap?&lt;&#x2F;h2&gt;
+&lt;p&gt;Text! I had hoped to add this feature this week, but Apple policy team love to faff so i&#x27;ve been playing ping-pong with them all week trying to get the new version accepted. Anyway I think Text would be an awesome feature so that&#x27;s high on my priority list. Also some basic settings to allow default skin colors etc, that will probably be next... I need to get back to on other app&#x27;s now but I&#x27;ll swing back to this in the future, and possibly try to squeeze in some more features on Friday afternoons!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Introducing Kosmos &#x2F;&#x2F; Gemini API Developer Competition Submission</title>
+        <published>2024-08-11T00:00:00+00:00</published>
+        <updated>2024-08-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/kosmos-my-gemini-ai-developer-compeition-subsmission/"/>
+        <id>https://www.jimmyff.co.uk/blog/kosmos-my-gemini-ai-developer-compeition-subsmission/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/kosmos-my-gemini-ai-developer-compeition-subsmission/">&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;a98ePlYomUs &quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;This is the video to accompany my submission to the &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;competition&quot;&gt;Gemini AI Developer Competition&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;I&#x27;m going to try and squeeze a quick dev log 4 video in before I set off on holiday in a couple of hours!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ai, Astrology and Clocks, oh my! &#x2F;&#x2F; Dev Log 3</title>
+        <published>2024-08-05T00:00:00+00:00</published>
+        <updated>2024-08-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/cosmic-dev-log-3/"/>
+        <id>https://www.jimmyff.co.uk/blog/cosmic-dev-log-3/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/cosmic-dev-log-3/">&lt;p&gt;&lt;em&gt;Woo, so here we are, Dev Log 3. I said this was going to be a big AI update and wow, I&#x27;ve been blown away by the results I&#x27;ve managed to get with &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;&quot;&gt;Gemini&lt;&#x2F;a&gt;!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;p0sxLEX6PUk &quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;h3 id=&quot;gemini-interpretations&quot;&gt;Gemini Interpretations&lt;&#x2F;h3&gt;
+&lt;p&gt;Gemini an incredibly powerful LLM and simple asking it straight up for interpretations works pretty well, but If there&#x27;s one thing I&#x27;ve learned in the last few weeks is there isn&#x27;t a singe correct way to interpret something in Astrology, there are often various approaches, with different meanings and importance given depending on the astrology tradition, era etc. In order to get a consistent voice &amp;amp; perspective across the app I needed to provide a really thorough astrological context to Gemini. I discovered that by feeding the principles along with the meanings that my app would use, then it would give me consistently accurate and incredibly nuanced results. I&#x27;ve created the concept of an &#x27;AI Astrologer&#x27; on my app, I&#x27;m currently using the Hellenistic AI Astrologer but in the future I can add a Modern Western Astrologer, a Vedic Astroloter, (BaZi, Medievil etc...) and let the user choose what interpretations and principles they desire.&lt;&#x2F;p&gt;
+&lt;p&gt;I experimented with using the cost-effective Gemini Flash 1.5 model but decided that the results I was getting from Gemini Pro 1.5 were worth the additional cost. The were often slightly more creative and really remarkably nuanced. I think Astrology is a great fit for using an LLM, but I could breakdown the interpretations Gemini was providing and trace back pretty much everything to the wealth of astrological data I was feeding it. I played around with various settings but found that using a low Temperature (the balance between predictability 0.0 and creativity 2.0), I found that a value of 0.3 was perfect for my interpretations. I was providing so much context and detail and using a higher score would give Gemini a little more creativity but risked something a little less accurate.&lt;&#x2F;p&gt;
+&lt;p&gt;The results have been nothing less than remarkable, I&#x27;m generating huge amount of interpretations, so many that using anything other than an LLM would not be feasible but as a result there is a staggering amount of depth to each intepretation. I can&#x27;t wait until I get to the point where I am providing a bespoke interpretation for an individual. I plan to do this in phase 2 of the app and if this is an indication of the results then that is going to be wild.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+
+
+
+
+&lt;img alt=&quot;Neil and I at St Marks clock tower, Venice, 2017&quot; title=&quot;Neil and I at St Marks clock tower, Venice, 2017&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.317330d719524b27.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.eb68c06c3bf2c6aa.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.317330d719524b27.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.883416e433199269.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h3 id=&quot;a-detour-for-a-comsmic-clock&quot;&gt;A Detour for a Comsmic Clock&lt;&#x2F;h3&gt;
+&lt;p&gt;I know I need to start wrapping things up ...the deadline for submission to the competition is looming. But I had this idea that I really wanted to reproduce the St Marks Cosmic clock that I saw back in 2017 on holiday in Venice. I thought it would be a lovely way to greet the user each time they open the app. I had all the components to do it so I decided I&#x27;d allow myself a little detour to get it made. I soon realised that with this being a digial cosmmic clock, I could go above and beyond what the original clock offered. Like the original I added roman numerals around the edge of the clock that show the time, I would tell the time with the same sun hand, but my sun hand would be based on the sun&#x27;s position on the eclipitc. I added another hand for the moon, again showing it&#x27;s position on the ecliptic but instead of pointing to a roman numeral that pointed to the current moon phase. Both of these hands would also pass through a zodiac ring, showins which sign they were in. I added the AC, MC, DC &amp;amp; IC to show the key points and signs that they&#x27;re in. I created some custom icons for the clock and I think it came out beautifully. I added the same gestural navigation as the astrology charts and it feels really satisfying playing around with it.
+Although the clock looked good, it&#x27;s only when I super-charged it with Gemini AI that it transformed in to something really special. My idea was that the confirutation of all this information and then multiplied by the astrological perspective, context and principles as used for the interpretations could then be fed to Gemini to create something based on the precise moment. I call these cosmic moments, and for every cosmic moment Gemini creates a Haiku poem, a thoughful koan-like expression and 3 affirmations. As the moon takes around 27 days to orbit the Earth, it would be in the same phase for up to a few days at time, so I came up with the idea of using the day of the week too. the 7 day week has lots of astrological significance and each day is said to have it&#x27;s own ruler. With Hellenistic Astrology each planet has it&#x27;s themes and also it&#x27;s sect. Adding this as an additional layer means that even while the moonphase gradually shifts, each of the possibly 4 days would have its own unique take on the moments. (Besides, the sun ascendant, sign positions would almost certainly be different too!). The creativity of Gemini has made this my favorite feature of the whole app. I&#x27;m very glag I allowed myself to go on the cosmic clock detour!&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;scarlet-tides&quot;&gt;Scarlet Tides&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Here is an example of Gemini&#x27;s creative and poetic side, these were generated with the context that it&#x27;s 4am, the ascendant and the rising sun are both in Cancer. The moon (first quarter phase) is subterranean and it&#x27;s a Tuesday which is ruled by Mars.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;haiku-of-the-moment&quot;&gt;Haiku of the moment&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;Crimson dawn breaks free,
+Crab&amp;#x27;s shell shimmers, wet with dew,
+a new day beings.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;thought-of-the-moment&quot;&gt;Thought of the moment&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Without the Moon&#x27;s reflection, how can we truly know the Sun&#x27;s fire?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;affirmations-of-the-moment&quot;&gt;Affirmations of the moment&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I embrace the depths of my emotions.&lt;&#x2F;li&gt;
+&lt;li&gt;I trust the journey unfolding before me.&lt;&#x2F;li&gt;
+&lt;li&gt;I am safe to express my authentic self.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;I&#x27;ll end that with those lovely inspiring messages, until next time - keeping look up! ✨&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcing Kosmos! &#x2F;&#x2F; Dev Log 2</title>
+        <published>2024-07-24T00:00:00+00:00</published>
+        <updated>2024-07-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/cosmic-app-update/"/>
+        <id>https://www.jimmyff.co.uk/blog/cosmic-app-update/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/cosmic-app-update/">&lt;p&gt;&lt;em&gt;Hey stargazers! 🔭 I had hoped to do regular dev logs for my Gemini AI competition entry project, but life (and building this app) has been keeping me super busy! But anyway, late is better than never right? And the good news is, the app has come on a ton and I&#x27;m really excited about how it&#x27;s shaping up!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;Pb3UwpWO0aY&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Check out the video above for a walkthrough&#x2F;wafflethrough of the app so far. (Apologies for the rough edges with the vid– I&#x27;m determined not to do any scripting or post-editing!)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;here-s-what-i-ve-been-up-to&quot;&gt;Here&#x27;s what I&#x27;ve been up to&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A buttery smooth interface: You can now shuttle&#x2F;animate through time, location, and even settings (though I turned that off in the video because there&#x27;s a little quirk I need to fix). It feels really tactile with some nice haptic feedback as your rotate the charts.&lt;&#x2F;li&gt;
+&lt;li&gt;Interpolation and custom tweens: These make everything super fast and my custom tween sequence keeps the animation calculations nice and accurate.&lt;&#x2F;li&gt;
+&lt;li&gt;Ecliptic and Equatorial positions: Exposing all the data I can such as their coordinates, their sign, house, speed, and distance.&lt;&#x2F;li&gt;
+&lt;li&gt;Aspects: The app now shows 11 different aspect types, with intensity calculated based on type, accuracy, speed, and celestial body pairings. (To be fully configurable by the user)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;bonus-stuff-i-didn-t-mention-forgot-to-mention-in-the-video&quot;&gt;Bonus stuff I didn&#x27;t mention&#x2F;forgot to mention in the video&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Map Projections: After initially using GeoJSON maps I&#x27;ve switched to D3&#x27;s TopoJSON maps and plan to do some really cool stuff with these in the future.&lt;&#x2F;li&gt;
+&lt;li&gt;Astrology accuracy tests: I&#x27;m making sure all the data that the app is generating is accurate by benchmarking it against external services. I also have an interpolation accuracy test which allows me to understand how far I can interpolate astrological data whilst animating before the accuracy drops below acceptable tolerance levels&lt;&#x2F;li&gt;
+&lt;li&gt;Custom font: I&#x27;ve drawn a set of astrological symbols (on my tablet) which really help give the app a distinctive look. I plan to write a blog post in the future detailing process and tools used (as a reminder for my future self!)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+&lt;img alt=&quot;Cosmic Symbols&quot; title=&quot;Cosmic Symbols&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.6b789b39fc69a493.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.4ab451c0c1f586d3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.6b789b39fc69a493.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.5e01f1dcfcf6910b.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h3 id=&quot;app-availability&quot;&gt;App Availability&lt;&#x2F;h3&gt;
+&lt;p&gt;I&#x27;ll be uploading a web version soon and submitting to the app stores by the end of the week (hopefully). So next time you hear from me, you&#x27;ll be able to play with it yourself!&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m also considering doing a bit more of a technical deep-dive, let me know if you&#x27;d like to see some of the code behind the scenes. I&#x27;m happy to share a closer look at the Kosmos!&lt;&#x2F;p&gt;
+&lt;p&gt;Until then, keep looking up! ✨✌️&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Decoding the Stars with AI &#x2F;&#x2F; Dev Log 1</title>
+        <published>2024-06-14T00:00:00+00:00</published>
+        <updated>2024-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/building-a-cosmic-app/"/>
+        <id>https://www.jimmyff.co.uk/blog/building-a-cosmic-app/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/building-a-cosmic-app/">&lt;p&gt;Ever since I heard about the Gemini &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;competition&quot;&gt;AI competition&lt;&#x2F;a&gt; my brain has been whirring. I knew I wanted to build something for it, and I have &lt;em&gt;lots&lt;&#x2F;em&gt; ideas so the problem has been which idea to choose. Earlier this week I finally landed on my idea and I&#x27;m feeling super fired up about it. A couple of months back I bought a lovely little Astrology book (as content and inspiration for &lt;a href=&quot;&#x2F;projects&#x2F;quest&#x2F;&quot;&gt;a game I&#x27;m working on&lt;&#x2F;a&gt;), astrology is totally new to me but I quite liked the idea of exploring birth chart astrology further. I think a great way to explore a subject is to build an app about it (I did this with &lt;a href=&quot;&#x2F;projects&#x2F;eurovision-app&#x2F;&quot;&gt;my Eurovision app&lt;&#x2F;a&gt; back in 2018). I also think it&#x27;s a great fit for the Gemini competition, not only is the clue is in the name but after running a few tests I&#x27;ve found Gemini to provide some really interesting observations on birth chart data. I think I can offer people a much more personal interpretation of their birth chart using the power of generative AI.&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;cXfPvt9oHpg&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;the-cosmic-black-rabbit-hole&quot;&gt;The cosmic &lt;del&gt;black&lt;&#x2F;del&gt; rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve been down a bit of a rabbit hole for the last couple of days, learning all about space. From transforming geocentric positions (planetary positions as observed from the centre of earth) to topocentric positions (as observed from a point on earth&#x27;s surface), dealing with parallax correction and atmospheric bending of observed positions! It&#x27;s been a lot, but lots of fun.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-astrology-rabbit-hole&quot;&gt;The Astrology rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve digested a huge amount of Astrology information over the last few days learning everything from the significance of planets, zodiac signs, houses, house systems, zodiac systems, transits, house rulers, placement conditions and we&#x27;re only touching the surface! Throwing myself in to coding an astrology app means no stone can be left unturned! One of the areas that has really caught my interest is that being born in February I&#x27;ve always been told I was an Aquarius, so I assumed I the sun was in the Aquarius sign at the time of my birth, whilst exploring Sidereal Astrology (which is based on the exact placement of stars) I realised the sun was in fact in the Capricorn sign! I&#x27;ve used astrology software to rewind and confirm that this is true! To my current understanding (disclaimer: I&#x27;m now expert -in fact I was a total Astrology novice 3 days ago!) is that Ancient Astrology was based on the stars, a system first created by Babylonian Astrologers. Later Greek Astrologers decided to change the system to ensure that the Sun was at the top of the chart at the Spring Equinox not realising that due to the Earth&#x27;s &quot;wobble&quot;, every 71.6 years the degree the sun appears shifts by 1 degree. Western Astrology is based on that system (now known as Tropical Astrology) and over the last 2000 years that 1 degree every 70 odd years has added up to around 27 degrees! A 360 degree chart is broken in to 12 segments for each of the Zodiac signs (&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ophiuchus_(astrology)&quot;&gt;Ignoring the 13th zodiac sign&lt;&#x2F;a&gt; 😅) so each segment is 30 degrees - the Western system is now almost an entire constellation out of sync with the actual stars! Anyway, I could rabbit on about this and numerous other interesting things I&#x27;ve discovered but I&#x27;ll save that waffle for pub chat.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Cosmic map - showing the planets at my birth time and location&quot; title=&quot;Cosmic map - showing the planets at my birth time and location&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.8cbce0088e91665a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.5c0d24941bb3afc2.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.8cbce0088e91665a.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;gemini-my-ai-coworker&quot;&gt;Gemini: My AI coworker&lt;&#x2F;h2&gt;
+&lt;p&gt;The huge surprise for me is the role that AI has played in this project before I&#x27;;&#x27;ve even started implementing it in to the app. Gemini has been my astronomy &amp;amp; astrology mentor. I&#x27;ve fed it 200+ page documentation PDFs and had it expertly clearing any roadblocks I&#x27;ve come up against. I&#x27;ve been using Gen AI more and more, but never to this extent, I feel like Popeye and Gemini is my Spinach! I can&#x27;t wait actually start implementing the chart interpretation stuff next. Feels like I&#x27;ve made a heap of progress in super short time -I can&#x27;t wait see where this goes!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Cosmic</title>
+        <published>2024-06-14T00:00:00+00:00</published>
+        <updated>2024-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/projects/cosmic/"/>
+        <id>https://www.jimmyff.co.uk/projects/cosmic/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/projects/cosmic/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Stickers</title>
+        <published>2023-10-01T00:00:00+00:00</published>
+        <updated>2023-10-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/projects/stickers/"/>
+        <id>https://www.jimmyff.co.uk/projects/stickers/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/projects/stickers/"></content>
+        
+    </entry>
+</feed>

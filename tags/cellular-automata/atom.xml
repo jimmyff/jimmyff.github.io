@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - cellular_automata</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/cellular-automata/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2017-07-17T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/cellular-automata/atom.xml</id>
+    <entry xml:lang="en">
+        <title>The many beautiful worlds of Cellular Automata</title>
+        <published>2017-07-17T00:00:00+00:00</published>
+        <updated>2017-07-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/the-many-beautiful-worlds-of-cellular-automata/"/>
+        <id>https://www.jimmyff.co.uk/blog/the-many-beautiful-worlds-of-cellular-automata/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/the-many-beautiful-worlds-of-cellular-automata/">&lt;p&gt;(&lt;em&gt;I&#x27;ve also posted this article &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;the-many-beautiful-worlds-of-cellular-automata-3e09afa8d48d&quot;&gt;over on Medium&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve been interested in Cellular Automata (such as &#x27;Conway&#x27;s Game of Life&#x27;) for years. I&#x27;ve implemented them countless times in various programming languages. A couple of weeks back I created a &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;cellular_automata&quot;&gt;Dart library&lt;&#x2F;a&gt; for exploring playing with Cellular Automata, it&#x27;s open source and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;cellular_automata&quot;&gt;available on Github&lt;&#x2F;a&gt;. You can browse the &lt;a href=&quot;https:&#x2F;&#x2F;jimmyff.github.io&#x2F;cellular_automata&#x2F;&quot;&gt;demos on github&lt;&#x2F;a&gt; or see the library running on my personal website -the gifs on this article were also generated using the library.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;the-many-beautiful-worlds-of-cellular-automata&#x2F;1.gif#pixelate&quot; alt=&quot;GIF&quot; title=&quot;Cellular Automata rule set: &amp;#39;Star Wars&amp;#39; with a random seed&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-are-cellular-automata&quot;&gt;What are Cellular Automata?&lt;&#x2F;h2&gt;
+&lt;p&gt;Cellular Automata were all the rage in Science and Math clubs back in the 70s &amp;amp; 80s however the first papers on the subject actually date way back to the 40s. In those days mathematicians &amp;amp; scientists created the rules using pen and paper rather than a computer (John Conway actually created his &#x27;Game of Life&#x27; rules on a Go board!). Stephen Wolfram wrote numerous papers on the subject in the 80s &amp;amp; 90s.&lt;&#x2F;p&gt;
+&lt;p&gt;A Cellular Automaton is a grid of &#x27;cells&#x27;, each of which has a single &#x27;state&#x27;. For each cycle (known as a new &#x27;generation&#x27;) a set of rules are applied to each cell in the grid which could potentially change it&#x27;s state. The rules usually consider each of the cells &#x27;neighbourhood&#x27; (the surrounding cells). Cellular Automata rules are usually incredibly simple. Below are the rules to &#x27;Conway&#x27;s Game of Life&#x27; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;cellular_automata&#x2F;blob&#x2F;master&#x2F;lib&#x2F;src&#x2F;rules&#x2F;game_of_life.dart&quot;&gt;here is my library&#x27;s code implementation&lt;&#x2F;a&gt;):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Any living cell with fewer than two live neighbours dies, as if caused by underpopulation.&lt;&#x2F;li&gt;
+&lt;li&gt;Any living cell with two or three live neighbours lives on to the next generation.&lt;&#x2F;li&gt;
+&lt;li&gt;Any living cell with more than three live neighbours dies, as if by overpopulation.&lt;&#x2F;li&gt;
+&lt;li&gt;Any dead cell with exactly three live neighbours becomes a living cell, as if by reproduction.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;the-many-beautiful-worlds-of-cellular-automata&#x2F;2.gif#pixelate&quot; alt=&quot;GIF&quot; title=&quot;&amp;#39;Conway&amp;#39;s Game of Life&amp;#39; with a patterned seed&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&#x27;Conway&#x27;s Game of Life&#x27; (among many other rules) can be described as &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Turing_completeness&quot;&gt;Turing-complete&lt;&#x2F;a&gt;, meaning they can perform computations (if the necessary cell states are in particular formations — &lt;a href=&quot;http:&#x2F;&#x2F;rendell-attic.org&#x2F;gol&#x2F;tm.htm&quot;&gt;like this&lt;&#x2F;a&gt;). &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wireworld&quot;&gt;Wire World&lt;&#x2F;a&gt; is another incredibly simple rule that allows the simulation of electronic logic elements —the 80s equivalent of Minecraft&#x27;s redstone circuits!&lt;&#x2F;p&gt;
+&lt;p&gt;What fascinates me is that from such a simple set of rules, complex systems can arise. Often stable groups of cells occur and large complex formations that can even move as a single unit. Reoccurring patterns arise that can span numerous generations (there&#x27;s a simple 3 generational pattern in the header graphic). I find this aspect of Cellular Automata so exciting -you never know what you are going to see. It&#x27;s as if we&#x27;re simulating a very basic universe. What would happen if rather than a very simple 2D grid of cells, we simulated protons, neutrons &amp;amp; electrons? Would we also see complex structures appear; or even simulated life? (aside: &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Simulation_hypothesis&quot;&gt;Simulation hypothesis&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-dart-library&quot;&gt;The Dart library&lt;&#x2F;h2&gt;
+&lt;p&gt;The library separates the Cellular Automata rules (the fun bit) from the boilerplate processing &amp;amp; rendering. This makes it quick &amp;amp; easy to add new rules or experiment. I&#x27;ve added a few rules so far and also added support for &#x27;MCell&#x27; rules so it can run any of the hundreds of rules published in the &lt;a href=&quot;http:&#x2F;&#x2F;www.mirekw.com&#x2F;ca&#x2F;rullex_rtab.html&quot;&gt;MCell rules Lexicon&lt;&#x2F;a&gt;. I plan to add the ability to have numerous rule sets running in the same scene although this feature will have to wait for a rainy day. The rendering code is also decoupled which means you can easily add&#x2F;swap renderers as you need, I&#x27;ve already added a few (WebGL, Canvas, Html) and I plan to add another that can drive an LED Matrix.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;the-many-beautiful-worlds-of-cellular-automata&#x2F;3.gif#pixelate&quot; alt=&quot;GIF&quot; title=&quot;&amp;#39;Brain&amp;#39;s Brain&amp;#39; with a patterned seed&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The dart package &#x27;cellular_automata&#x27; is published on &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;cellular_automata&quot;&gt;pub.dartlang.org&lt;&#x2F;a&gt;. Have fun with it and don&#x27;t forget to send me a pull request! ;-)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

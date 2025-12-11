@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - coding</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/coding/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Zap: A fast, ultra-minimal Zola theme</title>
+          <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/zap-theme/</link>
+          <guid>https://www.jimmyff.co.uk/blog/zap-theme/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/zap-theme/">
+
+
+
+&lt;img alt=&quot;Zap theme&quot; title=&quot;Zap theme&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.330104f3ba45de51.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.63d4867385304493.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.330104f3ba45de51.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.5aa396a18d6c917c.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Ever since I went minimal with my last website theme (&lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;inky&#x2F;&quot;&gt;Inky&lt;&#x2F;a&gt;), I&#x27;ve been wanting to go ultra-minimal. I wanted to see how much I could strip back to get TUI vibes: fast, lightweight with zero bloat.&lt;&#x2F;p&gt;
+&lt;p&gt;This weekend I finally built &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;zola-zap&quot;&gt;Zap&lt;&#x2F;a&gt;, an ultra-minimal theme for &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; (the wonderful Rust-based static site generator). It&#x27;s designed to be as minimal as possible while still being functional: light&#x2F;dark mode toggle, optional inline SVG icons via a sprite sheet, responsive images, and vibrant &lt;a href=&quot;&#x2F;blog&#x2F;prism-dart-flutter-color-package&#x2F;&quot;&gt;OKLCH&lt;&#x2F;a&gt; colors. The entire base CSS is inlined in the HTML—no external stylesheet requests. I also replaced the old search index with Fuse.js, which generates a significantly smaller index.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The old theme &amp;#x27;Inky&amp;#x27; on the left, new &amp;#x27;Zap&amp;#x27; theme in dark mode central and light mode right.&quot; title=&quot;The old theme &amp;#x27;Inky&amp;#x27; on the left, new &amp;#x27;Zap&amp;#x27; theme in dark mode central and light mode right.&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.efb4f7c8fd725418.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.626ce955212dc725.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.efb4f7c8fd725418.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.2f02f03dacc93934.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;&lt;em&gt;Comparison showing (from left) the old Inky theme and Zap dark + light mode.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;does-it-live-up-to-its-name&quot;&gt;Does it live up to its name?&lt;&#x2F;h2&gt;
+&lt;p&gt;Perfect scores from PageSpeed Insights! 100 across the board for performance, accessibility, best practices, and SEO.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;PageSpeed Insights showing perfect 100 scores&quot; title=&quot;PageSpeed Insights showing perfect 100 scores&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;results.2f6f14dba51f336c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;results.48bac00d82a1fa0f.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;results.2f6f14dba51f336c.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;bonus-analytics&quot;&gt;Bonus: Analytics&lt;&#x2F;h2&gt;
+&lt;p&gt;I took the opportunity to add support for &lt;a href=&quot;https:&#x2F;&#x2F;umami.is&#x2F;&quot;&gt;Umami&lt;&#x2F;a&gt; analytics. It&#x27;s privacy-focused and lightweight—a nice change from the usual suspects.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Looking forward to publishing more content on my shiny refreshed site in 2026!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Keeping my Nix inputs fresh</title>
+          <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/keeping-my-nix-inputs-fresh/</link>
+          <guid>https://www.jimmyff.co.uk/blog/keeping-my-nix-inputs-fresh/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/keeping-my-nix-inputs-fresh/">&lt;p&gt;Nix&#x27;s approach to reproducibility means programs live in read-only storage and can&#x27;t self-update—you manage everything manually. After &lt;a href=&quot;&#x2F;blog&#x2F;beyond-package-management-how-nix-refactored-my-digital-life&#x2F;&quot;&gt;moving to Nix full-time&lt;&#x2F;a&gt;, my initial setup meant updating everything at once: AI tools, developer tooling, and my desktop environment. This got annoying fast, since I like to update AI stuff almost daily, dev tools weekly, and my desktop maybe monthly.&lt;&#x2F;p&gt;
+&lt;p&gt;I split my nixpkgs into specialized inputs (&lt;code&gt;pkgs-ai&lt;&#x2F;code&gt;, &lt;code&gt;pkgs-dev-tools&lt;&#x2F;code&gt;, &lt;code&gt;pkgs-desktop&lt;&#x2F;code&gt;) so I could update them independently, but I had no easy way to see which inputs actually had updates available.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Terminal output showing flake-freshness checking packages across nixpkgs inputs&quot; title=&quot;Terminal output showing flake-freshness checking packages across nixpkgs inputs&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;flake-freshness.6234a8493c5aedef.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;flake-freshness.6883a46d9c7a977a.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;flake-freshness.6234a8493c5aedef.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;So, I created a little nushell script called &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;tree&#x2F;main&#x2F;scripts&#x2F;flake-freshness&quot;&gt;flake-freshness&lt;&#x2F;a&gt; that checks my inputs and shows what needs updating. It compares my &lt;code&gt;flake.lock&lt;&#x2F;code&gt; versions against upstream, caches the results to avoid repeated &lt;code&gt;nix eval&lt;&#x2F;code&gt; calls.&lt;&#x2F;p&gt;
+&lt;p&gt;I run it on system startup so I get a quick overview before deciding what to update. It&#x27;s made managing multiple inputs a lot less of a chore.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Splatoon characters Callie &amp;amp; Marie with the text &amp;#x27;Stay Fresh!&amp;#x27;&quot; title=&quot;Splatoon characters Callie &amp;amp; Marie with the text &amp;#x27;Stay Fresh!&amp;#x27;&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;stay-fresh.069ffe884bc212ec.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;stay-fresh.b8c7e5fff0d5c2a7.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;stay-fresh.069ffe884bc212ec.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;My entire Nix config, including other scripts like this, is available on GitHub: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&quot;&gt;github.com&#x2F;jimmyff&#x2F;nixfiles&lt;&#x2F;a&gt;. Stay Fresh! 🦑&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Beyond package management: How Nix refactored my digital life</title>
+          <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/beyond-package-management-how-nix-refactored-my-digital-life/</link>
+          <guid>https://www.jimmyff.co.uk/blog/beyond-package-management-how-nix-refactored-my-digital-life/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/beyond-package-management-how-nix-refactored-my-digital-life/">&lt;p&gt;&lt;em&gt;(You can find my Nix config &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;&quot;&gt;over on Github&lt;&#x2F;a&gt;)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m a disorganised person. My workflow is to bounce around a codebase for days&#x2F;weeks at a time and when I come up for air I&#x27;ll usually have left a slew of configs, tools, scripts, repos scattered around my computer like the socks near the bed, or the pile of paperwork on my desk. After a while I reach a point where it all becomes unmanageable. I&#x27;ll wade on (unproductively) until I can&#x27;t go any further, then reset my laptop and spend a week reconfiguring the system, tooling, and getting projects running again. So when I discovered Nix (about 12 months back) it sounded &lt;em&gt;too&lt;&#x2F;em&gt; good to be true: a declarative package manager with reproducible builds and pinned package versions. Even better, NixOS applies these principles to your entire operating system! I was incredibly excited by it but then got horrendously bogged down in my first system config. I shelved it as something to come back to when I had more time. Several months later I gave it another try and spent the time needed to understand how to properly configure it. Result? Well let&#x27;s just say I&#x27;m never going back -boy oh boy, Nix is &lt;em&gt;wild&lt;&#x2F;em&gt;! In this post, I&#x27;ll walk you through my journey: reviving an old Pixelbook with &lt;a href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt;, wrangling my MacBook with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-darwin&#x2F;nix-darwin&quot;&gt;nix-darwin&lt;&#x2F;a&gt;, and super-charging Nix with AI to solve a problem I thought was unsolvable.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;nixos-on-an-old-pixelbook&quot;&gt;NixOS on an old Pixelbook&lt;&#x2F;h3&gt;
+&lt;p&gt;I gave Nix a second chance as I had a slow old Pixelbook Go (2017 Chromebook that I&#x27;d picked-up cheap on ebay). It frustrated me how sluggish it was despite being reasonably well-specced. I disabled the BIOS write protection (using the excellent guides at &lt;a href=&quot;https:&#x2F;&#x2F;docs.mrchromebox.tech&#x2F;&quot;&gt;MrChromebox&lt;&#x2F;a&gt;) and replaced it with Coreboot, an open-source BIOS that allowed me to install NixOS (&lt;em&gt;the process was more involved than expected, requiring me to physically disconnect the battery to disable write protection!&lt;&#x2F;em&gt;). Getting a simple NixOS system running was simple and I was instantly blown away by the speed! The Pixelbook (&lt;em&gt;now a Nixelbook&lt;&#x2F;em&gt;) had &lt;em&gt;never&lt;&#x2F;em&gt; felt so snappy -it was a joy to use. I&#x27;ve not used Linux on the desktop for almost 15 years (I started on Linux in the early 2000s with Debian Woody and remember the hype around Ubuntu Warty Warthog!) so I had great fun playing around with all the cool new stuff -especially the display managers! Everything worked remarkably well except the parts specific to the Pixelbook: The AI assistant button, the function key row and the speakers. &lt;em&gt;I&#x27;ve almost got everything working now -more on this later!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Left: Disconnecting the battery of my Pixelbook. Right: My Nixelbook is born!&quot; title=&quot;Left: Disconnecting the battery of my Pixelbook. Right: My Nixelbook is born!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nixelbook.a311ce1aaec861c1.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nixelbook.9510ad192953210f.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nixelbook.a311ce1aaec861c1.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h3 id=&quot;running-nix-on-my-macbook&quot;&gt;Running Nix on my macbook&lt;&#x2F;h3&gt;
+&lt;p&gt;The Nixelbook was a triumph, but could I apply this same magic to my daily driver, a chaotic M1 MacBook Pro? My system is a mess; way too much stuff, brew packages, countless dev projects, tooling and SDKs installed globally. I&#x27;m also never quite sure about the correct way to fully purge something on macOS (especially if it&#x27;s been installed via an installer). Enter Nix: I can now enable those configurations I setup for my NixOS laptop on a per-module basis for my macbook. The macOS version of Nix configuration is handled by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-darwin&#x2F;nix-darwin&quot;&gt;nix-darwin&lt;&#x2F;a&gt;, which has some differences and gotchas due to macOS&#x27;s BSD Unix foundation versus Linux. Also I&#x27;m running an Apple silicon macbook pro- so the packages I use need to have aarch64-darwin builds (which most do). With a little bit of patience you can configure your various hosts and share your nix modules across systems with different architectures. This for me is huge: I can have a dependable, reproducible configuration, I am in control of every aspect, and every configuration is deliberate, considered and under version control.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;declarative-dev-environments&quot;&gt;Declarative Dev Environments&lt;&#x2F;h3&gt;
+&lt;p&gt;I&#x27;ve previously used Ansible for dev-ops configuration, it&#x27;s powerful but also painful. I found that it would be overkill for my smaller projects, and it certainly wouldn&#x27;t be good for configuring desktop tooling etc. The NixOS package repository with pinned versions is the HUGE differentiator for me. I&#x27;m not at the stage of configuring cloud containers with NixOS (that will be a challenge for another day), but for local development environments this is massive. For this, I use &lt;a href=&quot;https:&#x2F;&#x2F;nixos.wiki&#x2F;wiki&#x2F;Flakes&quot;&gt;Nix Flakes&lt;&#x2F;a&gt;. Flakes are the modern way to package Nix expressions, locking all dependencies for true reproducibility. I configure my projects as Nix Flakes that checkout the code, provide utility scripts and configure the environment by installing SDKs (pinned to specific version) and any tooling required. With direnv, the entire environment appears when entering a project directory and disappears when leaving: SDKs, running services, tooling, even IDEs if desired. Doing something like this, supporting different system architectures with Ansible would be a nightmare (and far beyond my ability!). As I can now reproduce my configurations I&#x27;m leaning heavily in to nushell as my default shell environment, and I&#x27;ve created a couple of nuscripts (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;tree&#x2F;main&#x2F;scripts&#x2F;git-manager&quot;&gt;gm.nu&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;tree&#x2F;main&#x2F;scripts&#x2F;dartboard&quot;&gt;dartboard.nu&lt;&#x2F;a&gt;) to manage my bigger projects, handling everything from batch-updating and running tests across various projects to syncing and managing git submodules in mono-repos. My flakes (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;blob&#x2F;main&#x2F;projects&#x2F;rocket-kit&#x2F;flake.nix&quot;&gt;example&lt;&#x2F;a&gt;) can enable these global scripts, and I have them configured to give me a project overview each time the flake is loaded. I&#x27;m willing to spend longer creating the perfect dev environment as now it&#x27;s reproducible, my utility tools and scripts can be shared among projects and I&#x27;m seeing qualitative improvements to my developer experience because of it.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;nix-ai-exploding-head&quot;&gt;Nix + AI = 🤯&lt;&#x2F;h3&gt;
+&lt;p&gt;My biggest challenge was the Nixelbook&#x27;s audio. After replacing the firmware, I discovered the audio drivers were unavailable -a dead end that others online had hit with no success. I&#x27;d failed miserably trying to fix it myself. As a last resort, I decided to see if an AI could help me crack it. I tasked Claude Code with the problem and the results were astonishing -I watched as the AI assistant (under close supervision) methodically tried various approaches while monitoring system logs and working through errors I probably would never have discovered. Eventually it(&#x2F;we?) managed to locate the final piece of the puzzle: the speakers topology file (that someone had recovered from the ChromeOS recovery image) which with some impressive nix configuration literally brought music to my ears &lt;em&gt;(if you have a Pixelbook Go&#x2F;Chromebook Atlas, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;tree&#x2F;main&#x2F;nix_modules&#x2F;hardware&#x2F;pixelbook-go&quot;&gt;help yourself to the solution here&lt;&#x2F;a&gt;!).&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;what-s-next-final-thoughts&quot;&gt;What&#x27;s next &amp;amp; final thoughts&lt;&#x2F;h3&gt;
+&lt;p&gt;Earlier this year &lt;a href=&quot;https:&#x2F;&#x2F;www.androidauthority.com&#x2F;android-linux-terminal-app-available-3532999&#x2F;&quot;&gt;Google released &#x27;Linux Terminal&#x27; which provides a virtualized Linux environment on Android&lt;&#x2F;a&gt;, of course &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-community&#x2F;nixos-avf&quot;&gt;there is already Nix support&lt;&#x2F;a&gt;. I&#x27;m going to configure my Pixel phone as a host in my nix config which will give me a fully-fledged, perfectly configured Linux OS in my pocket- everything setup just the way I like it. I could also play with using Nix as a tool for configuring cloud infrastructure -something I would like to explore further down the road.&lt;&#x2F;p&gt;
+&lt;p&gt;My closing comment is that Nix has blown me away. It&#x27;s refactored my chaotic digital life in to something well structured, thoughtfully considered, reproducible and dependable, and I&#x27;m reaping the rewards of all of this already. I urge everyone to take a look at Nix and give it the time it deserves; you can thank me later (&lt;em&gt;over in my &lt;a href=&quot;&#x2F;guestbook&#x2F;&quot;&gt;guestbook&lt;&#x2F;a&gt;!&lt;&#x2F;em&gt;).&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;&quot;&gt;github.com&#x2F;jimmyff&#x2F;nixfiles&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Prism: Color Library for Dart &amp; Flutter</title>
+          <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/prism-dart-flutter-color-package/</link>
+          <guid>https://www.jimmyff.co.uk/blog/prism-dart-flutter-color-package/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/prism-dart-flutter-color-package/">&lt;blockquote&gt;
+&lt;p&gt;Prism is an optimized, zero-dependency color manipulation library for Dart &amp;amp; Flutter with multiple color models, accessibility tools, and pre-built palettes.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I&#x27;ve always been fascinated with colors and color theory. I&#x27;ve designed a board game and an app around it, and in my amateur artworks I seem to subconsciously gravitate to complementary palettes (&lt;em&gt;examples: &lt;a href=&quot;&#x2F;gallery&#x2F;glass-containers&#x2F;&quot;&gt;1&lt;&#x2F;a&gt;, &lt;a href=&quot;&#x2F;gallery&#x2F;hearts&#x2F;&quot;&gt;2&lt;&#x2F;a&gt;, &lt;a href=&quot;&#x2F;gallery&#x2F;museum-sektching&#x2F;&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;). Over the years I&#x27;ve written a couple of unpublished color libraries. The first was Chroma which I later replaced with Pigment, which I rebranded as Prism due to a name clash. The rebrand gave me a good excuse to spend a bit of time refactoring it and polishing it. I&#x27;m pleased to announce Prism is now available over on &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;prism&quot;&gt;pub.dev&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;prism&quot;&gt;github&lt;&#x2F;a&gt;. While the concepts aren&#x27;t new, Prism is a comprehensive and thoughtfully designed package that makes working with modern color spaces in Dart really easy.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Color Theory in practice&quot; title=&quot;Color Theory in practice&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;tablet_screen.c2d1b09d146d1f2c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;tablet_screen.c5b9a48f32396da3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;tablet_screen.c2d1b09d146d1f2c.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;✨ Back in 2015 I spotted this orange and blue banding on my tablet&#x27;s screen providing a little real-world demonstration of the color theory that I was reading about! 🧡💙&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;To understand what makes prism useful I need to briefly explain color spaces. These are systems for describing and storing colors:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;rgb-the-color-model-of-screens&quot;&gt;RGB - The Color Model of Screens&lt;&#x2F;h3&gt;
+&lt;p&gt;Your phone or laptop screen creates colors by mixing light. Each pixel is made of tiny red, green, and blue sub-pixels (RGB). If all are off, you get black; if all are on full, you get white. This is great for screens, but it&#x27;s not very intuitive for humans.&lt;&#x2F;p&gt;
+&lt;p&gt;If you want to make a color lighter or change its hue, you&#x27;re just fiddling with Red, Green, and Blue values. Worse, if you try to create a gradient between two colors in RGB, you often get a muddy, greyish color in the middle. This is because the math of RGB doesn&#x27;t match up with how our eyes actually perceive color and lightness.&lt;&#x2F;p&gt;
+&lt;p&gt;Color spaces like HSL and HSV were created to make manipulating RGB colors easier. However, they are fundamentally flawed, as their handling of lightness and value is inconsistent across different hues.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;oklab-oklch-a-more-human-approach&quot;&gt;Oklab + Oklch - A More Human Approach&lt;&#x2F;h3&gt;
+&lt;p&gt;This is the problem Oklab and Oklch are designed to solve. They are modern color spaces built around how humans perceive color, focusing on three things:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;L&lt;&#x2F;strong&gt; - Lightness (how light or dark it appears)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;C&lt;&#x2F;strong&gt; - Chroma (how vibrant or intense the color is)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;H&lt;&#x2F;strong&gt; - Hue (the actual color, like red, green, blue)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The magic is that &quot;Lightness&quot; in Oklch is perceptually uniform. This means you can change the hue or chroma and the perceived lightness won&#x27;t change. This is a game-changer for creating accessible UIs with proper contrast, and for creating beautiful, vibrant gradients that don&#x27;t turn to mud.&lt;&#x2F;p&gt;
+&lt;p&gt;While the math behind this is complex (I used the brilliant formulas from &lt;a href=&quot;https:&#x2F;&#x2F;bottosson.github.io&#x2F;posts&#x2F;gamutclipping&#x2F;&quot;&gt;Björn Ottosson&#x27;s post&lt;&#x2F;a&gt; to handle gamut clipping), but Prism abstracts all that away.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Hopefully the above gives you a little overview of why a dedicated color library is useful. Prism provides a really easy way to create, manipulate and store colors. Prism currently supports Rgb8, Rgb16, Hsl, Hsv, Oklch and Oklab color spaces, and makes it trivial to convert between them. Here&#x27;s a little example:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dart&quot; class=&quot;language-dart &quot;&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&amp;#x2F;&amp;#x2F; Create an rgb color from hex and convert to oklch
+final red = RayRgb8.fromHex(&amp;#x27;#FF0000&amp;#x27;);
+final redInOklch = red.toOklch();
+print(redInOklch); 
+&amp;#x2F;&amp;#x2F; RayOklch(l: 0.628, c: 0.258, h: 29.2°)
+
+&amp;#x2F;&amp;#x2F; A darker red (with perceptually uniform lightness)
+final darkRed = redInOklch.withLightness(0.3);
+print(darkRed);
+&amp;#x2F;&amp;#x2F; RayOklch(l: 0.300, c: 0.089, h: 29.2°)
+
+&amp;#x2F;&amp;#x2F; let&amp;#x27;s take it back to rgb to print the hex
+final darkRedInRgb = darkRed.toRgb8();
+print(darkRedInRgb.toHexStr());
+&amp;#x2F;&amp;#x2F; #521711
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;em&gt;Notice that the final rgb hex color (format: #RRGGBB) actually has a bit of green and blue to create the darker red.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;palettes&quot;&gt;Palettes&lt;&#x2F;h2&gt;
+&lt;p&gt;Prism also has a palette system, this allows developers to have palettes with pre-calculated luminosity levels with RGB or OKLCH colors (this is particularly useful when working with RGB palettes as runtime calculations can be expensive). The palette sources can be pre-defined such as Material Colors, Open Colors, Tailwind or can be pre-computed using Prism (the Prism palette is called Spectrum). Spectrum builds on the Google&#x27;s Material Colors system (which offers shades from 50-900 in multiple colors) but expands it at both ends to offer shades from 0-1000 giving more choice at the extremes of the spectrum, great for doing really light&#x2F;dark themes. I&#x27;ve also expanded the color choices with hues at 15° intervals around the color wheel. The result is a palette with more nuance at the lightest and darkest extremes, as you can see in the comparison below:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;prism-dart-flutter-color-package&#x2F;Spectrum.png&quot; alt=&quot;Spectrum RGB palette&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;prism-dart-flutter-color-package&#x2F;Material.png&quot; alt=&quot;Material RGB palette&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;As a little bonus all the palettes are compiled to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;prism&#x2F;tree&#x2F;main&#x2F;palette_gallery&#x2F;&quot;&gt;css and available on github&lt;&#x2F;a&gt; in both RGB and OKLCH formats.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-s-next&quot;&gt;What&#x27;s next&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve not finished porting over the Pigment library to Prism, there is still the color theory code to migrate. I use color theory to calculate palettes based on images by extracting the dominant colors and choosing aesthetically pleasing combinations of colors. Before I port this over I need to consider my approach as at the moment prism and prism_flutter require zero dependencies and i&#x27;d like to keep them that way. I&#x27;ll probably add a prism_image_analysis package at some point which will have the &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;image&quot;&gt;package:image&lt;&#x2F;a&gt; package dependency.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;You can find Prism on &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;prism&quot;&gt;pub.dev&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;prism&quot;&gt;github&lt;&#x2F;a&gt;. Prism Flutter is also available on &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;prism_flutter&quot;&gt;pub.dev&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;prism_flutter&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Pop Snap Mega Update</title>
+          <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/pop-snap-update/</link>
+          <guid>https://www.jimmyff.co.uk/blog/pop-snap-update/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/pop-snap-update/">&lt;p&gt;So the latest version of Pop Snap has just hit the app stores so I figured it was the perfect time to add some deets about it to my blog. This is the result of about 2 weeks work totally revamping the client app. I&#x27;ve rewritten the editor itself which has big optimisation benefits and loads of scope for further development. I had an idea late last year that I would use Gemini LLM to categorise stickers for me. I implemented that back in September and I detailed the process with a youtube a dev log which is included below. I&#x27;ve since had some help loading SVG assets (stickers) in to the system for gemini to churn through and we now have almost 20k stickers in the system! Anyway, I&#x27;ll include more details below, but if you&#x27;re tight for time, just go and &lt;a href=&quot;&#x2F;apps&#x2F;&quot;&gt;download the app&lt;&#x2F;a&gt; and have a play!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;new-app-store-screenshots&quot;&gt;New App Store Screenshots&lt;&#x2F;h2&gt;
+
+
+
+
+&lt;img alt=&quot;App Screenshots&quot; title=&quot;App Screenshots&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.cc80d1b18163ea0a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.101651a22d8f566f.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.cc80d1b18163ea0a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-1.0b872c403b7c741f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+
+
+
+
+&lt;img alt=&quot;App Screenshots&quot; title=&quot;App Screenshots&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.128ee027ab1ff08f.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.ed7eb7fa3fba7aa3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.128ee027ab1ff08f.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;screenshots-2.7fb1e7ff6ef99290.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;building-an-ai-super-powered-control-panel&quot;&gt;Building an AI super-powered control-panel&lt;&#x2F;h2&gt;
+&lt;p&gt;I built a CMS which allows me to bulk upload SVG assets in to the system, sanitize them, tag the colors and then process them by generating metadata with AI. I won&#x27;t go in to too much detail as I&#x27;ve gone through most of it in the devlog video below:&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;B9rZwdGQ47E &quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;new-features&quot;&gt;New Features&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;asset-pipeline-system&quot;&gt;Asset Pipeline System&lt;&#x2F;h3&gt;
+&lt;p&gt;One of the big optimisations of the new version is an asset pipeline system which rasterizes the SVG graphic (with the colors, styling options required) and then feeds the back to the flutter UI, it re-renders this as the user scales and manipulates the asset. It&#x27;s a pretty cool system and makes the UI buttery smooth!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;new-sticker-manipulation-toolbar&quot;&gt;New sticker manipulation toolbar&lt;&#x2F;h3&gt;
+&lt;p&gt;Now when you select a sticker a toolbar appears allowing you quick access to outline tool, recolor options, flip, arrange etc. It&#x27;s nothing fancy but makes the editor nice and easy to use.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;haptic-feedback&quot;&gt;Haptic Feedback&lt;&#x2F;h3&gt;
+&lt;p&gt;I loved the haptic feedback I added to my Kosmos app so I did something similar here, now as your manipulate the Stickers you can feel little haptic vibrations for every few degrees you rotate, or percentage you scale. It feels really good!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;revenue-cat&quot;&gt;Revenue Cat&lt;&#x2F;h3&gt;
+&lt;p&gt;I downloaded and implemented Revenue Cat a couple of days ago, I couldn&#x27;t believe how simple it made subscription integration. I&#x27;ve always handled subscriptions and in-app purchases myself and it all works fine, but with this I could delete a whole bunch of code, one less thing for me to maintain. It&#x27;s so good I&#x27;m considering shifting all my app to use it despite them taking a cut...&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;so-what-s-next-for-pop-snap&quot;&gt;So what&#x27;s Next for Pop Snap?&lt;&#x2F;h2&gt;
+&lt;p&gt;Text! I had hoped to add this feature this week, but Apple policy team love to faff so i&#x27;ve been playing ping-pong with them all week trying to get the new version accepted. Anyway I think Text would be an awesome feature so that&#x27;s high on my priority list. Also some basic settings to allow default skin colors etc, that will probably be next... I need to get back to on other app&#x27;s now but I&#x27;ll swing back to this in the future, and possibly try to squeeze in some more features on Friday afternoons!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Introducing Kosmos &#x2F;&#x2F; Gemini API Developer Competition Submission</title>
+          <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/kosmos-my-gemini-ai-developer-compeition-subsmission/</link>
+          <guid>https://www.jimmyff.co.uk/blog/kosmos-my-gemini-ai-developer-compeition-subsmission/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/kosmos-my-gemini-ai-developer-compeition-subsmission/">&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;a98ePlYomUs &quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;This is the video to accompany my submission to the &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;competition&quot;&gt;Gemini AI Developer Competition&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;I&#x27;m going to try and squeeze a quick dev log 4 video in before I set off on holiday in a couple of hours!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Introducing Clackety - a new fun little flutter package</title>
+          <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/clackety/</link>
+          <guid>https://www.jimmyff.co.uk/blog/clackety/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/clackety/">&lt;p&gt;&lt;em&gt;I created a text animation for my &lt;a href=&quot;&#x2F;projects&#x2F;cosmic&#x2F;&quot;&gt;Kosmos app&lt;&#x2F;a&gt;, I wanted a typewritter style effect that could correct itself in realtime -à la Matrix. It would work well as the user interacts with the astrology charts. The retro-futuristic style fits really well with the vibe of my app and it&#x27;s become part of it&#x27;s identity. I figured I&#x27;d package it up so other people can use it too! So Clackety is available now over on &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;clackety&quot;&gt;pub.dev&lt;&#x2F;a&gt; and the sourcecode is &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;clackety&quot;&gt;on Github&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;clackety&#x2F;example.gif&quot; alt=&quot;GIF&quot; title=&quot;Demo of Clackety&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;clackety-features&quot;&gt;Clackety Features&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrects text in realtime when new typing target is provided&lt;&#x2F;li&gt;
+&lt;li&gt;Easy to use with or without Controller&lt;&#x2F;li&gt;
+&lt;li&gt;Zero dependencies, lightweight &amp;amp; optimised&lt;&#x2F;li&gt;
+&lt;li&gt;Tap to fast-forward&lt;&#x2F;li&gt;
+&lt;li&gt;onComplete callback&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;...Happy Clacking!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;P.s: If you haven&#x27;t tried Kosmos yet and haven&#x27;t seen Clackety in action, then what are you waiting for? You&#x27;re literally one tap away from the &lt;a href=&quot;https:&#x2F;&#x2F;app.kosmos.space&quot;&gt;web app&lt;&#x2F;a&gt;!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Ai, Astrology and Clocks, oh my! &#x2F;&#x2F; Dev Log 3</title>
+          <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/cosmic-dev-log-3/</link>
+          <guid>https://www.jimmyff.co.uk/blog/cosmic-dev-log-3/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/cosmic-dev-log-3/">&lt;p&gt;&lt;em&gt;Woo, so here we are, Dev Log 3. I said this was going to be a big AI update and wow, I&#x27;ve been blown away by the results I&#x27;ve managed to get with &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;&quot;&gt;Gemini&lt;&#x2F;a&gt;!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;p0sxLEX6PUk &quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;h3 id=&quot;gemini-interpretations&quot;&gt;Gemini Interpretations&lt;&#x2F;h3&gt;
+&lt;p&gt;Gemini an incredibly powerful LLM and simple asking it straight up for interpretations works pretty well, but If there&#x27;s one thing I&#x27;ve learned in the last few weeks is there isn&#x27;t a singe correct way to interpret something in Astrology, there are often various approaches, with different meanings and importance given depending on the astrology tradition, era etc. In order to get a consistent voice &amp;amp; perspective across the app I needed to provide a really thorough astrological context to Gemini. I discovered that by feeding the principles along with the meanings that my app would use, then it would give me consistently accurate and incredibly nuanced results. I&#x27;ve created the concept of an &#x27;AI Astrologer&#x27; on my app, I&#x27;m currently using the Hellenistic AI Astrologer but in the future I can add a Modern Western Astrologer, a Vedic Astroloter, (BaZi, Medievil etc...) and let the user choose what interpretations and principles they desire.&lt;&#x2F;p&gt;
+&lt;p&gt;I experimented with using the cost-effective Gemini Flash 1.5 model but decided that the results I was getting from Gemini Pro 1.5 were worth the additional cost. The were often slightly more creative and really remarkably nuanced. I think Astrology is a great fit for using an LLM, but I could breakdown the interpretations Gemini was providing and trace back pretty much everything to the wealth of astrological data I was feeding it. I played around with various settings but found that using a low Temperature (the balance between predictability 0.0 and creativity 2.0), I found that a value of 0.3 was perfect for my interpretations. I was providing so much context and detail and using a higher score would give Gemini a little more creativity but risked something a little less accurate.&lt;&#x2F;p&gt;
+&lt;p&gt;The results have been nothing less than remarkable, I&#x27;m generating huge amount of interpretations, so many that using anything other than an LLM would not be feasible but as a result there is a staggering amount of depth to each intepretation. I can&#x27;t wait until I get to the point where I am providing a bespoke interpretation for an individual. I plan to do this in phase 2 of the app and if this is an indication of the results then that is going to be wild.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+
+
+
+
+&lt;img alt=&quot;Neil and I at St Marks clock tower, Venice, 2017&quot; title=&quot;Neil and I at St Marks clock tower, Venice, 2017&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.317330d719524b27.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.eb68c06c3bf2c6aa.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.317330d719524b27.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;venice_photo.883416e433199269.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h3 id=&quot;a-detour-for-a-comsmic-clock&quot;&gt;A Detour for a Comsmic Clock&lt;&#x2F;h3&gt;
+&lt;p&gt;I know I need to start wrapping things up ...the deadline for submission to the competition is looming. But I had this idea that I really wanted to reproduce the St Marks Cosmic clock that I saw back in 2017 on holiday in Venice. I thought it would be a lovely way to greet the user each time they open the app. I had all the components to do it so I decided I&#x27;d allow myself a little detour to get it made. I soon realised that with this being a digial cosmmic clock, I could go above and beyond what the original clock offered. Like the original I added roman numerals around the edge of the clock that show the time, I would tell the time with the same sun hand, but my sun hand would be based on the sun&#x27;s position on the eclipitc. I added another hand for the moon, again showing it&#x27;s position on the ecliptic but instead of pointing to a roman numeral that pointed to the current moon phase. Both of these hands would also pass through a zodiac ring, showins which sign they were in. I added the AC, MC, DC &amp;amp; IC to show the key points and signs that they&#x27;re in. I created some custom icons for the clock and I think it came out beautifully. I added the same gestural navigation as the astrology charts and it feels really satisfying playing around with it.
+Although the clock looked good, it&#x27;s only when I super-charged it with Gemini AI that it transformed in to something really special. My idea was that the confirutation of all this information and then multiplied by the astrological perspective, context and principles as used for the interpretations could then be fed to Gemini to create something based on the precise moment. I call these cosmic moments, and for every cosmic moment Gemini creates a Haiku poem, a thoughful koan-like expression and 3 affirmations. As the moon takes around 27 days to orbit the Earth, it would be in the same phase for up to a few days at time, so I came up with the idea of using the day of the week too. the 7 day week has lots of astrological significance and each day is said to have it&#x27;s own ruler. With Hellenistic Astrology each planet has it&#x27;s themes and also it&#x27;s sect. Adding this as an additional layer means that even while the moonphase gradually shifts, each of the possibly 4 days would have its own unique take on the moments. (Besides, the sun ascendant, sign positions would almost certainly be different too!). The creativity of Gemini has made this my favorite feature of the whole app. I&#x27;m very glag I allowed myself to go on the cosmic clock detour!&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;scarlet-tides&quot;&gt;Scarlet Tides&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Here is an example of Gemini&#x27;s creative and poetic side, these were generated with the context that it&#x27;s 4am, the ascendant and the rising sun are both in Cancer. The moon (first quarter phase) is subterranean and it&#x27;s a Tuesday which is ruled by Mars.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;haiku-of-the-moment&quot;&gt;Haiku of the moment&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;Crimson dawn breaks free,
+Crab&amp;#x27;s shell shimmers, wet with dew,
+a new day beings.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;thought-of-the-moment&quot;&gt;Thought of the moment&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Without the Moon&#x27;s reflection, how can we truly know the Sun&#x27;s fire?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;affirmations-of-the-moment&quot;&gt;Affirmations of the moment&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I embrace the depths of my emotions.&lt;&#x2F;li&gt;
+&lt;li&gt;I trust the journey unfolding before me.&lt;&#x2F;li&gt;
+&lt;li&gt;I am safe to express my authentic self.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;I&#x27;ll end that with those lovely inspiring messages, until next time - keeping look up! ✨&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Announcing Kosmos! &#x2F;&#x2F; Dev Log 2</title>
+          <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/cosmic-app-update/</link>
+          <guid>https://www.jimmyff.co.uk/blog/cosmic-app-update/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/cosmic-app-update/">&lt;p&gt;&lt;em&gt;Hey stargazers! 🔭 I had hoped to do regular dev logs for my Gemini AI competition entry project, but life (and building this app) has been keeping me super busy! But anyway, late is better than never right? And the good news is, the app has come on a ton and I&#x27;m really excited about how it&#x27;s shaping up!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;Pb3UwpWO0aY&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Check out the video above for a walkthrough&#x2F;wafflethrough of the app so far. (Apologies for the rough edges with the vid– I&#x27;m determined not to do any scripting or post-editing!)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;here-s-what-i-ve-been-up-to&quot;&gt;Here&#x27;s what I&#x27;ve been up to&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A buttery smooth interface: You can now shuttle&#x2F;animate through time, location, and even settings (though I turned that off in the video because there&#x27;s a little quirk I need to fix). It feels really tactile with some nice haptic feedback as your rotate the charts.&lt;&#x2F;li&gt;
+&lt;li&gt;Interpolation and custom tweens: These make everything super fast and my custom tween sequence keeps the animation calculations nice and accurate.&lt;&#x2F;li&gt;
+&lt;li&gt;Ecliptic and Equatorial positions: Exposing all the data I can such as their coordinates, their sign, house, speed, and distance.&lt;&#x2F;li&gt;
+&lt;li&gt;Aspects: The app now shows 11 different aspect types, with intensity calculated based on type, accuracy, speed, and celestial body pairings. (To be fully configurable by the user)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;bonus-stuff-i-didn-t-mention-forgot-to-mention-in-the-video&quot;&gt;Bonus stuff I didn&#x27;t mention&#x2F;forgot to mention in the video&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Map Projections: After initially using GeoJSON maps I&#x27;ve switched to D3&#x27;s TopoJSON maps and plan to do some really cool stuff with these in the future.&lt;&#x2F;li&gt;
+&lt;li&gt;Astrology accuracy tests: I&#x27;m making sure all the data that the app is generating is accurate by benchmarking it against external services. I also have an interpolation accuracy test which allows me to understand how far I can interpolate astrological data whilst animating before the accuracy drops below acceptable tolerance levels&lt;&#x2F;li&gt;
+&lt;li&gt;Custom font: I&#x27;ve drawn a set of astrological symbols (on my tablet) which really help give the app a distinctive look. I plan to write a blog post in the future detailing process and tools used (as a reminder for my future self!)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+&lt;img alt=&quot;Cosmic Symbols&quot; title=&quot;Cosmic Symbols&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.6b789b39fc69a493.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.4ab451c0c1f586d3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.6b789b39fc69a493.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic-vibes.5e01f1dcfcf6910b.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h3 id=&quot;app-availability&quot;&gt;App Availability&lt;&#x2F;h3&gt;
+&lt;p&gt;I&#x27;ll be uploading a web version soon and submitting to the app stores by the end of the week (hopefully). So next time you hear from me, you&#x27;ll be able to play with it yourself!&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m also considering doing a bit more of a technical deep-dive, let me know if you&#x27;d like to see some of the code behind the scenes. I&#x27;m happy to share a closer look at the Kosmos!&lt;&#x2F;p&gt;
+&lt;p&gt;Until then, keep looking up! ✨✌️&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Decoding the Stars with AI &#x2F;&#x2F; Dev Log 1</title>
+          <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/building-a-cosmic-app/</link>
+          <guid>https://www.jimmyff.co.uk/blog/building-a-cosmic-app/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/building-a-cosmic-app/">&lt;p&gt;Ever since I heard about the Gemini &lt;a href=&quot;https:&#x2F;&#x2F;ai.google.dev&#x2F;competition&quot;&gt;AI competition&lt;&#x2F;a&gt; my brain has been whirring. I knew I wanted to build something for it, and I have &lt;em&gt;lots&lt;&#x2F;em&gt; ideas so the problem has been which idea to choose. Earlier this week I finally landed on my idea and I&#x27;m feeling super fired up about it. A couple of months back I bought a lovely little Astrology book (as content and inspiration for &lt;a href=&quot;&#x2F;projects&#x2F;quest&#x2F;&quot;&gt;a game I&#x27;m working on&lt;&#x2F;a&gt;), astrology is totally new to me but I quite liked the idea of exploring birth chart astrology further. I think a great way to explore a subject is to build an app about it (I did this with &lt;a href=&quot;&#x2F;projects&#x2F;eurovision-app&#x2F;&quot;&gt;my Eurovision app&lt;&#x2F;a&gt; back in 2018). I also think it&#x27;s a great fit for the Gemini competition, not only is the clue is in the name but after running a few tests I&#x27;ve found Gemini to provide some really interesting observations on birth chart data. I think I can offer people a much more personal interpretation of their birth chart using the power of generative AI.&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;cXfPvt9oHpg&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;the-cosmic-black-rabbit-hole&quot;&gt;The cosmic &lt;del&gt;black&lt;&#x2F;del&gt; rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve been down a bit of a rabbit hole for the last couple of days, learning all about space. From transforming geocentric positions (planetary positions as observed from the centre of earth) to topocentric positions (as observed from a point on earth&#x27;s surface), dealing with parallax correction and atmospheric bending of observed positions! It&#x27;s been a lot, but lots of fun.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-astrology-rabbit-hole&quot;&gt;The Astrology rabbit hole&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve digested a huge amount of Astrology information over the last few days learning everything from the significance of planets, zodiac signs, houses, house systems, zodiac systems, transits, house rulers, placement conditions and we&#x27;re only touching the surface! Throwing myself in to coding an astrology app means no stone can be left unturned! One of the areas that has really caught my interest is that being born in February I&#x27;ve always been told I was an Aquarius, so I assumed I the sun was in the Aquarius sign at the time of my birth, whilst exploring Sidereal Astrology (which is based on the exact placement of stars) I realised the sun was in fact in the Capricorn sign! I&#x27;ve used astrology software to rewind and confirm that this is true! To my current understanding (disclaimer: I&#x27;m now expert -in fact I was a total Astrology novice 3 days ago!) is that Ancient Astrology was based on the stars, a system first created by Babylonian Astrologers. Later Greek Astrologers decided to change the system to ensure that the Sun was at the top of the chart at the Spring Equinox not realising that due to the Earth&#x27;s &quot;wobble&quot;, every 71.6 years the degree the sun appears shifts by 1 degree. Western Astrology is based on that system (now known as Tropical Astrology) and over the last 2000 years that 1 degree every 70 odd years has added up to around 27 degrees! A 360 degree chart is broken in to 12 segments for each of the Zodiac signs (&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ophiuchus_(astrology)&quot;&gt;Ignoring the 13th zodiac sign&lt;&#x2F;a&gt; 😅) so each segment is 30 degrees - the Western system is now almost an entire constellation out of sync with the actual stars! Anyway, I could rabbit on about this and numerous other interesting things I&#x27;ve discovered but I&#x27;ll save that waffle for pub chat.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Cosmic map - showing the planets at my birth time and location&quot; title=&quot;Cosmic map - showing the planets at my birth time and location&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.8cbce0088e91665a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.5c0d24941bb3afc2.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;cosmic.8cbce0088e91665a.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;gemini-my-ai-coworker&quot;&gt;Gemini: My AI coworker&lt;&#x2F;h2&gt;
+&lt;p&gt;The huge surprise for me is the role that AI has played in this project before I&#x27;;&#x27;ve even started implementing it in to the app. Gemini has been my astronomy &amp;amp; astrology mentor. I&#x27;ve fed it 200+ page documentation PDFs and had it expertly clearing any roadblocks I&#x27;ve come up against. I&#x27;ve been using Gen AI more and more, but never to this extent, I feel like Popeye and Gemini is my Spinach! I can&#x27;t wait actually start implementing the chart interpretation stuff next. Feels like I&#x27;ve made a heap of progress in super short time -I can&#x27;t wait see where this goes!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Dating</title>
+          <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/projects/dating/</link>
+          <guid>https://www.jimmyff.co.uk/projects/dating/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/projects/dating/"></description>
+      </item>
+      <item>
+          <title>Next generation dating apps are live</title>
+          <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/next-generation-dating-app-live/</link>
+          <guid>https://www.jimmyff.co.uk/blog/next-generation-dating-app-live/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/next-generation-dating-app-live/">
+
+
+
+&lt;img alt=&quot;App Store Apps ready for sale!&quot; title=&quot;App Store Apps ready for sale!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;apple-apps.45ff5c7a33e86b8f.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;apple-apps.55d412ffb3a0801f.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;apple-apps.45ff5c7a33e86b8f.webp 1024w&quot; class=&quot;framed&quot; &#x2F;&gt;
+
+&lt;p&gt;🎉 Today Apple have approved my final app which means Rocketware&#x27;s next generation dating apps are now live across both Google Play and Apple Store! 🥳&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s a big milestone for me. These are the apps that I&#x27;ve built the business on and over the last decade they&#x27;ve been used by millions of LGBTQI+ people worldwide. The new apps offer an experience that is more modern, inclusive and maintainable. Hopefully these new apps will provide an equally solid foundation for the business over the next decade.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;app-store-screenshots&quot;&gt;App store screenshots&lt;&#x2F;h3&gt;
+&lt;p&gt;Here&#x27;s a sample of the new app store screenshots for the Only Women brand:&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Only Women app screenshots&quot; title=&quot;Only Women app screenshots&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onlywomen.c5ab927088a71397.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onlywomen.0dbddfe5ec4caf87.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onlywomen.c5ab927088a71397.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onlywomen.efd6601ac78fdaf8.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h3 id=&quot;what-s-the-next-milestone&quot;&gt;What&#x27;s the next milestone?&lt;&#x2F;h3&gt;
+&lt;p&gt;In the short term I&#x27;ll be continuing to refine the new app experience and expand the customer service tools and systems. I also have a rather innovative marketing project that&#x27;s ready to go live that involves AI. I hope it will drive traffic to the new apps. I&#x27;ll be launching it as soon as I get the necessary API access -although when that will be it out of my control!&lt;&#x2F;p&gt;
+&lt;p&gt;The next major milestone is retiring the legacy dating platform &#x27;Datingnode&#x27;. The dating web sites built on this platform are still running and they continue to be profitable so it will be some time before I&#x27;m ready to fully turn them off. It will be great when I can turn the servers off as when that&#x27;s done, I will have fully transitioned to the next chapter of my dating services and fully embraced the all cloud future!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Feature drop: Social Scoring, accounts and more!</title>
+          <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/</link>
+          <guid>https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/">&lt;p&gt;It was a big effort getting this update together in time for Eurovision 2023 but I&#x27;m so glad I did. This updates was really well received and I personally think it&#x27;s a &lt;em&gt;huge&lt;&#x2F;em&gt; step forward for the app! The app has received some lovely reviews over the week of Eurovision and is now 4.8⭐️&#x2F;5⭐️ on both Google Play and Apple App Store!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Promotion details&quot; title=&quot;Promotion details&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.b852fa40d72106a0.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.92cba6367bf1c40b.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.b852fa40d72106a0.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;social-scorecards-and-account-system&quot;&gt;Social scorecards and account system&lt;&#x2F;h2&gt;
+&lt;p&gt;The headline feature for this year is social scorecards. I came up with this idea last year when a friend casually asked if at her Eurovision party they could all score together on my app? I told her she couldn&#x27;t but that was a fabulous idea! (Thanks Ellie!) Group scoring is an addition to the scorecard system for 2 years back. It allows you to create a &#x27;Group&#x27;. During the development of this I was chatting to another friend (Queenie this time) and they asked if the group would have a combined scorecard -another fab idea! Initially I had planned for it to just allow you to see each others scorecards and share your realtime reactions (with emoji) but this would elevate the feature so I pushed to add this and prioritised it over seeing each others scorecards.&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to make this work for large groups. As a member of OGAE UK (The UK&#x27;s official Eurovision fan club) which around 1k members - I wanted to make sure that if a club used it, then it would work. I decided on setting a limit of 500 members for each group and worked backwards from that. Each minute a cloud function would trigger which would look for any active group scorecards, and generate the latest scorecard for that group. I could increase this to every 30 seconds during the week of Eurovision - maybe this is something I&#x27;ll do in the future. People can also add emoji reactions which are shown to the group in realtime. There is a limit on the frequency these can be posted by individuals based on the group size. I added some simple management tools to the UI so the group owner manage their group.&lt;&#x2F;p&gt;
+&lt;p&gt;I really think this feature is my apps &#x27;Killer feature&#x27;, it&#x27;s something that no other app does and something I don&#x27;t anticipate anyone else doing. It&#x27;s quite a complex thing, and with this not being a money making app it would take someone as crazy as me to invest time in to making it work!!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;(To do: Add a video of the group scorecard feature)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;everything-is-now-free-money-with-wings&quot;&gt;Everything is now free! 💸&lt;&#x2F;h2&gt;
+&lt;p&gt;Speaking of this app not making much money -I&#x27;ve decided to make everything free this year. When I first implemented scorecards I set a restriction that the current&#x2F;latest year required a paid &#x27;VIP Pass&#x27; (£2.99 one off for a year or £1.99 per&#x2F;year subscription). The app has always made very little money and if I want my scorecard feature to be used by lots of people then I need to life that restriction. So this year I&#x27;ve kept the concept of a &#x27;VIP Pass&#x27; but I give people the choice: Watch an advert for a temporary pass or buy a subscription (£1.99 for the year or £10.99 for life). I&#x27;m really happy with this change as now the people can download my app and use it fully without paying a penny, it also works for those that don&#x27;t want to watch an advert so would rather subscribe or just buy it once and own it forever. The little bit of revenue I receive contributes towards the running costs of the app.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;new-scorecard-themes-layouts&quot;&gt;New scorecard themes &amp;amp; layouts&lt;&#x2F;h2&gt;
+
+
+
+
+&lt;img alt=&quot;Scorecards showcasing different themes and layouts&quot; title=&quot;Scorecards showcasing different themes and layouts&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.694048aeb29bf31a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.3847711c6d6638a4.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.694048aeb29bf31a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.f2b19a3e784ced8f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve added a 4 new scorecard themes and 2 scorecard layouts. I intend to add more in the future but this is a decent upgrade over the single theme and layout up to now.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;So that wraps up my updates for 2023, if you haven&#x27;t downloaded ESC Party yet then what the heck are you waiting for? -download it now, the links are available on my apps &lt;a href=&quot;&#x2F;projects&#x2F;eurovision-app&#x2F;&quot;&gt;project page&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Launching the next generation of my dating apps</title>
+          <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/next-generation-of-my-dating-apps/</link>
+          <guid>https://www.jimmyff.co.uk/blog/next-generation-of-my-dating-apps/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/next-generation-of-my-dating-apps/">&lt;p&gt;I&#x27;m super happy to be able to say that the first app using my next generation dating platform is now available in both &lt;a href=&quot;https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=com.onescene.app&quot;&gt;Goolge Play&lt;&#x2F;a&gt; store and &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;one-scene-dating-friends&#x2F;id6443775589&quot;&gt;Apple App Store&lt;&#x2F;a&gt;. I&#x27;ve launched one of my brands &#x27;One Scene&#x27; using the new platform. This will be a bit of a test before I start moving over the bigger brands.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s been a long road to getting here so I&#x27;ll quickly get you up to speed...&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;a-brief-history-of-rocketware-dating-apps&quot;&gt;A brief history of Rocketware &amp;amp; dating apps&lt;&#x2F;h2&gt;
+&lt;p&gt;I created my company Rocketware back in 2011. My company&#x27;s first product was a white label dating platform called &#x27;Datingnode&#x27;. I built it around the LGBTQI+ community and it&#x27;s been steadily ticking over for the last 13 years. Almost 6 million members have registered over the years and about half of those are currently active on the platform. Over the years Datingnode has provided dating services for some great brands, GT (UK&#x27;s biggest gay lifestyle magazine), DIVA (UK&#x27;s largest lesbian lifestyle magazine), Pink Paper (UK LGBTQI+ news portal &amp;amp; newspaper), GayXchange (dating TV channel) as well as my only brands including Only Women and Only Lads that are reasonably well known within the LGBTQI+ community.&lt;&#x2F;p&gt;
+&lt;p&gt;Datingnode was initially launched as a white label dating solution for dating websites. It was 2011 and websites were still king. Only a year later everything changed when Tinder launched, the dating industry evolved over night. Over the years there have been various iterations of Datingnode:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;2011: Datingnode white label platform launches&lt;&#x2F;li&gt;
+&lt;li&gt;2012: Datingnode apps available in app stores utilising Titanium&#x2F;Appcelerator to wrap Javascript web apps&lt;&#x2F;li&gt;
+&lt;li&gt;2016: New API alongside native Android and Native Objective-C iOS apps released&lt;&#x2F;li&gt;
+&lt;li&gt;2017: New website launches built upon the 2016 API.&lt;&#x2F;li&gt;
+&lt;li&gt;2018-2020: Developed new Angular Dart PWA (Progressive web app), although this app never saw the light of day!&lt;&#x2F;li&gt;
+&lt;li&gt;2020-2023: Developed new entirely new dating product which is what I&#x27;ve launched this week.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;(TODO: Add screenshots here)&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;thinking-so-what-happened-to-the-2018-app&quot;&gt;🤔 So what happened to the 2018 app?&lt;&#x2F;h3&gt;
+&lt;p&gt;In 2018 I started creating and new dating app built on the Datingnode API. The app was written in Angular and it interfaced with the API by an SDK that was generated from the Datingnode JSON API specification file. To help me on this project I took on a senior very experienced developer for around 18 months. This would be my first commercial Dart project and having someone on-board that has written battle-hardened dart code was reassuring.&lt;&#x2F;p&gt;
+&lt;p&gt;We slogged away at it for almost 2 years, the app came together and when it did I was pretty proud of it -it really was a very accomplished web app. A week or two away from launch I took the very difficult decision to not launch it and throw away the huge investment that my company had made in to it over the last 24 months.&lt;&#x2F;p&gt;
+&lt;p&gt;One morning sat in my co-working space and I was trying to wrap up those loose-ends. I didn&#x27;t feel good about launching the app and I couldn&#x27;t put my finger on why. I then had a crazy thought -&quot;What start all over again&quot; -and I didn&#x27;t mean just the client app, I mean the whole shebang... Reinvent Datingnode from the ground up. The moment this idea had entered my head it was over all for the Angular client and Datingnode too. I felt terrible about the wasted money but I felt hugely relieved, I knew that launching another Datingnode app was subscribing me to another 5+ years of Datingnode. Datingnode had grown long in the tooth, it&#x27;s API was huge and complex. It was the very definition of a &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Monolithic_application&quot;&gt;monoalithic app&lt;&#x2F;a&gt;, it ran on physical servers and them breaking would often ruin weekends, evenings even holidays! Maybe it was a case of the grass is greener but I had already mentally taken the leap, I was invested in the idea of starting with a clean slate.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Clean slate cartoon&quot; title=&quot;Clean slate cartoon&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;clean-slate.23bbeb25eec6b7a6.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;clean-slate.20532818a9382f11.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;clean-slate.23bbeb25eec6b7a6.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;&lt;em&gt;🤣 I keep this in mind whenever I start a new project -to remind myself not to fall in to the trap!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;reimaging-my-dating-product-10-years-later&quot;&gt;Reimaging my dating product 10 years later&lt;&#x2F;h2&gt;
+&lt;p&gt;Ignoring the fact I&#x27;ve just wasted 2 years of work and paid a rockstar developers salary for 18 months, I was in a pretty privileged position. I had a relatively passive income and a bit of a runway to re-imagine my dating product. Here are the ideologies I came up with:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Developed for the cloud&lt;&#x2F;strong&gt;: I wanted my dev-ops to be mostly someone elses problem. Not only would I utilise cloud technology I would design for it. I would utilise managed services where I could to maximise redundancy and security. Yes you pay a premium for the fancy technology but I&#x27;m a strong believe in do what you you do well, and for me that&#x27;s making software, not settings up and maintaining the infrastructure.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Properly Gender inclusion&lt;&#x2F;strong&gt;: The vast majority of dating services that are available today handle gender-identity inclusion poorly. Even if they let users choose their gender identity it still comes down to binary male or female when it comes to the matching. To support gender-identities properly the service needs to be designed around this concept - not just adapted to it. On my new dating service, gender identities are treated equally not as subsets of male or female.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Mutual likes to chat&lt;&#x2F;strong&gt;: Thank you Tinder, this is one of the two great innovations we have Tinder to thank. The principle that both parties must be interested in one-another before communication can happen solves many problems with traditional dating services. It also is a great way to stop the service being abused by spammers and (unsophisticated) bots. This would be baked in to my new dating experience.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;A modern UI built with Flutter&lt;&#x2F;strong&gt;: I knew straight away that Flutter to build my new app. As a Dart developer this was the current hotness and it would allow me to have Android and iOS apps built from a single codebase. It also meant I could deploy Dart services in the cloud and they could all share the same code base. Dart is the language endgame for me and I&#x27;m living the developer dream -a single technology stack (front-end and back-end). In terms of user experience I will incorporate Tinder&#x27;s other great innovation - the gestural swipe system for sifting through potential matches.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+
+
+
+
+&lt;img alt=&quot;One does not simply launch a new dating app&quot; title=&quot;One does not simply launch a new dating app&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;boromir.3eed997353b2a831.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;boromir.096004279f0414ec.webp 512w&quot; class=&quot;framed&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;the-tip-of-the-iceberg&quot;&gt;The tip of the iceberg&lt;&#x2F;h2&gt;
+&lt;p&gt;I always thought a Dating platform a bit like an iceberg (or ant-hill), the bit people see (the app) makes up about 10% of the project. The other 90% is the customer service tools, the moderation systems, the anti-scam systems, billing systems, the notification systems, marketing etc etc. As I was starting with a clean-slate and new technology stack I&#x27;ve had to rebuild all the tools again. Using the single tech stack and shared code base has been a huge help here. I&#x27;ve created some cloud orchestration tools that allow semi-automated testing and deployment of my cloud-endpoints. The new platform has around 50 cloud endpoints &#x2F; micro-services - handling everything from registration to AI photo moderation.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve created a new management tool and moderation tools using Flutter however this time they&#x27;re targeting the web giving remote workers easy access using their browser. There&#x27;s more work to do on this front but the initial tooling is more than adequate for launch.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;launch-plan&quot;&gt;Launch plan&lt;&#x2F;h2&gt;
+&lt;p&gt;My long-term goal is to transfer the traffic and revenue from the old Datingnode platform on to the new platform. Hopefully this will happen within 12 months but I&#x27;m prepared for it to take longer than my estimate (things usually do!). Once I&#x27;ve established the new platform I&#x27;ll look at retiring the old platform. I will be popping a large bottle of fizz the day I turn off the old servers! It&#x27;s going to be a busy year or two but massively exciting. So cheers everyone, I&#x27;ve waiting a long time to let my new dating apps in to wild and today they&#x27;re available for you all to download! 🎉&lt;&#x2F;p&gt;
+&lt;p&gt;Download One Scene on &lt;a href=&quot;https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=com.onescene.app&quot;&gt;Android&lt;&#x2F;a&gt; or &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;one-scene-dating-friends&#x2F;id6443775589&quot;&gt;iPhone&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Building a sticker app in 5 days</title>
+          <pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/building-a-sticker-app-in-5-days/</link>
+          <guid>https://www.jimmyff.co.uk/blog/building-a-sticker-app-in-5-days/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/building-a-sticker-app-in-5-days/">&lt;p&gt;During London Pride I had a great selfie with some friends but the photo was spoilt by something in the foreground. I thought I&#x27;ll add a stiker over part of the photo so I turned to the Goolge play store to find an app. I quickly found that I was spoilt for choice but they were almost all terrible. Despite their quality the download numbers were mindblowing, some of the apps had tens of millions of downloads! I found one app doing it well but it they were trying to push me in to a £38.99 p&#x2F;year subscription! Who would pay that to stick some stickers on photos!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;building-a-sticker-app-in-5-days&#x2F;photo_that_started_it_all.gif&quot; alt=&quot;GIF&quot; title=&quot;The photo that started it all!&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The following day, on the very long &amp;amp; hungover jouney home, I set myself a challenge to try and build a sticker app by the time I got home. As we pulled in to my home city I had managed to create an app with very basical functionality of being able to drag some stickers around the screen, and I had decided on a name: Sticker Party. Armed with my prototype and inspired by the crazy download numbers I decided to give myself a week to have the app finished and launched.&lt;&#x2F;p&gt;
+&lt;p&gt;I worked like a trooper that week and on the 5th day I had the app submitted to the app store! My USP was I would offer really high quality stickers (hand picked by me and all vectors so super sharp no matter the zoom level). I would also differentiate myself in pricing - I would make all my stickers available for free however in free mode you get a Sticker Party logo at the bottom right. To remove this and unlocked the high quality export mode would be a one-time fee of £2.99, pay once &amp;amp; own forever. I&#x27;m sick of every app under ths sun trying to get me in to monthly subscription. I figured an retro buy to own model would be refeshingly modern, lol.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Sticker Party logo&quot; title=&quot;Sticker Party logo&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;sticker_party.3440538967673dbb.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;sticker_party.5f61760a880dc291.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;sticker_party.3440538967673dbb.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve got a load of improvements I want to make, and I need to add tons of stickers. I&#x27;ll be continuing the app as a litle hobby project on evenings and weekends. My goal is to have a genuine sale by the end of next month. I&#x27;ll try to remeber to write another post with how that went later!&lt;&#x2F;p&gt;
+&lt;p&gt;You can download Sticker Party on &lt;a href=&quot;https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=uk.rocketware.stickerparty&quot;&gt;Google Play&lt;&#x2F;a&gt; and on the &lt;a href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;sticker-party&#x2F;id1634193331&quot;&gt;Apple App Store&lt;&#x2F;a&gt;. Please help get the ball rolling and give it a good rating! 😉&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Google Play banned my highly rated app with no real justification</title>
+          <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/google-play-banned-my-highly-rated-app-with-no-real-justification/</link>
+          <guid>https://www.jimmyff.co.uk/blog/google-play-banned-my-highly-rated-app-with-no-real-justification/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/google-play-banned-my-highly-rated-app-with-no-real-justification/">&lt;p&gt;(I also published this article over at &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;google-play-banned-my-highly-rated-app-with-no-real-justification-827e734df748&quot;&gt;Medium&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Google Play&#x27;s Policy team is judge, jury and executioner. They didn&#x27;t give me a real explanation or even a chance to appeal their decision. I share my story in the hope that it reaches Google Play and they reevaluate and improve the way they handle cases like mine.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Banned by Google Play&quot; title=&quot;Banned by Google Play&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;banned.9d6ea996e888a938.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;banned.afcf177bc94a0dd5.webp 512w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;For the last few years I&#x27;ve filled my evenings and weekends building a fan app dedicated to the &#x27;Eurovision Song Contest&#x27; (an annual song competition), it&#x27;s been my little hobby&#x2F;passion project. I blogged about it when I launched it and that post received comments and applause from senior Google engineers and the official Firebase Twitter account even tweeted about it. The app has come a long way since then and I totally rewrote the front-end to make use of the lovely Flutter framework. I&#x27;ve translated the app (and even the app store listing) in to every language used throughout Europe (via the paid-for translation service provided by Google Play). The app was probably the most comprehensive app&#x2F;resource on the song competition with every contest, entry, artist and thousands of photos and videos dating right back to 1956.&lt;&#x2F;p&gt;
+&lt;p&gt;One day, entirely out of the blue I received a notice from Google Play saying the app was suspended, it was a generic email and the only bespoke part was highlighted in bold: &lt;strong&gt;&quot;your on-device title does not reflect your app&#x27;s functionality.&quot;&lt;&#x2F;strong&gt; I&#x27;ve checked the Google Play policy documents and nowhere does it say your apps functionality needs to be reflected in the device title - (See popular apps: Amazon, Bumble etc …nobody&#x27;s on device app title reflects the apps functionality, they just use their brand name). My app&#x27;s on device title was &#x27;EurovisionGP&#x27; - GP is a nod to the history of the contest as it was originally called Eurovision Grand Prix. The only reason I can think that Google may have taken issue with my app is due to the inclusion of the word &#x27;Eurovision&#x27; (which is part of the trademark Eurovision Song Contest). I&#x27;m unsure if this is the case as there are so many apps on Google Play that also include the word Eurovision in their title and they haven&#x27;t been suspended. I would also have expected the suspension email to be very different clearly stating this as the reason if that was the case.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The EurovisionGP app&quot; title=&quot;The EurovisionGP app&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovisiongp.d7f949bf28ec18b8.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovisiongp.c14cf148e90f39bb.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovisiongp.d7f949bf28ec18b8.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I sent the Google Play Policy team numerous emails offering to entirely re-brand (and to even change the on device title to reflect my apps functionality!) and I received a single response from &#x27;Alexis&#x27; simply stating that my app would not be reinstated. That was the last time I heard from the Google Play Policy team despite me sending them numerous emails offering anything I could think of to resolve this issue. I even reached out to Albert Y. Cheng (Head of Google Play Global Marketing) and Megumi Takada (Google Play Business Development Manager) and pleaded my case, neither responded.&lt;&#x2F;p&gt;
+&lt;p&gt;My app has been offline for 7 months now and Google Play are unwilling to respond to my messages, where does that leave me? It looks like I&#x27;ll need to follow the guidelines in the suspension email which states that I&#x27;ll need to start again with a new app, zero installs &amp;amp; zero reviews, and just hope that Google Play doesn&#x27;t ban the next app too. Their feedback has been so minimal and it&#x27;s so ambiguous I don&#x27;t have any confidence that I know what they took issue with. I used to champion Google Play in the &#x27;most developer friendly app store&#x27; debate but this whole debacle has left an absolute bitter taste in my mouth. I&#x27;ll certainly be sharing this story as far and wide as I can in the hope that Google Play improves the way they handle these situations. Google Play has shown an absolute lack of care towards a developer who has invested time, money and effort, lovingly creating an app for their platform. I&#x27;m sure I&#x27;m not the first person that&#x27;s had their app banned without real justification and sadly I probably won&#x27;t be the last...&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Crypto Clock - the crypto currency ticker that runs on an old Kindle</title>
+          <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/crypto-clock/</link>
+          <guid>https://www.jimmyff.co.uk/blog/crypto-clock/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/crypto-clock/">
+
+
+
+&lt;img alt=&quot;Photo of the cyrpto-clock&quot; title=&quot;Photo of the cyrpto-clock&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock.965815847a9badd8.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock.cd2a79781f9049af.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock.965815847a9badd8.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;&lt;em&gt;(I&#x27;ve also posted this article &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;crypto-clock-the-crypto-currency-ticker-that-runs-on-a-kindle-2bc601244556&quot;&gt;over on Medium&lt;&#x2F;a&gt;)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I had a special birthday coming up and I wanted to make a cool gift to mark the occasion. As the recipient is interested in crypto currencies &amp;amp; blockchain tech, I thought a desk&#x2F;shelf crypto price ticker would be a cool present. I found a couple of products online but they were either not very good or prohibitively expensive so I decided to have a go at building one myself.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;TLDR: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;crypto-clock&quot;&gt;Code available on Github&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;https:&#x2F;&#x2F;jimmyff.github.io&#x2F;crypto-clock&#x2F;desktop.html&quot;&gt;try it in your browser&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;qPAcM4U1mio&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;concept&quot;&gt;Concept&lt;&#x2F;h2&gt;
+&lt;p&gt;I thought it would be cool if the device looked like a retro departures board, periodically cycling through various crypto prices. I wanted it to have low power consumption, always showing the latest prices, configurable &amp;amp; attractive.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;&#x2F;h2&gt;
+&lt;p&gt;At first I looked at split flap displays but it turns out they’re hard to come by &amp;amp; expensive. I decided to go for an eink display which I figured I could make to look like a split flap display. I’d heard about rooting Kindles and using them in DIY projects so I decided to go down that route, I managed to pick up a Kindle Paperwhite 2 on eBay for the bargain price of £18. Rooting the Kindle was easy enough; details on how to do that are out of the scope of this write up but I’m sure you’ll find all the information you need over on the ‘mobile read’ forum. I then got a Linux desktop running on the Kindle, ready to run my app.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Hardware progress&quot; title=&quot;Hardware progress&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hardware.8d6a2fddb2cb261a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hardware.9ac6f9966fd4dcb3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;hardware.8d6a2fddb2cb261a.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;&#x2F;h2&gt;
+&lt;p&gt;Using my language of choice (Dart) I decided to make a web app that would run in a kiosk mode browser. I went for the Midori browser as it has way less overhead than Chromium or Firefox. I designed the UI to look like a 7x3 split flap display. I added a simple character by character transition as the display updates which flows across it just like the old departure boards. Also by setting each character black for a second as it transitions does a lovely job of resetting the eink to avoid any ghosting. For the data source I used the Binance API which was super easy to use. As the Kindle had a touch screen I made it so tapping the left or right side of the screen would cycle between the crypto symbol pairs. I also added a configuration screen which you can access by hitting the central column on the display. The configuration screen allows you to choose which symbol pairs to cycle through and the duration to rest on each. With it being an eink display, having a long time between updates results in much less power consumption. I decided on 60 seconds as the default update time.&lt;&#x2F;p&gt;
+&lt;p&gt;The final addition to the software was adding the clock mode. At the end of each hour it displays the time so you can watch the turning of the hour. One of my favourite features is I added a sun which rises on the left in the morning, and as each hour passes it moves up and over and sets on the right. When the sun sets the moon comes up and in the midst of the night, the stars come out and twinkle. It think it’s a really playful little addition to the crypto ticker and the concept reminds me of those fancy mechanical cuckoo clocks.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve made the code open source so you can grab it over on Github. If you don’t want the code but you just want to run it, there are two hosted versions: Mobile&#x2F;desktop version or dedicated device version.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;finishing-touches&quot;&gt;Finishing touches&lt;&#x2F;h2&gt;
+&lt;p&gt;As this is something designed to be seen often, it needed to look good. I commissioned an oak lacquered frame at my local carpenters. I detached the Kindle’s front panel and sprayed it white to make it look like an artwork’s border&#x2F;mount. Finally I did some shopping on eBay and I got a metal frame kick stand for the back and found a nice white power cable. A little homemade label with the serial number 001 completes the look.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Finishing touches&quot; title=&quot;Finishing touches&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;finishing.5f350284896131ab.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;finishing.a025a7dc2832540b.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;finishing.5f350284896131ab.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;possible-upgrades&quot;&gt;Possible upgrades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I may at some point port the code to flutter and compile a Linux desktop app and see how that runs on the Kindle. I imagine this would give cleaner letter transitions &amp;amp; run at a higher frame rate.&lt;&#x2F;li&gt;
+&lt;li&gt;I’ve also been playing around with the Rust language recently, and it would be fun to write a Rust version. It would actually be a really good fit as Rust can run on bare metal embedded systems.&lt;&#x2F;li&gt;
+&lt;li&gt;It would be cool to buy a dedicated eink display and drive it from a Raspberry Pi (probably a Pi Zero to keep it affordable); You can get single colour eink displays (black, white + red&#x2F;yellow) for around £50, having colour would open up new possibilities in terms of UI.&lt;&#x2F;li&gt;
+&lt;li&gt;I also thought about buying some individual 2-3&quot; eink displays (or 7-segment-displays) and using each one of those as a character. This would be quite similar to one of the inspirations of this project (the original block clock). I might order some and have a play around with them for some future project!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+&lt;img alt=&quot;Finished crypto-clock&quot; title=&quot;Finished crypto-clock&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock2.8e44711f3098ce85.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock2.cc9cc2277f1f4edf.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;crypto-clock2.8e44711f3098ce85.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;&#x2F;h2&gt;
+&lt;p&gt;I’ve had loads of fun making this project and I’m super happy with the way the Crypto Clock turned out! I’m sure it’s going to make an awesome gift.&lt;&#x2F;p&gt;
+&lt;p&gt;If you decide to make a crypto clock please let me know! I’d love to see photos of your creations! :)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Painting asteroids</title>
+          <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/painting-asteroids/</link>
+          <guid>https://www.jimmyff.co.uk/blog/painting-asteroids/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/painting-asteroids/">&lt;p&gt;I&#x27;ve been stewing on how I could fill the asteroids to make my &lt;a href=&quot;&#x2F;tags&#x2F;space_game&#x2F;&quot;&gt;space game&lt;&#x2F;a&gt; look better. It&#x27;s a tricky problem as I only know terrain lines and nothing else (so I don&#x27;t know which side is supposed to be solid and which is supposed to be the empty void of space). This shows what I have and what I want to achieve:&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The problem&quot; title=&quot;The problem&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.7b9e19ad3dd9c01f.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.dd0eff4fb0908e95.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.7b9e19ad3dd9c01f.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I can trust that the space ship will always be in space (even if it&#x27;s hit an asteroid, it should never actually be in the asteroid!). Using that piece of truth I&#x27;ve came up with an idea, if I projected from the ship to the corners and count the terrain line intersections I should be able to figure out what&#x27;s solid. If the number of intersections is even, I know the corner should be in also in space, if the intersection count was odd, then the corner is in an asteroid.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Possible solution&quot; title=&quot;Possible solution&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.8a0e597594df834c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.5fcbb2418a9a32cb.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.8a0e597594df834c.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Once I knew if the corners were in an asteroid or not, I should then be able to move along each edge and join up the lines.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;&#x2F;h2&gt;
+&lt;img alt=&quot;Implementing the intersection counting&quot; title=&quot;Implementing the intersection counting&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;1-corners.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve implemented the intersection counting, if the line is green then there is an even number of intersections which means the corner is in space, if red then there is an odd number of intersections so this is in the asteroid.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve cut the terrain line at the scren edge (and highlighting it with a circle), this is so I can make a nice clean edge on each polygon.&lt;&#x2F;p&gt;
+&lt;p&gt;(Oh you might also notice I&#x27;ve implemented asteroid rotation too!)&lt;&#x2F;p&gt;
+&lt;img alt=&quot;Triangulation!&quot; title=&quot;Triangulation!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;2-triangulate.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;Here I have implemented the algorithm that combines all the edges in to polygons. At the top there is text that says something like &#x27;P: 2&#x27;, this means 2 polygons found.&lt;&#x2F;p&gt;
+&lt;p&gt;At first I was getting a weird graphical glitch when filling my polygons which I realised was due to the fact my polygons are concave. Filling concave polygons turns out is a technically tricky as the polygon needed triangulating (chopping in to simple triangles). Luckily Love2d has a triangulate feature that I could use. I coloured the triangles random colours to highlight the triangulation process.&lt;&#x2F;p&gt;
+&lt;img alt=&quot;It worked!&quot; title=&quot;It worked!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;3-done.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;...ta-dah! Here is the finished product. I&#x27;m super happy (&amp;amp; surprised) that my crazy idea worked!&lt;&#x2F;p&gt;
+&lt;p&gt;I now need to reimplement the ship, but I&#x27;m a little hesitant to continue with Lua due to it being so difficult to debug (and I&#x27;m really missing static-typing!). I&#x27;m thinking about switching to C or possibly Rust to continue my playdate journey.&lt;&#x2F;p&gt;
+&lt;p&gt;I apologise for the noisy strangely coloured gif&#x27;s -I really need to level up by gif skills!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Yoga card game</title>
+          <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/yoga-game/</link>
+          <guid>https://www.jimmyff.co.uk/blog/yoga-game/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/yoga-game/">&lt;blockquote&gt;
+&lt;p&gt;You are the residents of Pickledale village hall. Living under the floorboards you are treated to a highly diverse activity schedule provided by the over-floor frequenters. Poppy calls everyone together “It’s 5pm Monday which means it’s...”, “Yoga night!” Emanuel exclaims excitedly. “That’s right” Poppy continues, “Everyone, get your leaf mats rolled out, there are cheese support blocks if you need them, have fun and remember ...don’t overstretch!”.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Let me introduce you to &#x27;Yoga night for the Pickledale Village Hall Residents&#x27;. This is a game about a community of mice that live under the floorboards of a quaint little imaginary village hall. Once a week it&#x27;s Yoga night at the village hall and whilst the elderly human villagers are practicing Yoga in the main hall, under the floorboards the mice are following along too!&lt;&#x2F;p&gt;
+&lt;p&gt;The aim of the game is to see how good a practice you can have. Your success is reflected by how many &#x27;Om&#x27; tokens you can collector but careful not overexert yourself!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Yoga game&quot; title=&quot;Yoga game&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.196aa664ec9a6f66.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.6bc848b945dfd476.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.196aa664ec9a6f66.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.3cce75fb61daa8e6.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Here you can a page of cards from the game, it&#x27;s been generated using my &lt;a href=&quot;&#x2F;blog&#x2F;deckorator&quot;&gt;Decorator&lt;&#x2F;a&gt; package which feeds from a spreadsheet and combines art assets to produce a print and play game. I had load of fun illustrating the little mice people doing yoga!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Playtesting an early version with 4 players&quot; title=&quot;Playtesting an early version with 4 players&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest1.b5c74b00b13ede93.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest1.eff094a080f02a1e.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest1.b5c74b00b13ede93.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve been play testing the game all month, iterating quickly based on feedback. Thankfully I share an office with a load of equally keen gamers that are happy to try my creations!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Playtesting the game in 2 players&quot; title=&quot;Playtesting the game in 2 players&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest2.2084962c1e55f14e.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest2.c55c780a1fd74fd7.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest2.2084962c1e55f14e.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I think the game actually works really well in 2 player, it is simple yet has good deal of strategy. In higher player counts it becomes a little more chaotic. My biggest niggle with it is the setup is a little fiddly to ensure that the session starts gradually and gradually increases in intensity before reaching the apex pose. I&#x27;m happy with the game for now but do intend to continue developing the game.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Deckorator : A package for creating analogue games</title>
+          <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/deckorator/</link>
+          <guid>https://www.jimmyff.co.uk/blog/deckorator/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/deckorator/">&lt;p&gt;&lt;em&gt;Update: To view a couple of the games I&#x27;ve made with this package see: &lt;a href=&quot;&#x2F;blog&#x2F;yoga-game&#x2F;&quot;&gt;Yoga card game&lt;&#x2F;a&gt; &amp;amp; &lt;a href=&quot;&#x2F;blog&#x2F;eurovision-game-2-the-card-game&quot;&gt;Eurovision card game&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Decorator is a collection of tools for creating card games &amp;amp; board games, intended to be used by a developer. You can check it out over &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;deckorator&quot;&gt;on Github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I made this package to give me a way of prototyping my game ideas. I wanted a way to create throw together print and plays.&lt;&#x2F;p&gt;
+&lt;p&gt;This project originated about a year back when I created a game framework called &quot;Tinman&quot; (the idea behind the name being that it provides everything but the heart - you supply that which is the game). The idea for Tinman was to quickly create digital versions of analogue games which could then be played digitally, tested, possibly even add online play. I created some deck management tools for that which provided the inspiration for deckorator.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;spreadsheet-powered&quot;&gt;Spreadsheet powered&lt;&#x2F;h2&gt;
+&lt;p&gt;As I tend to turn to spreadsheets when fleshout out game ideas this was the natural location to be my source of truth when generating game components. Decorator provides tools to read google docs spreadsheets and make it easy to convert those rows to game components such as tokens or cards.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Building a web app, the progressive way</title>
+          <pubDate>Mon, 25 Jun 2018 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/</link>
+          <guid>https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/">&lt;p&gt;&lt;strong&gt;And finding an unconventional solution to a challenging objective&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;(&lt;em&gt;I&#x27;ve also posted this article &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;building-a-web-app-the-progressive-way-e81177e95738&quot;&gt;over on Medium&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;As a passionate developer I’m aways juggling side projects alongside my pay-the-bills work. Earlier this year I secured some great tickets to the Eurovision Song Contest and in the excitement I decided to build a modern web app to explore and discover the history of the annual show. I set myself some objectives:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It should utilise the very latest and greatest web technology.&lt;&#x2F;li&gt;
+&lt;li&gt;It should contain Eurovision Song Contests historic results and the information should be available in the most used languages in Europe.&lt;&#x2F;li&gt;
+&lt;li&gt;The data must be easy to maintain (this was the tricky bit!).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;em&gt;Tldr: &lt;del&gt;Here’s the app&lt;&#x2F;del&gt; (as of 2020 I&#x27;ve retired this version in favour of my newer flutter app) I built and below are the details of how I put it together &amp;amp; the challenge I encountered, video demo at the bottom.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The finished app&quot; title=&quot;The finished app&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.ba770c960187c9aa.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.9d9ea840c73ded56.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.ba770c960187c9aa.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;a-progressive-app-and-a-progressive-attitude&quot;&gt;A progressive app and a progressive attitude&lt;&#x2F;h2&gt;
+&lt;p&gt;‘Progressive Web Apps’ (or ‘PWAs’) are essentially shining exemplars of modern web technologies. They feel more like native apps than they do their creaky website ancestors. PWAs have the ability to work offline, be installed on your devices, and even receive push notifications. I’m a huge advocate of PWAs and I’ve done talks on the subject for my local tech community.&lt;&#x2F;p&gt;
+&lt;p&gt;Over the last year a large part of my everyday work has been building a large PWA to replace a complex established website. For my new Eurovision pet-project I wanted something much leaner and simpler. As well as building the app as PWA, I would challenge myself to approach every decision from the UI to the back-end with a modern progressive attitude.
+A progressive language &amp;amp; framework&lt;&#x2F;p&gt;
+&lt;p&gt;My language of choice is Dart. It’s strongly typed, fully object orientated and a language that makes me really productive. For web it compiles down to JavaScript. You can even use it to build native mobile apps with Flutter or run Dart on your server or development machine using the Dart VM -it’s the genuine holy grail!&lt;&#x2F;p&gt;
+&lt;p&gt;For the framework I chose Angular Dart, it’s a great framework that allows you to build robust and sophisticated web apps in a structured and opinionated way. I utilised ‘angular_components’ which are the same battle-hardened material design components that Google use on their own products. I also used the ‘intl’ library which allowed me to extract the text into dictionary files which could then be translated in to various languages.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;backend-as-a-service&quot;&gt;Backend as a service&lt;&#x2F;h2&gt;
+&lt;p&gt;In keeping with the progressive philosophy I chose Firebase for the backend. Firebase is a fully managed platform for building applications, these kind of platforms are often referred to as ‘backend as a service’ (‘baas’). With a solution like this, the jobs that traditional servers would do are broken down in to numerous services and you simply pay for what you use. It’s a really hassle-free, modern &amp;amp; progressive approach to application infrastructure and I love it!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-challenge-of-maintaining-the-data&quot;&gt;The challenge of maintaining the data&lt;&#x2F;h2&gt;
+&lt;p&gt;The biggest challenge I faced building this app was how to maintain the data. I really wanted a simple and elegant solution to updating the app but my choice of database-technology made this tricky. As I was using the Firebase backend I choose to use its new fancy Firestore database, however this is a ‘NoSQL’ datastore that doesn’t allow realtime complex querying or aggregating of data across relationships. I would be storing data that has lots of relationships and needed lots of aggregated statistics. Ideally I‘d use a relational database for this kind of dataset but as my objective was to be modern, simple and progressive, I really wanted to avoid the traditional database+server combo.&lt;&#x2F;p&gt;
+&lt;p&gt;Using Firestore meant I would need to compute all the relationships in my data ahead of time and cache these relationship &amp;amp; aggregated values in my data objects. Doing this also makes updating the data challenging as changing one object would likely have knock on effects to other objects that held a cache of the modified data.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-frugal-solution&quot;&gt;A frugal solution&lt;&#x2F;h2&gt;
+&lt;p&gt;The solution I came up with to maintain the data was to export it all to a Google Spreadsheet (yes …you read that correctly) and this would become my ‘source of truth’. Using the Spreadsheet I could then rebuild my database whenever required. I essentially use Firestore as a glorified cache. It feels like an unconventional yet rather elegant solution. Here’s is a breakdown of the build process:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the CSV files from the Google spreadsheet.&lt;&#x2F;li&gt;
+&lt;li&gt;Using the CSV files rebuild all the objects.&lt;&#x2F;li&gt;
+&lt;li&gt;From ‘Firebase Cloud Storage’ download the current snapshot of all the objects that are currently stored in the database.&lt;&#x2F;li&gt;
+&lt;li&gt;Diff the newly built objects with the downloaded database snapshot.&lt;&#x2F;li&gt;
+&lt;li&gt;Prompt the user with a summary of changes asking them if they wish to apply these changes.&lt;&#x2F;li&gt;
+&lt;li&gt;Apply the diff to the Firestore database.&lt;&#x2F;li&gt;
+&lt;li&gt;Upload the newly built objects to ‘Firebase Cloud Storage’ as the latest database snapshot. This will be used next time the build process is run.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;I love this solution for the following reasons:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;I didn’t have to write loads of data-management code: logic, forms, validation etc. I just setup some validation rules and conditional formatting on the spreadsheet. This left my codebase nice, clean and simple.&lt;&#x2F;li&gt;
+&lt;li&gt;Rebuilding from scratch every time inadvertently solves one of my main gripes with NoSQL data stores: when you refactor your data structures you can end up with inconsistencies across a collection due to the lack of collection-wide schemas. This mitigates the problem by simply patching any changes you make across the entire dataset.&lt;&#x2F;li&gt;
+&lt;li&gt;The thing that blows my mind is that this runs in the client browser (as there is no conventional server in this equation). It feels like only a short-while ago that browsers would struggle to do anything complex client-side and now they’re capable compiling thousands of objects from a remote collection of CSVs, diffing, patching then reuploading without even breaking a sweat. The entire process takes seconds to run and it builds and diffs over 3,000 objects. It also feels a really simple, efficient &amp;amp; frugal solution to harness the processing power of the administrators device &amp;amp; browser.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;the-finished-app&quot;&gt;The finished app&lt;&#x2F;h2&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;-MPWaxSBLPo&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;del&gt;You can try the finished app here&lt;&#x2F;del&gt; (as of 2020 I&#x27;ve retired this version in favour of my newer flutter app). It’s been so much fun to approach a project with a progressive attitude and a fresh set of eyes. I enjoyed it so much I’ll continue to develop the app (and I have some great ideas for it). I also plan to do more projects like this over the next 12 months so watch this space!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>The many beautiful worlds of Cellular Automata</title>
+          <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/the-many-beautiful-worlds-of-cellular-automata/</link>
+          <guid>https://www.jimmyff.co.uk/blog/the-many-beautiful-worlds-of-cellular-automata/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/the-many-beautiful-worlds-of-cellular-automata/">&lt;p&gt;(&lt;em&gt;I&#x27;ve also posted this article &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;the-many-beautiful-worlds-of-cellular-automata-3e09afa8d48d&quot;&gt;over on Medium&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve been interested in Cellular Automata (such as &#x27;Conway&#x27;s Game of Life&#x27;) for years. I&#x27;ve implemented them countless times in various programming languages. A couple of weeks back I created a &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;cellular_automata&quot;&gt;Dart library&lt;&#x2F;a&gt; for exploring playing with Cellular Automata, it&#x27;s open source and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;cellular_automata&quot;&gt;available on Github&lt;&#x2F;a&gt;. You can browse the &lt;a href=&quot;https:&#x2F;&#x2F;jimmyff.github.io&#x2F;cellular_automata&#x2F;&quot;&gt;demos on github&lt;&#x2F;a&gt; or see the library running on my personal website -the gifs on this article were also generated using the library.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;the-many-beautiful-worlds-of-cellular-automata&#x2F;1.gif#pixelate&quot; alt=&quot;GIF&quot; title=&quot;Cellular Automata rule set: &amp;#39;Star Wars&amp;#39; with a random seed&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-are-cellular-automata&quot;&gt;What are Cellular Automata?&lt;&#x2F;h2&gt;
+&lt;p&gt;Cellular Automata were all the rage in Science and Math clubs back in the 70s &amp;amp; 80s however the first papers on the subject actually date way back to the 40s. In those days mathematicians &amp;amp; scientists created the rules using pen and paper rather than a computer (John Conway actually created his &#x27;Game of Life&#x27; rules on a Go board!). Stephen Wolfram wrote numerous papers on the subject in the 80s &amp;amp; 90s.&lt;&#x2F;p&gt;
+&lt;p&gt;A Cellular Automaton is a grid of &#x27;cells&#x27;, each of which has a single &#x27;state&#x27;. For each cycle (known as a new &#x27;generation&#x27;) a set of rules are applied to each cell in the grid which could potentially change it&#x27;s state. The rules usually consider each of the cells &#x27;neighbourhood&#x27; (the surrounding cells). Cellular Automata rules are usually incredibly simple. Below are the rules to &#x27;Conway&#x27;s Game of Life&#x27; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;cellular_automata&#x2F;blob&#x2F;master&#x2F;lib&#x2F;src&#x2F;rules&#x2F;game_of_life.dart&quot;&gt;here is my library&#x27;s code implementation&lt;&#x2F;a&gt;):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Any living cell with fewer than two live neighbours dies, as if caused by underpopulation.&lt;&#x2F;li&gt;
+&lt;li&gt;Any living cell with two or three live neighbours lives on to the next generation.&lt;&#x2F;li&gt;
+&lt;li&gt;Any living cell with more than three live neighbours dies, as if by overpopulation.&lt;&#x2F;li&gt;
+&lt;li&gt;Any dead cell with exactly three live neighbours becomes a living cell, as if by reproduction.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;the-many-beautiful-worlds-of-cellular-automata&#x2F;2.gif#pixelate&quot; alt=&quot;GIF&quot; title=&quot;&amp;#39;Conway&amp;#39;s Game of Life&amp;#39; with a patterned seed&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&#x27;Conway&#x27;s Game of Life&#x27; (among many other rules) can be described as &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Turing_completeness&quot;&gt;Turing-complete&lt;&#x2F;a&gt;, meaning they can perform computations (if the necessary cell states are in particular formations — &lt;a href=&quot;http:&#x2F;&#x2F;rendell-attic.org&#x2F;gol&#x2F;tm.htm&quot;&gt;like this&lt;&#x2F;a&gt;). &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wireworld&quot;&gt;Wire World&lt;&#x2F;a&gt; is another incredibly simple rule that allows the simulation of electronic logic elements —the 80s equivalent of Minecraft&#x27;s redstone circuits!&lt;&#x2F;p&gt;
+&lt;p&gt;What fascinates me is that from such a simple set of rules, complex systems can arise. Often stable groups of cells occur and large complex formations that can even move as a single unit. Reoccurring patterns arise that can span numerous generations (there&#x27;s a simple 3 generational pattern in the header graphic). I find this aspect of Cellular Automata so exciting -you never know what you are going to see. It&#x27;s as if we&#x27;re simulating a very basic universe. What would happen if rather than a very simple 2D grid of cells, we simulated protons, neutrons &amp;amp; electrons? Would we also see complex structures appear; or even simulated life? (aside: &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Simulation_hypothesis&quot;&gt;Simulation hypothesis&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-dart-library&quot;&gt;The Dart library&lt;&#x2F;h2&gt;
+&lt;p&gt;The library separates the Cellular Automata rules (the fun bit) from the boilerplate processing &amp;amp; rendering. This makes it quick &amp;amp; easy to add new rules or experiment. I&#x27;ve added a few rules so far and also added support for &#x27;MCell&#x27; rules so it can run any of the hundreds of rules published in the &lt;a href=&quot;http:&#x2F;&#x2F;www.mirekw.com&#x2F;ca&#x2F;rullex_rtab.html&quot;&gt;MCell rules Lexicon&lt;&#x2F;a&gt;. I plan to add the ability to have numerous rule sets running in the same scene although this feature will have to wait for a rainy day. The rendering code is also decoupled which means you can easily add&#x2F;swap renderers as you need, I&#x27;ve already added a few (WebGL, Canvas, Html) and I plan to add another that can drive an LED Matrix.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;the-many-beautiful-worlds-of-cellular-automata&#x2F;3.gif#pixelate&quot; alt=&quot;GIF&quot; title=&quot;&amp;#39;Brain&amp;#39;s Brain&amp;#39; with a patterned seed&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The dart package &#x27;cellular_automata&#x27; is published on &lt;a href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;cellular_automata&quot;&gt;pub.dartlang.org&lt;&#x2F;a&gt;. Have fun with it and don&#x27;t forget to send me a pull request! ;-)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>RocketBox - HTML5 Toolkit</title>
+          <pubDate>Sat, 11 Aug 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/rocketbox-javascript-game-toolkit/</link>
+          <guid>https://www.jimmyff.co.uk/blog/rocketbox-javascript-game-toolkit/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/rocketbox-javascript-game-toolkit/">&lt;p&gt;I&#x27;ve create numerous HTML5 apps recently and each time I start a new one, I go through the same process getting all the core components in place. This takes an hour or so and once complete I can finally start working on the actual app. It&#x27;s for this reason that I decided to create &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;RocketBox&quot;&gt;RocketBox&lt;&#x2F;a&gt; - a html5 game&#x2F;demo&#x2F;app toolkit. It&#x27;s essentially a blackbox that abstracts away a lot of the headaches and boring stuff that developers face when they start a new project.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;features&quot;&gt;Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Front-end player &amp;amp; UI for canvas based applications&lt;&#x2F;li&gt;
+&lt;li&gt;Scaling handling&lt;&#x2F;li&gt;
+&lt;li&gt;Fullscreen support&lt;&#x2F;li&gt;
+&lt;li&gt;Events system&lt;&#x2F;li&gt;
+&lt;li&gt;Render loop timer&lt;&#x2F;li&gt;
+&lt;li&gt;Debug &amp;amp; logging system&lt;&#x2F;li&gt;
+&lt;li&gt;Supports multiple apps per page&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;There are other benefits to this project too: future features can be added which an app will benefit from without having to touch it&#x27;s code base (ie: fullscreen feature will implement the fullscreen API further down the line), the app&#x27;s won&#x27;t need updating, it just works. It also means that all your games&#x2F;demos follow a uniform structure, making it nice and easy to implement in a blog etc (plus RocketBox also supports multiple instances per page).&lt;&#x2F;p&gt;
+&lt;p&gt;View&#x2F;Download: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;RocketBox&quot;&gt;RocketBox Github Project&lt;&#x2F;a&gt; (as always, I welcome pull requests! :)&lt;&#x2F;p&gt;
+&lt;div id=&quot;rbExample&quot;&gt;&lt;&#x2F;div&gt;
+&lt;script src=&quot;..&#x2F;..&#x2F;shared_assets&#x2F;rocketbox&#x2F;rocketbox_1_0.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script&gt;
+var BouncingBall = function () {
+
+ this.canvasContext  = undefined;
+ this.events   = undefined;
+ this.width    = 640;
+ this.height   = 360;
+ this.ballPosition  = {x:0, y: 0};
+ this.ballDirection  = {x:1, y:1};
+ this.ballRadius  = 30;
+
+};
+
+BouncingBall.prototype = {
+
+ initalise: function (setup) {
+  this.canvasContext = setup.canvasContext;
+  this.width = setup.width;
+  this.height = setup.height;
+  this.ballPosition = {
+   x:Math.round(this.width&#x2F;2),
+   y: Math.round(this.height&#x2F;2)
+  };
+  this.events = setup.events;
+  this.events.listen(&#x27;APP:TICK&#x27;, this.appLoop, this);
+
+  this.events.listen(&#x27;APP:RESIZE&#x27;, this.resize, this);
+
+  this.canvasContext.fillStyle = &quot;rgb(245,245,245)&quot;;
+  this.canvasContext.fillRect(0, 0, this.width, this.height);
+ },
+
+ resize: function (eventData) {
+
+  this.width   = eventData.width;
+  this.height  = eventData.height;
+
+ },
+
+ appLoop: function (cycle) {
+
+  this.clearCanvas(cycle);
+  this.move(cycle);
+  this.render(cycle);
+ },
+
+ clearCanvas: function (cycle) {
+
+  &#x2F;&#x2F; 0.2 opacity to give trail effect
+  this.canvasContext.fillStyle = &quot;rgba(245,245,245,0.2)&quot;;
+  this.canvasContext.fillRect(0, 0, this.width, this.height);
+
+ },
+
+ move: function (cycle) {
+
+  this.ballPosition.x += ((cycle.dt&#x2F;5) *this.ballDirection.x);
+this.ballPosition.y += ((cycle.dt&#x2F;5)* this.ballDirection.y);
+
+  if (this.ballPosition.x - this.ballRadius &lt; 0) this.ballDirection.x = 1;
+  if (this.ballPosition.x + this.ballRadius &gt; this.width) this.ballDirection.x = -1;
+  if (this.ballPosition.y - this.ballRadius &lt; 0) this.ballDirection.y = 1;
+  if (this.ballPosition.y + this.ballRadius &gt; this.height) this.ballDirection.y = -1;
+  
+ },
+
+ render: function (cycle) {
+
+  this.canvasContext.fillStyle = &quot;rgb(40,40,40)&quot;;
+  this.canvasContext.beginPath();
+  this.canvasContext.arc(this.ballPosition.x, this.ballPosition.y, this.ballRadius, 0, Math.PI*2, true);
+  this.canvasContext.closePath();
+  this.canvasContext.fill();
+ }
+
+};
+
+test1 = new RocketBox(
+ new BouncingBall(),
+ {
+  id:&#x27;rbExample&#x27;,
+  width:870,
+  height:350,
+  title: &#x27;Example RocketBox Application&#x27;,
+  description: &#x27;Very simple application demonstrates RocketBox integration, see below for source code.&#x27;
+ });
+&lt;&#x2F;script&gt;
+&lt;p&gt;The demo above demonstrates a basic app integrating with RocketBox, below you can see&#x2F;download the code. All of the demos on this blog use RocketBox (even the older posts!), blogging was one of the main motives for creating the project!&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;
+var BouncingBall = function () {
+
+ this.canvasContext  = undefined;
+ this.events   = undefined;
+ this.width    = 640;
+ this.height   = 360;
+ this.ballPosition  = {x:0, y: 0};
+ this.ballDirection  = {x:1, y:1};
+ this.ballRadius  = 30;
+
+};
+
+BouncingBall.prototype = {
+ 
+ &amp;#x2F;* RocketBox will call this with the setup object *&amp;#x2F;
+ initalise: function (setup) {
+
+  this.canvasContext  = setup.canvasContext;
+  this.width    = setup.width;
+  this.height   = setup.height;
+  this.ballPosition  = {
+   x: Math.round(this.width&amp;#x2F;2), 
+   y: Math.round(this.height&amp;#x2F;2)
+  };
+
+  this.events = setup.events;
+  this.events.listen(&amp;#x27;APP:TICK&amp;#x27;, this.appLoop, this);
+  this.events.listen(&amp;#x27;APP:RESIZE&amp;#x27;, this.resize, this);
+  this.clearCanvas(1);
+
+ },
+ 
+ resize: function (eventData) {
+
+  this.width   = eventData.width;
+  this.height  = eventData.height;
+
+ },
+
+ appLoop: function (cycle) {
+
+  this.clearCanvas(0.2);
+  this.move(cycle);
+  this.render(cycle);
+ },
+
+ clearCanvas: function (opacity) {
+
+  &amp;#x2F;&amp;#x2F; 0.2 opacity to give trail effect
+  this.canvasContext.fillStyle = &amp;quot;rgba(225,225,225,&amp;quot;+opacity+&amp;quot;)&amp;quot;;
+  this.canvasContext.fillRect(0, 0, this.width, this.height);
+
+ },
+
+ move: function (cycle) {
+
+  this.ballPosition.x += ((cycle.dt&amp;#x2F;5) * this.ballDirection.x);
+  this.ballPosition.y += ((cycle.dt&amp;#x2F;5) * this.ballDirection.y);
+
+  if (this.ballPosition.x - this.ballRadius &amp;lt; 0) this.ballDirection.x = 1;
+  if (this.ballPosition.x + this.ballRadius &amp;gt; this.width) this.ballDirection.x = -1;
+  if (this.ballPosition.y - this.ballRadius &amp;lt; 0) this.ballDirection.y = 1;
+  if (this.ballPosition.y + this.ballRadius &amp;gt; this.height) this.ballDirection.y = -1;
+  
+ },
+
+ render: function (cycle) {
+
+  this.canvasContext.fillStyle = &amp;quot;rgb(40,40,40)&amp;quot;;
+  this.canvasContext.beginPath();
+  this.canvasContext.arc(this.ballPosition.x, this.ballPosition.y, this.ballRadius, 0, Math.PI*2, true); 
+  this.canvasContext.closePath();
+  this.canvasContext.fill();
+ }
+
+};
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+      <item>
+          <title>SublimeRsyncer - Rsync Plugin for SublimeText 2</title>
+          <pubDate>Wed, 30 May 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/sublimersyncer-rsync-plugin-sublimetext2/</link>
+          <guid>https://www.jimmyff.co.uk/blog/sublimersyncer-rsync-plugin-sublimetext2/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/sublimersyncer-rsync-plugin-sublimetext2/">&lt;p&gt;Discovering SublimeText 2 was love at first sight. It&#x27;s the fastest &amp;amp; most extensible IDE I&#x27;ve come across. Most of my projects reside on local virtual machines, I do this for development &amp;amp; production environment consistency, development machine portability and I don&#x27;t want to clutter up OSX, my desktop OS. This setup always results in an IDE headache: how to develop on OSX and automagically sync my changes to my various Linux VMs. When using Eclipse (my previous IDE of choice), I&#x27;d use the RSE plugin, which would allow me to have remote projects via SSH. SublimeText2 doesn&#x27;t offer many features out of the box and it&#x27;s left to you to choose how to setup your IDE by adding plugins. The plugin API is pretty simple, all python based so I decided to create a simple tool which would rsync my projects to my Linux VMs.&lt;&#x2F;p&gt;
+&lt;p&gt;View&#x2F;Download Project: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;SublimeRsyncer&quot;&gt;SublimeRsyncer on GitHub&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve not too much experience with Python so if this is your area you&#x27;ll probably cringe at my sloppy syntax and dodgy use of threading so not to block the UI. If you do make changes please hit me up with a pull request so I can incorporate your updates! :-)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Isometric HTML5 Game Engine</title>
+          <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/isometric-game-engine/</link>
+          <guid>https://www.jimmyff.co.uk/blog/isometric-game-engine/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/isometric-game-engine/">&lt;script src=&quot;renderer-test.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;style&gt;#canvasContainer canvas{max-width:100%;height:auto}&lt;&#x2F;style&gt;
+&lt;div id=&quot;canvasContainer&quot;&gt;&lt;&#x2F;div&gt;
+&lt;script&gt;
+game = new RendererTest();
+&lt;&#x2F;script&gt;
+&lt;p&gt;I&#x27;ve been playing a lot of Kairosoft games recently, I&#x27;m on holiday in Cuba and their mobile games are a great way to kill time on a long journey. Kariosoft implements beautiful pixelated 2.5d graphics across the majority of their games, it&#x27;s inspired me to create an Isometric game&#x2F;demo&#x2F;engine in HTML5:&lt;&#x2F;p&gt;
+&lt;div id=&quot;isometricDemo&quot;&gt;&lt;&#x2F;div&gt;
+&lt;script src=&quot;Isometric.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script&gt;
+test1 = new DemoPlayer(
+ new RendererTest(),
+ {
+  id:&#x27;isometricDemo&#x27;,
+  width:800,
+  height:350,
+  title: &#x27;Isometric Renderer&#x27;,
+  description: &#x27;The current isometric renderer with culling and mouse movement.&#x27;
+ });
+&lt;&#x2F;script&gt;
+&lt;p&gt;&lt;em&gt;I&#x27;m afraid this demo is using an very early prototype of &lt;a href=&quot;&#x2F;blog&#x2F;rocketbox-javascript-game-toolkit&quot;&gt;rocketbox&lt;&#x2F;a&gt; and as a result doesn&#x27;t work very well (mouse movement is currently broken), I might attempt to update it in the future.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;map-culling-and-mouse-movement&quot;&gt;Map culling and mouse movement&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve added map culling which will be a big optimisation when displaying large maps. I&#x27;ve also added keyboard drag zoom and keyboard controls to allow easier navigation.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;future-plans&quot;&gt;Future plans&lt;&#x2F;h2&gt;
+&lt;p&gt;Lots more to do with this, stay tuned as will add elevation slopes next!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>BBC Click features my Letter Bubbles game</title>
+          <pubDate>Fri, 04 May 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/</link>
+          <guid>https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/">
+
+
+
+&lt;img alt=&quot;BBC Click featuring Letter Bubbles&quot; title=&quot;BBC Click featuring Letter Bubbles&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.404f2cdedec51cd3.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.7acb9c75e4a36a1c.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.404f2cdedec51cd3.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;When I got back from a two week holiday in Cuba I noticed a big spike of traffic to my &lt;a href=&quot;&#x2F;blog&#x2F;letter-bubbles-typing-game&quot;&gt;Letter Bubbles game&lt;&#x2F;a&gt; coming from the BBC Click website. It turns out they featured my game in an educational edition of webscape! The show was broadcast on May 4th 2012.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Kate Russell on BBC Click demonstrating Letter Bubbles&quot; title=&quot;Kate Russell on BBC Click demonstrating Letter Bubbles&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.e7369d61569834de.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.960384a5fe398bb1.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.e7369d61569834de.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;As a big fan and regular viewer of BBC Click it&#x27;s great to see my game on the show. Luckily I have it series linked so was able to watch on the big screen via my Sky+. Head over to the BBC Click archive to &lt;a href=&quot;http:&#x2F;&#x2F;news.bbc.co.uk&#x2F;1&#x2F;hi&#x2F;programmes&#x2F;click_online&#x2F;9718549.stm&quot;&gt;view the episode&lt;&#x2F;a&gt; and jump to 2:45 to get straight to LetterBubbles. A huge thanks to &lt;a href=&quot;http:&#x2F;&#x2F;twitter.com&#x2F;katerussell&quot;&gt;Kate Russell&lt;&#x2F;a&gt; (pictured) for the great feature.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>HTML5 Jewels Switching Game</title>
+          <pubDate>Wed, 28 Mar 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/jewels-game/</link>
+          <guid>https://www.jimmyff.co.uk/blog/jewels-game/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/jewels-game/">&lt;script src=&quot;..&#x2F;..&#x2F;shared_assets&#x2F;rocketbox&#x2F;rocketbox_1_0.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script src=&quot;CanvasJewels2.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;p&gt;I&#x27;d bet that everyones been hooked on Bewjewled, ZooKeeper or another tile switching game at some point or another. Me and my partner whilst travelleing went through a phase trying to beat each others scores on the mobile variety of this genre which is what led me to the fun challenge of recreating this type of game in JavaScript.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;developing-the-game&quot;&gt;Developing the game&lt;&#x2F;h2&gt;
+&lt;p&gt;The project came together pretty quickly (a couple of sofa coding sessions), I was surpised at how tricky it was finding a decent way to store the grid and transision between which row the blocks are on. I tried a few different methods before finalising on a block array, a block object map and a grid object which stored a block reference for each of its coordinates.&lt;&#x2F;p&gt;
+&lt;p&gt;There was a niggling issue I had with the frst version - not all the blocks were totally syncronised. The initial version was mostly callback driven, so if the user switched some blocks it would trigger the callbacks regadless of a where the game was in it&#x27;s main loop. This resulted in blocks being slightly out of sync, maybe by only a millisecond or two but I wanted everything to fall perfectly in sync! After a bit of hacking I sorted this issue and it now keeps everything in sync by queuing jobs up and executing them syncronously at the correct time in the game loop.&lt;&#x2F;p&gt;
+&lt;div id=&quot;canvasJewels2_1&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;layout-rendering&quot;&gt;Layout &amp;amp; Rendering&lt;&#x2F;h2&gt;
+&lt;p&gt;I took a slightly different approach to layout this time and I really like it. I consider the variable width &amp;amp; height to be 100 - as in 100%. As I know how many columns &amp;amp; rows I want I can calculate what position they&#x27;re at, for example a block that is stationary in row 5, column 7, would&lt;&#x2F;p&gt;
+&lt;p&gt;In the version below I&#x27;ve temporarily &quot;borrowed&quot; the ZooKeeper sprites to test using bitmap graphics. When I get round to finishing this I&#x27;ll have original graphics!&lt;&#x2F;p&gt;
+&lt;div id=&quot;canvasJewels2_2&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;finding-possible-switches&quot;&gt;Finding possible switches&lt;&#x2F;h2&gt;
+&lt;p&gt;When the current game runs out of possible switches it needs to know so it can act on it (usually the board resets if no more moves). In order to find the possible switches I broke down game logic in to 3 patterns which cover all possible switches. Every time the grid changes I recalculate the switches by testing every block against these 3 patterns horozontally &amp;amp; vertically.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;switch-pattern-1&quot;&gt;Switch Pattern 1&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt; *  *  *  *       *  *  *  *
+ A  B  _C   +   A_  B  C
+ *  *  *  *       *  *  *  *
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;switch-pattern-2&quot;&gt;Switch Pattern 2&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;* _C1_       _B1 C1_
+ A  B  **+   A**  *  
+* _C2_       _B2 C2_  
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;switch-pattern-3&quot;&gt;Switch Pattern 3&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;* B1 **
+ A  _C_
+* B2 **
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The demo below highlights the possible switches by rendering a line connecting the blocks. It will randomly switch blocks, to stop it from running out of switches I&#x27;m also randomly removing blocks &amp;amp; rows. (If you notice that sometimes the switches fail it&#x27;s because it&#x27;s not considering if the blocks haven&#x27;t finished falling in to position, if they are this will result in a switch fail!).&lt;&#x2F;p&gt;
+&lt;div id=&quot;canvasJewels2_3&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;the-jewels-game-to-do-list&quot;&gt;The jewels game to-do list&lt;&#x2F;h2&gt;
+&lt;p&gt;The game mechanics are all mostly there now. The next things I&#x27;ll add to this will be:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Scores &amp;amp; Combos&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Level based difficulty system. Each level score target &amp;amp; time to reach that score&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Original graphics! (any designers out there?!)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Leaderboards&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Fun stuff! I&#x27;m sure I&#x27;ll come up with some fun new features I can add that will make my jewel switching game a little different!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Stay tuned for a future updates!&lt;&#x2F;p&gt;
+&lt;script&gt;
+var canvasJewels2_1 = new RocketBox(
+ new CanvasJewels({
+  renderer:&#x27;simple&#x27;,
+  imagePath:&#x27;.&#x2F;&#x27;
+ }),
+ {
+  id:&#x27;canvasJewels2_1&#x27;,
+  width:500,
+  height:500,
+  title: &#x27;Jewels Game : Simple Renderer&#x27;,
+  description: &#x27;Click on a block and drag to an adjacent block to switch them. Get 3 in a row to make them disappear!&#x27;,
+  canvasResize: true
+ });
+
+var canvasJewels2_2 = new RocketBox(
+ new CanvasJewels({
+  renderer:&#x27;production&#x27;,
+  imagePath:&#x27;.&#x2F;&#x27;
+ }),
+ {
+  id:&#x27;canvasJewels2_2&#x27;,
+  width:500,
+  height:500,
+  title: &#x27;Jewels Game : Graphical Renderer&#x27;,
+  description: &quot;I&#x27;ve ahem, temporarily borrowed the ZooKeeper sprites to test rendering bitmap graphics instead of geometric shapes.&quot;,
+  canvasResize: true
+ });
+
+var canvasJewels2_3 = new RocketBox(
+ new CanvasJewels({
+  renderer:&#x27;simple&#x27;,
+  imagePath:&#x27;.&#x2F;&#x27;,
+  autoSwitch:true,
+  destoryRows:true,
+  destoryBlocks:true,
+  showSwitches:true
+ }),
+ {
+  id:&#x27;canvasJewels2_3&#x27;,
+  width:500,
+  height:500,
+  title: &#x27;AI Playing the Jewels Game&#x27;,
+  description: &#x27;Sit back and watch the AI play the game, you can join in too if you like!&#x27;,
+  canvasResize: true
+ });
+&lt;&#x2F;script&gt;
+</description>
+      </item>
+      <item>
+          <title>Letter Bubbles: HTML5 typing game</title>
+          <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/</link>
+          <guid>https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/">&lt;p&gt;Back in 1999 I wrote a frantic arcade style touch typing game in Visual Basic (ew!). Someone reminded me of the game and I decided to recreate the game using modern web technologies such as HTML5 Canvas &amp;amp; Audio elements. I stayed as true to the original as I could and pleased that I managed to port the game almost identically. Check the youtube vid below to see the game being played on insane difficulty.&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;4heO3UiiRMo&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Here is a video giving an overview of some of the features:&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;fEx3HI6ODQQ&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Give the game a go over at &lt;del&gt;letterbubbles.com&lt;&#x2F;del&gt; &lt;sup&gt;(No longer online)&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;technical-details&quot;&gt;Technical Details&lt;&#x2F;h2&gt;
+&lt;p&gt;Below&#x27;s a few technical details regarding the development of the game.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;closure-library-and-why&quot;&gt;Closure library and why&lt;&#x2F;h3&gt;
+&lt;p&gt;I wanted a JavaScript library or framework that would allow me to develop using a classical object orientated style and didn&#x27;t restrict me in terms of application structure. I ended up choosing Closure Library for these reasons as well as that it&#x27;s compatible with the Closure Compiler. By compiling my game (using the advanced optimisation flag) allowed me to somewhat obfuscate the source code which would make cheating somewhat tricker.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;graphics-via-canvas&quot;&gt;Graphics via canvas&lt;&#x2F;h3&gt;
+&lt;p&gt;The graphics are all done via drawing directly to the canvas (there are zero sprites&#x2F;bitmaps in the game). The game runs at a steady 30 frames per second and profiling reveals that the vast majority of the render time drawing the circles&#x2F;bubbles&#x2F;htmls5 arcs. Maybe if I ever get around to writting a sequel I&#x27;ll create a WebGL renderer!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;multi-channel-audio&quot;&gt;Multi-channel audio&lt;&#x2F;h3&gt;
+&lt;p&gt;The HTML5 audio element isn&#x27;t great, I ended up creating a class which created multiple audio elements (programatically and never assigned to the DOM) which allowed my various sound effects to be played over multiple channels simultaneously. I&#x27;ll try to go in to this with code examples later.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;leaderboards-security&quot;&gt;Leaderboards &amp;amp; security&lt;&#x2F;h3&gt;
+&lt;p&gt;Back in 1999 I didn&#x27;t finished implementing the global leaderboards so this was something I really wanted to make sure I had in this time around. The big challenge was how to implement the feature securely to avoid people cheating. I didn&#x27;t find a solution to this problem and truth be told I don&#x27;t think there really is a way you can avoid people cheating in a javascript based game.&lt;&#x2F;p&gt;
+&lt;p&gt;One of the measures I implemented is a security token to verify the game submission, this is made up of a combination of all the game statistics including the games ID, this is the reverified on the server before the result is accepted to avoid the easy hacker packet sniffing and altering the JSON score submission. Of course this only protects against this single type of attack but it&#x27;s by adding little deterrents like this that I believe make the hack more effort than it&#x27;s worth which is why I&#x27;ve had so few people actaully hacking the game and submitted bogus scores.&lt;&#x2F;p&gt;
+&lt;p&gt;As I mentioned earlier by compiling the game source using Closure Compiler also helps deter people as the code isn&#x27;t instantly in a easily readable format. I&#x27;ve had a few ideas for ways I could create a much more secure game scoring system for a client-side javascript game, maybe one day I&#x27;ll implement them in to a new game or at least write a blog post about them!&lt;&#x2F;p&gt;
+&lt;p&gt;Anyway, why&#x27;d you bother reading all this boring small print?! &lt;del&gt;Get playing now: letterbubbles.com!&lt;&#x2F;del&gt; &lt;sup&gt;(No longer online)&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>HTML5 Ants!</title>
+          <pubDate>Sun, 07 Nov 2010 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/html5-ants/</link>
+          <guid>https://www.jimmyff.co.uk/blog/html5-ants/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/html5-ants/">&lt;p&gt;I&#x27;m sat in a bar on the edge of the Mekong in Luang Prabang, Laos. There are tiny ants running backward and forward along the bar&#x27;s balcony and I&#x27;ve decidedo it would be fun to try a little AI coding and create a virtual ant colony! Have a play below.&lt;&#x2F;p&gt;
+&lt;script src=&quot;..&#x2F;..&#x2F;shared_assets&#x2F;rocketbox&#x2F;rocketbox_1_0.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script src=&quot;AntDemos1.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;div id=&quot;antDemo1&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;the-simulation-thus-far&quot;&gt;The simulation thus far&lt;&#x2F;h2&gt;
+&lt;p&gt;At the moment my ants aren&#x27;t very intelligent, they wonder around in a clockwise direction (currently can only turn right... lol) oblivious to the piles of food I&#x27;ve dotted around If you click on an ant you will focus on it, revealing it&#x27;s name and smell radius, although the ants can&#x27;t smell yet. Clicking on the floor will tell all the ants to charge to that position, when it gets within their smell radius they&#x27;ll loose interest.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;he-s-a-nice-ant&quot;&gt;&quot;He&#x27;s a nice ant&quot;&lt;&#x2F;h2&gt;
+&lt;p&gt;I like the idea that all the ants were different, that&#x27;s why I gave them names. Also each ant is built a little different from the last, some are bigger but slower, others have longer feelers and a greater smell range. I quite like the idea of introducing different species of ants (red, green &amp;amp; black maybe?), each could be a little different. Maybe in the next version I&#x27;ll introduce roles or classes, certain ants could be soliders&#x2F;gathers etc, I guess I&#x27;m moving away from a simulator but that wouldn&#x27;t bother me, it&#x27;s just a bit of fun anyway!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ant-animation&quot;&gt;Ant animation&lt;&#x2F;h2&gt;
+&lt;p&gt;The ants are visually simple made up of geometric shapes &amp;amp; lines. The body is made up of 3 filled circles &amp;amp; the legs are simply bezier curved lines. To animate the legs I use the sine of distance travelled to generate the leg position difference from where it is when stationary.&lt;&#x2F;p&gt;
+&lt;div id=&quot;antDemo2&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;ant-food-a-sense-of-purpose&quot;&gt;Ant food &amp;amp; a sense of purpose&lt;&#x2F;h2&gt;
+&lt;p&gt;In the first demo I dotted piles of food around, the ants are currently oblivious to this. In the next version I will give them the gift of smell, if they get within a certain distance of food they will move to it whilst emitting instructions for ants behind them. This should create a highway to the food piles. The scents (instructions) the ants emmit would also need to slowly decay. Maybe then I&#x27;d need to introduce a concept of &#x27;home&#x27; or a base for where they could deposit their swag.. Ohhh I could get quite carried away with this! :)&lt;&#x2F;p&gt;
+&lt;div id=&quot;antDemo3&quot;&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Stay tuned for future updates to the cyber ant colony! :-)&lt;&#x2F;p&gt;
+&lt;script&gt;
+
+var demo1 = new RocketBox(
+ new AntDemos1 (&#x27;food&#x27;),
+ {
+  id:&#x27;antDemo1&#x27;,
+  width:800,
+  height:400,
+  fps:30,
+  autoPlay: false,
+  title: &#x27;Cyber Ant Colony Simulation&#x27;,
+  description: &quot;This is the ant simulator version 1. The cyber ants aren&#x27;t very intelligent at the moment, they move around in a clockwise direction paying no attention to the random food piles. Focus on an ant by clicking it or order all ants to a location by clicking the floor! Please don&#x27;t tap on the glass! ;)&quot;
+ });
+
+var demo2 = new RocketBox(
+ new AntDemos1(&#x27;ant&#x27;),
+ {
+  id:&#x27;antDemo2&#x27;,
+  width:800,
+  height:400,
+  fps:30,
+  autoPlay: false,
+  title: &#x27;Ant Animation&#x27;,
+  description: &#x27;Test to see the animation on the ants, the legs &amp; feelers all animated using sine waves.&#x27;
+ });
+
+var demo3 = new RocketBox(
+ new AntDemos1(&#x27;lotsOfAnts&#x27;),
+ {
+  id:&#x27;antDemo3&#x27;,
+  width:800,
+  height:400,
+  fps:30,
+  autoPlay: false,
+  title: &#x27;Ant invasion!&#x27;,
+  description: &quot;Demo showing x100 ants, really need optimising further down the line. For every ant and every cycle I&#x27;m reculcating the bezier curve to animate each of their legs. I&#x27;m sure I could cache this, or even the whole ant&#x27;s animation which would be a huge speed increase. This demo also demonstrates that the ants get stuck a lot!&quot;
+ });
+
+&lt;&#x2F;script&gt;
+</description>
+      </item>
+    </channel>
+</rss>

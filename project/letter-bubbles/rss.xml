@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - Letter Bubbles</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/project/letter-bubbles/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 04 May 2012 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>BBC Click features my Letter Bubbles game</title>
+          <pubDate>Fri, 04 May 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/</link>
+          <guid>https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/">
+
+
+
+&lt;img alt=&quot;BBC Click featuring Letter Bubbles&quot; title=&quot;BBC Click featuring Letter Bubbles&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.404f2cdedec51cd3.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.7acb9c75e4a36a1c.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.404f2cdedec51cd3.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;When I got back from a two week holiday in Cuba I noticed a big spike of traffic to my &lt;a href=&quot;&#x2F;blog&#x2F;letter-bubbles-typing-game&quot;&gt;Letter Bubbles game&lt;&#x2F;a&gt; coming from the BBC Click website. It turns out they featured my game in an educational edition of webscape! The show was broadcast on May 4th 2012.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Kate Russell on BBC Click demonstrating Letter Bubbles&quot; title=&quot;Kate Russell on BBC Click demonstrating Letter Bubbles&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.e7369d61569834de.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.960384a5fe398bb1.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.e7369d61569834de.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;As a big fan and regular viewer of BBC Click it&#x27;s great to see my game on the show. Luckily I have it series linked so was able to watch on the big screen via my Sky+. Head over to the BBC Click archive to &lt;a href=&quot;http:&#x2F;&#x2F;news.bbc.co.uk&#x2F;1&#x2F;hi&#x2F;programmes&#x2F;click_online&#x2F;9718549.stm&quot;&gt;view the episode&lt;&#x2F;a&gt; and jump to 2:45 to get straight to LetterBubbles. A huge thanks to &lt;a href=&quot;http:&#x2F;&#x2F;twitter.com&#x2F;katerussell&quot;&gt;Kate Russell&lt;&#x2F;a&gt; (pictured) for the great feature.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Letter Bubbles: HTML5 typing game</title>
+          <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/</link>
+          <guid>https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/">&lt;p&gt;Back in 1999 I wrote a frantic arcade style touch typing game in Visual Basic (ew!). Someone reminded me of the game and I decided to recreate the game using modern web technologies such as HTML5 Canvas &amp;amp; Audio elements. I stayed as true to the original as I could and pleased that I managed to port the game almost identically. Check the youtube vid below to see the game being played on insane difficulty.&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;4heO3UiiRMo&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Here is a video giving an overview of some of the features:&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;fEx3HI6ODQQ&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Give the game a go over at &lt;del&gt;letterbubbles.com&lt;&#x2F;del&gt; &lt;sup&gt;(No longer online)&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;technical-details&quot;&gt;Technical Details&lt;&#x2F;h2&gt;
+&lt;p&gt;Below&#x27;s a few technical details regarding the development of the game.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;closure-library-and-why&quot;&gt;Closure library and why&lt;&#x2F;h3&gt;
+&lt;p&gt;I wanted a JavaScript library or framework that would allow me to develop using a classical object orientated style and didn&#x27;t restrict me in terms of application structure. I ended up choosing Closure Library for these reasons as well as that it&#x27;s compatible with the Closure Compiler. By compiling my game (using the advanced optimisation flag) allowed me to somewhat obfuscate the source code which would make cheating somewhat tricker.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;graphics-via-canvas&quot;&gt;Graphics via canvas&lt;&#x2F;h3&gt;
+&lt;p&gt;The graphics are all done via drawing directly to the canvas (there are zero sprites&#x2F;bitmaps in the game). The game runs at a steady 30 frames per second and profiling reveals that the vast majority of the render time drawing the circles&#x2F;bubbles&#x2F;htmls5 arcs. Maybe if I ever get around to writting a sequel I&#x27;ll create a WebGL renderer!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;multi-channel-audio&quot;&gt;Multi-channel audio&lt;&#x2F;h3&gt;
+&lt;p&gt;The HTML5 audio element isn&#x27;t great, I ended up creating a class which created multiple audio elements (programatically and never assigned to the DOM) which allowed my various sound effects to be played over multiple channels simultaneously. I&#x27;ll try to go in to this with code examples later.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;leaderboards-security&quot;&gt;Leaderboards &amp;amp; security&lt;&#x2F;h3&gt;
+&lt;p&gt;Back in 1999 I didn&#x27;t finished implementing the global leaderboards so this was something I really wanted to make sure I had in this time around. The big challenge was how to implement the feature securely to avoid people cheating. I didn&#x27;t find a solution to this problem and truth be told I don&#x27;t think there really is a way you can avoid people cheating in a javascript based game.&lt;&#x2F;p&gt;
+&lt;p&gt;One of the measures I implemented is a security token to verify the game submission, this is made up of a combination of all the game statistics including the games ID, this is the reverified on the server before the result is accepted to avoid the easy hacker packet sniffing and altering the JSON score submission. Of course this only protects against this single type of attack but it&#x27;s by adding little deterrents like this that I believe make the hack more effort than it&#x27;s worth which is why I&#x27;ve had so few people actaully hacking the game and submitted bogus scores.&lt;&#x2F;p&gt;
+&lt;p&gt;As I mentioned earlier by compiling the game source using Closure Compiler also helps deter people as the code isn&#x27;t instantly in a easily readable format. I&#x27;ve had a few ideas for ways I could create a much more secure game scoring system for a client-side javascript game, maybe one day I&#x27;ll implement them in to a new game or at least write a blog post about them!&lt;&#x2F;p&gt;
+&lt;p&gt;Anyway, why&#x27;d you bother reading all this boring small print?! &lt;del&gt;Get playing now: letterbubbles.com!&lt;&#x2F;del&gt; &lt;sup&gt;(No longer online)&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

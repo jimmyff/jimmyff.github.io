@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - animation</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/animation/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-11-12T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/animation/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Faehound Games</title>
+        <published>2023-11-12T00:00:00+00:00</published>
+        <updated>2023-11-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/faehound-games/"/>
+        <id>https://www.jimmyff.co.uk/gallery/faehound-games/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/faehound-games/">&lt;img alt=&quot;Faehound Games&quot; title=&quot;Faehound Games&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;gallery&#x2F;faehound-games&#x2F;faehound-games.gif&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Had a go at animating a hound. I&#x27;ll use this name &amp;amp; logo on a teaser video and website about a very exciting board game that I&#x27;m working on! 🎲&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

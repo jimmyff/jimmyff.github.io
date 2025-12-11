@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - gaming-digital</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/gaming-digital/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>My shrine to Nintendo</title>
+          <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/nintendo-shrine/</link>
+          <guid>https://www.jimmyff.co.uk/blog/nintendo-shrine/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/nintendo-shrine/">
+
+
+
+&lt;img alt=&quot;Game shelf&quot; title=&quot;Game shelf&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf.cedd823539497920.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf.b270ce50fb23ae7d.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf.cedd823539497920.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I’ve been Nintendo fan since I was 8 years old and my brother got a Super Nintendo, I&#x27;ve been hooked for life. A couple of years ago I realised that I’ve amassed quite a collection. I’ve now finally got around to putting some shelving up in my office to display it. I’ve sadly had to leave some games in storage so I’ll probably have to expand the shelving at some point!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Game shelf&quot; title=&quot;Game shelf&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;short_shelves.12f824f0d7c03764.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;short_shelves.a6b7244fd98a66b2.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;short_shelves.12f824f0d7c03764.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I also got a couple of narrower shelves near my desk. I like having Amiibo dotted around. They really do lift my mood!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Game shelf&quot; title=&quot;Game shelf&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf2.cf1644444b4926dc.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf2.354a01cb08f92c9c.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf2.cf1644444b4926dc.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;It&#x27;s crazy to think I&#x27;ve been playing Nintendo games for over 30 years. I probably like them as much now than I did back when I was a kid!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Fixing my Xbox 360 red rings for £3</title>
+          <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/xbox-red-rings-of-death/</link>
+          <guid>https://www.jimmyff.co.uk/blog/xbox-red-rings-of-death/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/xbox-red-rings-of-death/">&lt;p&gt;My Xbox 360 sat gartering dust for a couple of months, fallen ill to the dreaded &#x27;Red Rings of Death&#x27; and out of warranty. With the Skyrim DLC out at the end of the month my options were to pay to get it repaired (£50), buy a second-hand replacement (£85 - £130 depending on model) or repair it myself (ended up costing £2.51).&lt;&#x2F;p&gt;
+&lt;p&gt;I implemented the well documented &#x27;Penny Fix&#x27;, in essence this involves adding thermal paste &amp;amp; insulated pennies to your xbox&#x27;s x4 RAM chips. The scary part is that in order for tricking your Xbox to forget that it&#x27;s previously registered the ROD error you have to cause another temporary error by deliberately overheating your xbox! This is dangerous, I take no responsibility if you try this! Read on for more details...&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Photos showing the process&quot; title=&quot;Photos showing the process&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.342bf63e25e35028.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.dca85f9683078ce0.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.342bf63e25e35028.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.c0e0611b8b0ef457.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;overview-of-the-process&quot;&gt;Overview of the process&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Disassemble your Xbox 360&lt;&#x2F;li&gt;
+&lt;li&gt;Paint a little thermal heat on each of the x4 ram chips&lt;&#x2F;li&gt;
+&lt;li&gt;Stick a parcel of x2 pennies wrapped in electrical tape to each of the 4 ram chips&lt;&#x2F;li&gt;
+&lt;li&gt;Reassemble your Xbox 360&lt;&#x2F;li&gt;
+&lt;li&gt;Overheat your xbox by wrapping it in a towel or two while plugged, let it bake for about 20 minutes. &lt;strong&gt;Caution: This is the scary part and quite silly and very dangerous; I take no responsibility for if this goes wrong. Be careful if you try this!&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Let Xbox fully cool down for an hour&lt;&#x2F;li&gt;
+&lt;li&gt;Voila, your xbox &#x2F;may&#x2F; be fixed!&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</description>
+      </item>
+    </channel>
+</rss>

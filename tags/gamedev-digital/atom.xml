@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - gamedev-digital</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/gamedev-digital/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-10-01T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/gamedev-digital/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Letter Bubbles</title>
+        <published>2023-10-01T00:00:00+00:00</published>
+        <updated>2023-10-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/projects/letter-bubbles/"/>
+        <id>https://www.jimmyff.co.uk/projects/letter-bubbles/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/projects/letter-bubbles/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Frogger &#x2F; Crossy road Playdate remake</title>
+        <published>2021-08-08T19:05:59+01:00</published>
+        <updated>2021-08-08T19:05:59+01:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/frogger/"/>
+        <id>https://www.jimmyff.co.uk/blog/frogger/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/frogger/">&lt;p&gt;I got super excited when the idea to make a frogger &#x2F; crossy-road game for the playdate hit me. The crank would be perrrfect! I can imagine the frantic cranking as you try to rush in front of 4 lanes of traffic and a train!&lt;&#x2F;p&gt;
+&lt;p&gt;I also figured it would be a fun project to learn Rust on. So without further adieu, behold... the first thing I&#x27;ve ever made in rust!&lt;&#x2F;p&gt;
+&lt;p&gt;(TODO: Imgur GIF expired. Replace with Webassembly demo at some point)&lt;&#x2F;p&gt;
+&lt;p&gt;I thought it would be a really nice fit to go for an isometric projection, also it means you make maximum use of the screen real estate as you can hopefully see oncomming traffic in the diagonal corners of the display.&lt;&#x2F;p&gt;
+&lt;p&gt;Rust is really fun and can&#x27;t wait to level up my skills!&lt;&#x2F;p&gt;
+&lt;p&gt;p.s. Maybe this can be goose themed? It would be a nice little nod to Panic &amp;amp; their Goose game!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Painting asteroids</title>
+        <published>2021-07-16T00:00:00+00:00</published>
+        <updated>2021-07-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/painting-asteroids/"/>
+        <id>https://www.jimmyff.co.uk/blog/painting-asteroids/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/painting-asteroids/">&lt;p&gt;I&#x27;ve been stewing on how I could fill the asteroids to make my &lt;a href=&quot;&#x2F;tags&#x2F;space_game&#x2F;&quot;&gt;space game&lt;&#x2F;a&gt; look better. It&#x27;s a tricky problem as I only know terrain lines and nothing else (so I don&#x27;t know which side is supposed to be solid and which is supposed to be the empty void of space). This shows what I have and what I want to achieve:&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The problem&quot; title=&quot;The problem&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.7b9e19ad3dd9c01f.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.dd0eff4fb0908e95.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.7b9e19ad3dd9c01f.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I can trust that the space ship will always be in space (even if it&#x27;s hit an asteroid, it should never actually be in the asteroid!). Using that piece of truth I&#x27;ve came up with an idea, if I projected from the ship to the corners and count the terrain line intersections I should be able to figure out what&#x27;s solid. If the number of intersections is even, I know the corner should be in also in space, if the intersection count was odd, then the corner is in an asteroid.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Possible solution&quot; title=&quot;Possible solution&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.8a0e597594df834c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.5fcbb2418a9a32cb.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.8a0e597594df834c.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Once I knew if the corners were in an asteroid or not, I should then be able to move along each edge and join up the lines.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;&#x2F;h2&gt;
+&lt;img alt=&quot;Implementing the intersection counting&quot; title=&quot;Implementing the intersection counting&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;1-corners.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve implemented the intersection counting, if the line is green then there is an even number of intersections which means the corner is in space, if red then there is an odd number of intersections so this is in the asteroid.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve cut the terrain line at the scren edge (and highlighting it with a circle), this is so I can make a nice clean edge on each polygon.&lt;&#x2F;p&gt;
+&lt;p&gt;(Oh you might also notice I&#x27;ve implemented asteroid rotation too!)&lt;&#x2F;p&gt;
+&lt;img alt=&quot;Triangulation!&quot; title=&quot;Triangulation!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;2-triangulate.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;Here I have implemented the algorithm that combines all the edges in to polygons. At the top there is text that says something like &#x27;P: 2&#x27;, this means 2 polygons found.&lt;&#x2F;p&gt;
+&lt;p&gt;At first I was getting a weird graphical glitch when filling my polygons which I realised was due to the fact my polygons are concave. Filling concave polygons turns out is a technically tricky as the polygon needed triangulating (chopping in to simple triangles). Luckily Love2d has a triangulate feature that I could use. I coloured the triangles random colours to highlight the triangulation process.&lt;&#x2F;p&gt;
+&lt;img alt=&quot;It worked!&quot; title=&quot;It worked!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;3-done.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;...ta-dah! Here is the finished product. I&#x27;m super happy (&amp;amp; surprised) that my crazy idea worked!&lt;&#x2F;p&gt;
+&lt;p&gt;I now need to reimplement the ship, but I&#x27;m a little hesitant to continue with Lua due to it being so difficult to debug (and I&#x27;m really missing static-typing!). I&#x27;m thinking about switching to C or possibly Rust to continue my playdate journey.&lt;&#x2F;p&gt;
+&lt;p&gt;I apologise for the noisy strangely coloured gif&#x27;s -I really need to level up by gif skills!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>RocketBox - HTML5 Toolkit</title>
+        <published>2012-08-11T00:00:00+00:00</published>
+        <updated>2012-08-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/rocketbox-javascript-game-toolkit/"/>
+        <id>https://www.jimmyff.co.uk/blog/rocketbox-javascript-game-toolkit/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/rocketbox-javascript-game-toolkit/">&lt;p&gt;I&#x27;ve create numerous HTML5 apps recently and each time I start a new one, I go through the same process getting all the core components in place. This takes an hour or so and once complete I can finally start working on the actual app. It&#x27;s for this reason that I decided to create &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;RocketBox&quot;&gt;RocketBox&lt;&#x2F;a&gt; - a html5 game&#x2F;demo&#x2F;app toolkit. It&#x27;s essentially a blackbox that abstracts away a lot of the headaches and boring stuff that developers face when they start a new project.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;features&quot;&gt;Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Front-end player &amp;amp; UI for canvas based applications&lt;&#x2F;li&gt;
+&lt;li&gt;Scaling handling&lt;&#x2F;li&gt;
+&lt;li&gt;Fullscreen support&lt;&#x2F;li&gt;
+&lt;li&gt;Events system&lt;&#x2F;li&gt;
+&lt;li&gt;Render loop timer&lt;&#x2F;li&gt;
+&lt;li&gt;Debug &amp;amp; logging system&lt;&#x2F;li&gt;
+&lt;li&gt;Supports multiple apps per page&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;There are other benefits to this project too: future features can be added which an app will benefit from without having to touch it&#x27;s code base (ie: fullscreen feature will implement the fullscreen API further down the line), the app&#x27;s won&#x27;t need updating, it just works. It also means that all your games&#x2F;demos follow a uniform structure, making it nice and easy to implement in a blog etc (plus RocketBox also supports multiple instances per page).&lt;&#x2F;p&gt;
+&lt;p&gt;View&#x2F;Download: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;RocketBox&quot;&gt;RocketBox Github Project&lt;&#x2F;a&gt; (as always, I welcome pull requests! :)&lt;&#x2F;p&gt;
+&lt;div id=&quot;rbExample&quot;&gt;&lt;&#x2F;div&gt;
+&lt;script src=&quot;..&#x2F;..&#x2F;shared_assets&#x2F;rocketbox&#x2F;rocketbox_1_0.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script&gt;
+var BouncingBall = function () {
+
+ this.canvasContext  = undefined;
+ this.events   = undefined;
+ this.width    = 640;
+ this.height   = 360;
+ this.ballPosition  = {x:0, y: 0};
+ this.ballDirection  = {x:1, y:1};
+ this.ballRadius  = 30;
+
+};
+
+BouncingBall.prototype = {
+
+ initalise: function (setup) {
+  this.canvasContext = setup.canvasContext;
+  this.width = setup.width;
+  this.height = setup.height;
+  this.ballPosition = {
+   x:Math.round(this.width&#x2F;2),
+   y: Math.round(this.height&#x2F;2)
+  };
+  this.events = setup.events;
+  this.events.listen(&#x27;APP:TICK&#x27;, this.appLoop, this);
+
+  this.events.listen(&#x27;APP:RESIZE&#x27;, this.resize, this);
+
+  this.canvasContext.fillStyle = &quot;rgb(245,245,245)&quot;;
+  this.canvasContext.fillRect(0, 0, this.width, this.height);
+ },
+
+ resize: function (eventData) {
+
+  this.width   = eventData.width;
+  this.height  = eventData.height;
+
+ },
+
+ appLoop: function (cycle) {
+
+  this.clearCanvas(cycle);
+  this.move(cycle);
+  this.render(cycle);
+ },
+
+ clearCanvas: function (cycle) {
+
+  &#x2F;&#x2F; 0.2 opacity to give trail effect
+  this.canvasContext.fillStyle = &quot;rgba(245,245,245,0.2)&quot;;
+  this.canvasContext.fillRect(0, 0, this.width, this.height);
+
+ },
+
+ move: function (cycle) {
+
+  this.ballPosition.x += ((cycle.dt&#x2F;5) *this.ballDirection.x);
+this.ballPosition.y += ((cycle.dt&#x2F;5)* this.ballDirection.y);
+
+  if (this.ballPosition.x - this.ballRadius &lt; 0) this.ballDirection.x = 1;
+  if (this.ballPosition.x + this.ballRadius &gt; this.width) this.ballDirection.x = -1;
+  if (this.ballPosition.y - this.ballRadius &lt; 0) this.ballDirection.y = 1;
+  if (this.ballPosition.y + this.ballRadius &gt; this.height) this.ballDirection.y = -1;
+  
+ },
+
+ render: function (cycle) {
+
+  this.canvasContext.fillStyle = &quot;rgb(40,40,40)&quot;;
+  this.canvasContext.beginPath();
+  this.canvasContext.arc(this.ballPosition.x, this.ballPosition.y, this.ballRadius, 0, Math.PI*2, true);
+  this.canvasContext.closePath();
+  this.canvasContext.fill();
+ }
+
+};
+
+test1 = new RocketBox(
+ new BouncingBall(),
+ {
+  id:&#x27;rbExample&#x27;,
+  width:870,
+  height:350,
+  title: &#x27;Example RocketBox Application&#x27;,
+  description: &#x27;Very simple application demonstrates RocketBox integration, see below for source code.&#x27;
+ });
+&lt;&#x2F;script&gt;
+&lt;p&gt;The demo above demonstrates a basic app integrating with RocketBox, below you can see&#x2F;download the code. All of the demos on this blog use RocketBox (even the older posts!), blogging was one of the main motives for creating the project!&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;
+var BouncingBall = function () {
+
+ this.canvasContext  = undefined;
+ this.events   = undefined;
+ this.width    = 640;
+ this.height   = 360;
+ this.ballPosition  = {x:0, y: 0};
+ this.ballDirection  = {x:1, y:1};
+ this.ballRadius  = 30;
+
+};
+
+BouncingBall.prototype = {
+ 
+ &amp;#x2F;* RocketBox will call this with the setup object *&amp;#x2F;
+ initalise: function (setup) {
+
+  this.canvasContext  = setup.canvasContext;
+  this.width    = setup.width;
+  this.height   = setup.height;
+  this.ballPosition  = {
+   x: Math.round(this.width&amp;#x2F;2), 
+   y: Math.round(this.height&amp;#x2F;2)
+  };
+
+  this.events = setup.events;
+  this.events.listen(&amp;#x27;APP:TICK&amp;#x27;, this.appLoop, this);
+  this.events.listen(&amp;#x27;APP:RESIZE&amp;#x27;, this.resize, this);
+  this.clearCanvas(1);
+
+ },
+ 
+ resize: function (eventData) {
+
+  this.width   = eventData.width;
+  this.height  = eventData.height;
+
+ },
+
+ appLoop: function (cycle) {
+
+  this.clearCanvas(0.2);
+  this.move(cycle);
+  this.render(cycle);
+ },
+
+ clearCanvas: function (opacity) {
+
+  &amp;#x2F;&amp;#x2F; 0.2 opacity to give trail effect
+  this.canvasContext.fillStyle = &amp;quot;rgba(225,225,225,&amp;quot;+opacity+&amp;quot;)&amp;quot;;
+  this.canvasContext.fillRect(0, 0, this.width, this.height);
+
+ },
+
+ move: function (cycle) {
+
+  this.ballPosition.x += ((cycle.dt&amp;#x2F;5) * this.ballDirection.x);
+  this.ballPosition.y += ((cycle.dt&amp;#x2F;5) * this.ballDirection.y);
+
+  if (this.ballPosition.x - this.ballRadius &amp;lt; 0) this.ballDirection.x = 1;
+  if (this.ballPosition.x + this.ballRadius &amp;gt; this.width) this.ballDirection.x = -1;
+  if (this.ballPosition.y - this.ballRadius &amp;lt; 0) this.ballDirection.y = 1;
+  if (this.ballPosition.y + this.ballRadius &amp;gt; this.height) this.ballDirection.y = -1;
+  
+ },
+
+ render: function (cycle) {
+
+  this.canvasContext.fillStyle = &amp;quot;rgb(40,40,40)&amp;quot;;
+  this.canvasContext.beginPath();
+  this.canvasContext.arc(this.ballPosition.x, this.ballPosition.y, this.ballRadius, 0, Math.PI*2, true); 
+  this.canvasContext.closePath();
+  this.canvasContext.fill();
+ }
+
+};
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Isometric HTML5 Game Engine</title>
+        <published>2012-05-18T00:00:00+00:00</published>
+        <updated>2012-05-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/isometric-game-engine/"/>
+        <id>https://www.jimmyff.co.uk/blog/isometric-game-engine/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/isometric-game-engine/">&lt;script src=&quot;renderer-test.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;style&gt;#canvasContainer canvas{max-width:100%;height:auto}&lt;&#x2F;style&gt;
+&lt;div id=&quot;canvasContainer&quot;&gt;&lt;&#x2F;div&gt;
+&lt;script&gt;
+game = new RendererTest();
+&lt;&#x2F;script&gt;
+&lt;p&gt;I&#x27;ve been playing a lot of Kairosoft games recently, I&#x27;m on holiday in Cuba and their mobile games are a great way to kill time on a long journey. Kariosoft implements beautiful pixelated 2.5d graphics across the majority of their games, it&#x27;s inspired me to create an Isometric game&#x2F;demo&#x2F;engine in HTML5:&lt;&#x2F;p&gt;
+&lt;div id=&quot;isometricDemo&quot;&gt;&lt;&#x2F;div&gt;
+&lt;script src=&quot;Isometric.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script&gt;
+test1 = new DemoPlayer(
+ new RendererTest(),
+ {
+  id:&#x27;isometricDemo&#x27;,
+  width:800,
+  height:350,
+  title: &#x27;Isometric Renderer&#x27;,
+  description: &#x27;The current isometric renderer with culling and mouse movement.&#x27;
+ });
+&lt;&#x2F;script&gt;
+&lt;p&gt;&lt;em&gt;I&#x27;m afraid this demo is using an very early prototype of &lt;a href=&quot;&#x2F;blog&#x2F;rocketbox-javascript-game-toolkit&quot;&gt;rocketbox&lt;&#x2F;a&gt; and as a result doesn&#x27;t work very well (mouse movement is currently broken), I might attempt to update it in the future.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;map-culling-and-mouse-movement&quot;&gt;Map culling and mouse movement&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve added map culling which will be a big optimisation when displaying large maps. I&#x27;ve also added keyboard drag zoom and keyboard controls to allow easier navigation.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;future-plans&quot;&gt;Future plans&lt;&#x2F;h2&gt;
+&lt;p&gt;Lots more to do with this, stay tuned as will add elevation slopes next!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>BBC Click features my Letter Bubbles game</title>
+        <published>2012-05-04T00:00:00+00:00</published>
+        <updated>2012-05-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/"/>
+        <id>https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/bbc-click-features-letter-bubbles/">
+
+
+
+&lt;img alt=&quot;BBC Click featuring Letter Bubbles&quot; title=&quot;BBC Click featuring Letter Bubbles&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.404f2cdedec51cd3.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.7acb9c75e4a36a1c.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;bbc-click-letter-bubbles2.404f2cdedec51cd3.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;When I got back from a two week holiday in Cuba I noticed a big spike of traffic to my &lt;a href=&quot;&#x2F;blog&#x2F;letter-bubbles-typing-game&quot;&gt;Letter Bubbles game&lt;&#x2F;a&gt; coming from the BBC Click website. It turns out they featured my game in an educational edition of webscape! The show was broadcast on May 4th 2012.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Kate Russell on BBC Click demonstrating Letter Bubbles&quot; title=&quot;Kate Russell on BBC Click demonstrating Letter Bubbles&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.e7369d61569834de.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.960384a5fe398bb1.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kate-russell-bbc-click-letter-bubbles.e7369d61569834de.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;As a big fan and regular viewer of BBC Click it&#x27;s great to see my game on the show. Luckily I have it series linked so was able to watch on the big screen via my Sky+. Head over to the BBC Click archive to &lt;a href=&quot;http:&#x2F;&#x2F;news.bbc.co.uk&#x2F;1&#x2F;hi&#x2F;programmes&#x2F;click_online&#x2F;9718549.stm&quot;&gt;view the episode&lt;&#x2F;a&gt; and jump to 2:45 to get straight to LetterBubbles. A huge thanks to &lt;a href=&quot;http:&#x2F;&#x2F;twitter.com&#x2F;katerussell&quot;&gt;Kate Russell&lt;&#x2F;a&gt; (pictured) for the great feature.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>HTML5 Jewels Switching Game</title>
+        <published>2012-03-28T00:00:00+00:00</published>
+        <updated>2012-03-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/jewels-game/"/>
+        <id>https://www.jimmyff.co.uk/blog/jewels-game/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/jewels-game/">&lt;script src=&quot;..&#x2F;..&#x2F;shared_assets&#x2F;rocketbox&#x2F;rocketbox_1_0.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script src=&quot;CanvasJewels2.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;p&gt;I&#x27;d bet that everyones been hooked on Bewjewled, ZooKeeper or another tile switching game at some point or another. Me and my partner whilst travelleing went through a phase trying to beat each others scores on the mobile variety of this genre which is what led me to the fun challenge of recreating this type of game in JavaScript.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;developing-the-game&quot;&gt;Developing the game&lt;&#x2F;h2&gt;
+&lt;p&gt;The project came together pretty quickly (a couple of sofa coding sessions), I was surpised at how tricky it was finding a decent way to store the grid and transision between which row the blocks are on. I tried a few different methods before finalising on a block array, a block object map and a grid object which stored a block reference for each of its coordinates.&lt;&#x2F;p&gt;
+&lt;p&gt;There was a niggling issue I had with the frst version - not all the blocks were totally syncronised. The initial version was mostly callback driven, so if the user switched some blocks it would trigger the callbacks regadless of a where the game was in it&#x27;s main loop. This resulted in blocks being slightly out of sync, maybe by only a millisecond or two but I wanted everything to fall perfectly in sync! After a bit of hacking I sorted this issue and it now keeps everything in sync by queuing jobs up and executing them syncronously at the correct time in the game loop.&lt;&#x2F;p&gt;
+&lt;div id=&quot;canvasJewels2_1&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;layout-rendering&quot;&gt;Layout &amp;amp; Rendering&lt;&#x2F;h2&gt;
+&lt;p&gt;I took a slightly different approach to layout this time and I really like it. I consider the variable width &amp;amp; height to be 100 - as in 100%. As I know how many columns &amp;amp; rows I want I can calculate what position they&#x27;re at, for example a block that is stationary in row 5, column 7, would&lt;&#x2F;p&gt;
+&lt;p&gt;In the version below I&#x27;ve temporarily &quot;borrowed&quot; the ZooKeeper sprites to test using bitmap graphics. When I get round to finishing this I&#x27;ll have original graphics!&lt;&#x2F;p&gt;
+&lt;div id=&quot;canvasJewels2_2&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;finding-possible-switches&quot;&gt;Finding possible switches&lt;&#x2F;h2&gt;
+&lt;p&gt;When the current game runs out of possible switches it needs to know so it can act on it (usually the board resets if no more moves). In order to find the possible switches I broke down game logic in to 3 patterns which cover all possible switches. Every time the grid changes I recalculate the switches by testing every block against these 3 patterns horozontally &amp;amp; vertically.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;switch-pattern-1&quot;&gt;Switch Pattern 1&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt; *  *  *  *       *  *  *  *
+ A  B  _C   +   A_  B  C
+ *  *  *  *       *  *  *  *
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;switch-pattern-2&quot;&gt;Switch Pattern 2&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;* _C1_       _B1 C1_
+ A  B  **+   A**  *  
+* _C2_       _B2 C2_  
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;switch-pattern-3&quot;&gt;Switch Pattern 3&lt;&#x2F;h3&gt;
+&lt;pre&gt;&lt;code&gt;* B1 **
+ A  _C_
+* B2 **
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The demo below highlights the possible switches by rendering a line connecting the blocks. It will randomly switch blocks, to stop it from running out of switches I&#x27;m also randomly removing blocks &amp;amp; rows. (If you notice that sometimes the switches fail it&#x27;s because it&#x27;s not considering if the blocks haven&#x27;t finished falling in to position, if they are this will result in a switch fail!).&lt;&#x2F;p&gt;
+&lt;div id=&quot;canvasJewels2_3&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;the-jewels-game-to-do-list&quot;&gt;The jewels game to-do list&lt;&#x2F;h2&gt;
+&lt;p&gt;The game mechanics are all mostly there now. The next things I&#x27;ll add to this will be:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Scores &amp;amp; Combos&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Level based difficulty system. Each level score target &amp;amp; time to reach that score&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Original graphics! (any designers out there?!)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Leaderboards&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Fun stuff! I&#x27;m sure I&#x27;ll come up with some fun new features I can add that will make my jewel switching game a little different!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Stay tuned for a future updates!&lt;&#x2F;p&gt;
+&lt;script&gt;
+var canvasJewels2_1 = new RocketBox(
+ new CanvasJewels({
+  renderer:&#x27;simple&#x27;,
+  imagePath:&#x27;.&#x2F;&#x27;
+ }),
+ {
+  id:&#x27;canvasJewels2_1&#x27;,
+  width:500,
+  height:500,
+  title: &#x27;Jewels Game : Simple Renderer&#x27;,
+  description: &#x27;Click on a block and drag to an adjacent block to switch them. Get 3 in a row to make them disappear!&#x27;,
+  canvasResize: true
+ });
+
+var canvasJewels2_2 = new RocketBox(
+ new CanvasJewels({
+  renderer:&#x27;production&#x27;,
+  imagePath:&#x27;.&#x2F;&#x27;
+ }),
+ {
+  id:&#x27;canvasJewels2_2&#x27;,
+  width:500,
+  height:500,
+  title: &#x27;Jewels Game : Graphical Renderer&#x27;,
+  description: &quot;I&#x27;ve ahem, temporarily borrowed the ZooKeeper sprites to test rendering bitmap graphics instead of geometric shapes.&quot;,
+  canvasResize: true
+ });
+
+var canvasJewels2_3 = new RocketBox(
+ new CanvasJewels({
+  renderer:&#x27;simple&#x27;,
+  imagePath:&#x27;.&#x2F;&#x27;,
+  autoSwitch:true,
+  destoryRows:true,
+  destoryBlocks:true,
+  showSwitches:true
+ }),
+ {
+  id:&#x27;canvasJewels2_3&#x27;,
+  width:500,
+  height:500,
+  title: &#x27;AI Playing the Jewels Game&#x27;,
+  description: &#x27;Sit back and watch the AI play the game, you can join in too if you like!&#x27;,
+  canvasResize: true
+ });
+&lt;&#x2F;script&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Letter Bubbles: HTML5 typing game</title>
+        <published>2011-11-01T00:00:00+00:00</published>
+        <updated>2011-11-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/"/>
+        <id>https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/letter-bubbles-typing-game/">&lt;p&gt;Back in 1999 I wrote a frantic arcade style touch typing game in Visual Basic (ew!). Someone reminded me of the game and I decided to recreate the game using modern web technologies such as HTML5 Canvas &amp;amp; Audio elements. I stayed as true to the original as I could and pleased that I managed to port the game almost identically. Check the youtube vid below to see the game being played on insane difficulty.&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;4heO3UiiRMo&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Here is a video giving an overview of some of the features:&lt;&#x2F;p&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;fEx3HI6ODQQ&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Give the game a go over at &lt;del&gt;letterbubbles.com&lt;&#x2F;del&gt; &lt;sup&gt;(No longer online)&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;technical-details&quot;&gt;Technical Details&lt;&#x2F;h2&gt;
+&lt;p&gt;Below&#x27;s a few technical details regarding the development of the game.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;closure-library-and-why&quot;&gt;Closure library and why&lt;&#x2F;h3&gt;
+&lt;p&gt;I wanted a JavaScript library or framework that would allow me to develop using a classical object orientated style and didn&#x27;t restrict me in terms of application structure. I ended up choosing Closure Library for these reasons as well as that it&#x27;s compatible with the Closure Compiler. By compiling my game (using the advanced optimisation flag) allowed me to somewhat obfuscate the source code which would make cheating somewhat tricker.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;graphics-via-canvas&quot;&gt;Graphics via canvas&lt;&#x2F;h3&gt;
+&lt;p&gt;The graphics are all done via drawing directly to the canvas (there are zero sprites&#x2F;bitmaps in the game). The game runs at a steady 30 frames per second and profiling reveals that the vast majority of the render time drawing the circles&#x2F;bubbles&#x2F;htmls5 arcs. Maybe if I ever get around to writting a sequel I&#x27;ll create a WebGL renderer!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;multi-channel-audio&quot;&gt;Multi-channel audio&lt;&#x2F;h3&gt;
+&lt;p&gt;The HTML5 audio element isn&#x27;t great, I ended up creating a class which created multiple audio elements (programatically and never assigned to the DOM) which allowed my various sound effects to be played over multiple channels simultaneously. I&#x27;ll try to go in to this with code examples later.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;leaderboards-security&quot;&gt;Leaderboards &amp;amp; security&lt;&#x2F;h3&gt;
+&lt;p&gt;Back in 1999 I didn&#x27;t finished implementing the global leaderboards so this was something I really wanted to make sure I had in this time around. The big challenge was how to implement the feature securely to avoid people cheating. I didn&#x27;t find a solution to this problem and truth be told I don&#x27;t think there really is a way you can avoid people cheating in a javascript based game.&lt;&#x2F;p&gt;
+&lt;p&gt;One of the measures I implemented is a security token to verify the game submission, this is made up of a combination of all the game statistics including the games ID, this is the reverified on the server before the result is accepted to avoid the easy hacker packet sniffing and altering the JSON score submission. Of course this only protects against this single type of attack but it&#x27;s by adding little deterrents like this that I believe make the hack more effort than it&#x27;s worth which is why I&#x27;ve had so few people actaully hacking the game and submitted bogus scores.&lt;&#x2F;p&gt;
+&lt;p&gt;As I mentioned earlier by compiling the game source using Closure Compiler also helps deter people as the code isn&#x27;t instantly in a easily readable format. I&#x27;ve had a few ideas for ways I could create a much more secure game scoring system for a client-side javascript game, maybe one day I&#x27;ll implement them in to a new game or at least write a blog post about them!&lt;&#x2F;p&gt;
+&lt;p&gt;Anyway, why&#x27;d you bother reading all this boring small print?! &lt;del&gt;Get playing now: letterbubbles.com!&lt;&#x2F;del&gt; &lt;sup&gt;(No longer online)&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>HTML5 Ants!</title>
+        <published>2010-11-07T00:00:00+00:00</published>
+        <updated>2010-11-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/html5-ants/"/>
+        <id>https://www.jimmyff.co.uk/blog/html5-ants/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/html5-ants/">&lt;p&gt;I&#x27;m sat in a bar on the edge of the Mekong in Luang Prabang, Laos. There are tiny ants running backward and forward along the bar&#x27;s balcony and I&#x27;ve decidedo it would be fun to try a little AI coding and create a virtual ant colony! Have a play below.&lt;&#x2F;p&gt;
+&lt;script src=&quot;..&#x2F;..&#x2F;shared_assets&#x2F;rocketbox&#x2F;rocketbox_1_0.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script src=&quot;AntDemos1.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;div id=&quot;antDemo1&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;the-simulation-thus-far&quot;&gt;The simulation thus far&lt;&#x2F;h2&gt;
+&lt;p&gt;At the moment my ants aren&#x27;t very intelligent, they wonder around in a clockwise direction (currently can only turn right... lol) oblivious to the piles of food I&#x27;ve dotted around If you click on an ant you will focus on it, revealing it&#x27;s name and smell radius, although the ants can&#x27;t smell yet. Clicking on the floor will tell all the ants to charge to that position, when it gets within their smell radius they&#x27;ll loose interest.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;he-s-a-nice-ant&quot;&gt;&quot;He&#x27;s a nice ant&quot;&lt;&#x2F;h2&gt;
+&lt;p&gt;I like the idea that all the ants were different, that&#x27;s why I gave them names. Also each ant is built a little different from the last, some are bigger but slower, others have longer feelers and a greater smell range. I quite like the idea of introducing different species of ants (red, green &amp;amp; black maybe?), each could be a little different. Maybe in the next version I&#x27;ll introduce roles or classes, certain ants could be soliders&#x2F;gathers etc, I guess I&#x27;m moving away from a simulator but that wouldn&#x27;t bother me, it&#x27;s just a bit of fun anyway!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ant-animation&quot;&gt;Ant animation&lt;&#x2F;h2&gt;
+&lt;p&gt;The ants are visually simple made up of geometric shapes &amp;amp; lines. The body is made up of 3 filled circles &amp;amp; the legs are simply bezier curved lines. To animate the legs I use the sine of distance travelled to generate the leg position difference from where it is when stationary.&lt;&#x2F;p&gt;
+&lt;div id=&quot;antDemo2&quot;&gt;&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;ant-food-a-sense-of-purpose&quot;&gt;Ant food &amp;amp; a sense of purpose&lt;&#x2F;h2&gt;
+&lt;p&gt;In the first demo I dotted piles of food around, the ants are currently oblivious to this. In the next version I will give them the gift of smell, if they get within a certain distance of food they will move to it whilst emitting instructions for ants behind them. This should create a highway to the food piles. The scents (instructions) the ants emmit would also need to slowly decay. Maybe then I&#x27;d need to introduce a concept of &#x27;home&#x27; or a base for where they could deposit their swag.. Ohhh I could get quite carried away with this! :)&lt;&#x2F;p&gt;
+&lt;div id=&quot;antDemo3&quot;&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;Stay tuned for future updates to the cyber ant colony! :-)&lt;&#x2F;p&gt;
+&lt;script&gt;
+
+var demo1 = new RocketBox(
+ new AntDemos1 (&#x27;food&#x27;),
+ {
+  id:&#x27;antDemo1&#x27;,
+  width:800,
+  height:400,
+  fps:30,
+  autoPlay: false,
+  title: &#x27;Cyber Ant Colony Simulation&#x27;,
+  description: &quot;This is the ant simulator version 1. The cyber ants aren&#x27;t very intelligent at the moment, they move around in a clockwise direction paying no attention to the random food piles. Focus on an ant by clicking it or order all ants to a location by clicking the floor! Please don&#x27;t tap on the glass! ;)&quot;
+ });
+
+var demo2 = new RocketBox(
+ new AntDemos1(&#x27;ant&#x27;),
+ {
+  id:&#x27;antDemo2&#x27;,
+  width:800,
+  height:400,
+  fps:30,
+  autoPlay: false,
+  title: &#x27;Ant Animation&#x27;,
+  description: &#x27;Test to see the animation on the ants, the legs &amp; feelers all animated using sine waves.&#x27;
+ });
+
+var demo3 = new RocketBox(
+ new AntDemos1(&#x27;lotsOfAnts&#x27;),
+ {
+  id:&#x27;antDemo3&#x27;,
+  width:800,
+  height:400,
+  fps:30,
+  autoPlay: false,
+  title: &#x27;Ant invasion!&#x27;,
+  description: &quot;Demo showing x100 ants, really need optimising further down the line. For every ant and every cycle I&#x27;m reculcating the bezier curve to animate each of their legs. I&#x27;m sure I could cache this, or even the whole ant&#x27;s animation which would be a huge speed increase. This demo also demonstrates that the ants get stuck a lot!&quot;
+ });
+
+&lt;&#x2F;script&gt;
+</content>
+        
+    </entry>
+</feed>

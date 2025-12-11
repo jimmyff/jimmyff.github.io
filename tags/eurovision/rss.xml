@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - eurovision</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/eurovision/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Eurovision App</title>
+          <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/projects/eurovision-app/</link>
+          <guid>https://www.jimmyff.co.uk/projects/eurovision-app/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/projects/eurovision-app/">
+
+
+
+&lt;img alt=&quot;ESC Party app&quot; title=&quot;ESC Party app&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;graphic.bfe3d010ba87217b.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;graphic.3adff864537af476.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;graphic.bfe3d010ba87217b.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Love Love Peace Peace</title>
+          <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/projects/love-love-peace-peace/</link>
+          <guid>https://www.jimmyff.co.uk/projects/love-love-peace-peace/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/projects/love-love-peace-peace/"></description>
+      </item>
+      <item>
+          <title>Feature drop: Social Scoring, accounts and more!</title>
+          <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/</link>
+          <guid>https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/">&lt;p&gt;It was a big effort getting this update together in time for Eurovision 2023 but I&#x27;m so glad I did. This updates was really well received and I personally think it&#x27;s a &lt;em&gt;huge&lt;&#x2F;em&gt; step forward for the app! The app has received some lovely reviews over the week of Eurovision and is now 4.8⭐️&#x2F;5⭐️ on both Google Play and Apple App Store!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Promotion details&quot; title=&quot;Promotion details&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.b852fa40d72106a0.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.92cba6367bf1c40b.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.b852fa40d72106a0.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;social-scorecards-and-account-system&quot;&gt;Social scorecards and account system&lt;&#x2F;h2&gt;
+&lt;p&gt;The headline feature for this year is social scorecards. I came up with this idea last year when a friend casually asked if at her Eurovision party they could all score together on my app? I told her she couldn&#x27;t but that was a fabulous idea! (Thanks Ellie!) Group scoring is an addition to the scorecard system for 2 years back. It allows you to create a &#x27;Group&#x27;. During the development of this I was chatting to another friend (Queenie this time) and they asked if the group would have a combined scorecard -another fab idea! Initially I had planned for it to just allow you to see each others scorecards and share your realtime reactions (with emoji) but this would elevate the feature so I pushed to add this and prioritised it over seeing each others scorecards.&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to make this work for large groups. As a member of OGAE UK (The UK&#x27;s official Eurovision fan club) which around 1k members - I wanted to make sure that if a club used it, then it would work. I decided on setting a limit of 500 members for each group and worked backwards from that. Each minute a cloud function would trigger which would look for any active group scorecards, and generate the latest scorecard for that group. I could increase this to every 30 seconds during the week of Eurovision - maybe this is something I&#x27;ll do in the future. People can also add emoji reactions which are shown to the group in realtime. There is a limit on the frequency these can be posted by individuals based on the group size. I added some simple management tools to the UI so the group owner manage their group.&lt;&#x2F;p&gt;
+&lt;p&gt;I really think this feature is my apps &#x27;Killer feature&#x27;, it&#x27;s something that no other app does and something I don&#x27;t anticipate anyone else doing. It&#x27;s quite a complex thing, and with this not being a money making app it would take someone as crazy as me to invest time in to making it work!!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;(To do: Add a video of the group scorecard feature)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;everything-is-now-free-money-with-wings&quot;&gt;Everything is now free! 💸&lt;&#x2F;h2&gt;
+&lt;p&gt;Speaking of this app not making much money -I&#x27;ve decided to make everything free this year. When I first implemented scorecards I set a restriction that the current&#x2F;latest year required a paid &#x27;VIP Pass&#x27; (£2.99 one off for a year or £1.99 per&#x2F;year subscription). The app has always made very little money and if I want my scorecard feature to be used by lots of people then I need to life that restriction. So this year I&#x27;ve kept the concept of a &#x27;VIP Pass&#x27; but I give people the choice: Watch an advert for a temporary pass or buy a subscription (£1.99 for the year or £10.99 for life). I&#x27;m really happy with this change as now the people can download my app and use it fully without paying a penny, it also works for those that don&#x27;t want to watch an advert so would rather subscribe or just buy it once and own it forever. The little bit of revenue I receive contributes towards the running costs of the app.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;new-scorecard-themes-layouts&quot;&gt;New scorecard themes &amp;amp; layouts&lt;&#x2F;h2&gt;
+
+
+
+
+&lt;img alt=&quot;Scorecards showcasing different themes and layouts&quot; title=&quot;Scorecards showcasing different themes and layouts&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.694048aeb29bf31a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.3847711c6d6638a4.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.694048aeb29bf31a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.f2b19a3e784ced8f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve added a 4 new scorecard themes and 2 scorecard layouts. I intend to add more in the future but this is a decent upgrade over the single theme and layout up to now.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;So that wraps up my updates for 2023, if you haven&#x27;t downloaded ESC Party yet then what the heck are you waiting for? -download it now, the links are available on my apps &lt;a href=&quot;&#x2F;projects&#x2F;eurovision-app&#x2F;&quot;&gt;project page&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Google Play banned my highly rated app with no real justification</title>
+          <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/google-play-banned-my-highly-rated-app-with-no-real-justification/</link>
+          <guid>https://www.jimmyff.co.uk/blog/google-play-banned-my-highly-rated-app-with-no-real-justification/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/google-play-banned-my-highly-rated-app-with-no-real-justification/">&lt;p&gt;(I also published this article over at &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;google-play-banned-my-highly-rated-app-with-no-real-justification-827e734df748&quot;&gt;Medium&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Google Play&#x27;s Policy team is judge, jury and executioner. They didn&#x27;t give me a real explanation or even a chance to appeal their decision. I share my story in the hope that it reaches Google Play and they reevaluate and improve the way they handle cases like mine.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Banned by Google Play&quot; title=&quot;Banned by Google Play&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;banned.9d6ea996e888a938.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;banned.afcf177bc94a0dd5.webp 512w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;For the last few years I&#x27;ve filled my evenings and weekends building a fan app dedicated to the &#x27;Eurovision Song Contest&#x27; (an annual song competition), it&#x27;s been my little hobby&#x2F;passion project. I blogged about it when I launched it and that post received comments and applause from senior Google engineers and the official Firebase Twitter account even tweeted about it. The app has come a long way since then and I totally rewrote the front-end to make use of the lovely Flutter framework. I&#x27;ve translated the app (and even the app store listing) in to every language used throughout Europe (via the paid-for translation service provided by Google Play). The app was probably the most comprehensive app&#x2F;resource on the song competition with every contest, entry, artist and thousands of photos and videos dating right back to 1956.&lt;&#x2F;p&gt;
+&lt;p&gt;One day, entirely out of the blue I received a notice from Google Play saying the app was suspended, it was a generic email and the only bespoke part was highlighted in bold: &lt;strong&gt;&quot;your on-device title does not reflect your app&#x27;s functionality.&quot;&lt;&#x2F;strong&gt; I&#x27;ve checked the Google Play policy documents and nowhere does it say your apps functionality needs to be reflected in the device title - (See popular apps: Amazon, Bumble etc …nobody&#x27;s on device app title reflects the apps functionality, they just use their brand name). My app&#x27;s on device title was &#x27;EurovisionGP&#x27; - GP is a nod to the history of the contest as it was originally called Eurovision Grand Prix. The only reason I can think that Google may have taken issue with my app is due to the inclusion of the word &#x27;Eurovision&#x27; (which is part of the trademark Eurovision Song Contest). I&#x27;m unsure if this is the case as there are so many apps on Google Play that also include the word Eurovision in their title and they haven&#x27;t been suspended. I would also have expected the suspension email to be very different clearly stating this as the reason if that was the case.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The EurovisionGP app&quot; title=&quot;The EurovisionGP app&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovisiongp.d7f949bf28ec18b8.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovisiongp.c14cf148e90f39bb.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovisiongp.d7f949bf28ec18b8.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I sent the Google Play Policy team numerous emails offering to entirely re-brand (and to even change the on device title to reflect my apps functionality!) and I received a single response from &#x27;Alexis&#x27; simply stating that my app would not be reinstated. That was the last time I heard from the Google Play Policy team despite me sending them numerous emails offering anything I could think of to resolve this issue. I even reached out to Albert Y. Cheng (Head of Google Play Global Marketing) and Megumi Takada (Google Play Business Development Manager) and pleaded my case, neither responded.&lt;&#x2F;p&gt;
+&lt;p&gt;My app has been offline for 7 months now and Google Play are unwilling to respond to my messages, where does that leave me? It looks like I&#x27;ll need to follow the guidelines in the suspension email which states that I&#x27;ll need to start again with a new app, zero installs &amp;amp; zero reviews, and just hope that Google Play doesn&#x27;t ban the next app too. Their feedback has been so minimal and it&#x27;s so ambiguous I don&#x27;t have any confidence that I know what they took issue with. I used to champion Google Play in the &#x27;most developer friendly app store&#x27; debate but this whole debacle has left an absolute bitter taste in my mouth. I&#x27;ll certainly be sharing this story as far and wide as I can in the hope that Google Play improves the way they handle these situations. Google Play has shown an absolute lack of care towards a developer who has invested time, money and effort, lovingly creating an app for their platform. I&#x27;m sure I&#x27;m not the first person that&#x27;s had their app banned without real justification and sadly I probably won&#x27;t be the last...&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Eurovision game 2.0 - The card game!</title>
+          <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/eurovision-game-2-the-card-game/</link>
+          <guid>https://www.jimmyff.co.uk/blog/eurovision-game-2-the-card-game/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/eurovision-game-2-the-card-game/">&lt;p&gt;My previous Eurovision game took around two of prototyping countless versions and lots and lots of playtesting but I never felt I was tottally satisfied with it. About 6 weeks ago I started working on a tottally new reminaged game and today I&#x27;ve finally finished creating the first proper protoytpe complete with artwork. Read on to here about how it plays!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Play testing&quot; title=&quot;Play testing&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;game.28dfe2ff05802994.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;game.bec8445f18d34171.webp 512w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;game-design&quot;&gt;Game design&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bringing some succesful parts of the previous game forward:&lt;&#x2F;strong&gt; There was a lot of really good stuff in the previous game so I brought forward the bits that I were portable and would fit in to this new game. I rescued quite a few bits (including the scoring system), but sadly not all of the good bits were compatible with the new game.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Swithing to a card game&lt;&#x2F;strong&gt;: The previous game had a lots of classic Eurovision moments in, however they never actually felt like those had consequence in the context of the game. Pyrotechnics, vocalists, it just felt like box-ticking. This version I decided to move the majority of the gameplay &amp;amp; combo-building in to cards. By doing this I could really make each of these classic Eurovision moments feel unique and feel right (For instance Yodelling is a great additional genre, but doesn&#x27;t work so well on it&#x27;s own!) and smoke machines combo nicely with ballads.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Adding a spacial puzzle&lt;&#x2F;strong&gt;: This gameplay mechanism was born out of the theme. As I thought-through the logistics of putting a Eurovision act together I realised that there is a bit of spcial puzzle at play. You lights need to be pointing at your performers and they dont want to be directly over your pyrotechnicals! This would make a full little tetris puzzle as you piece of your act together.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+&lt;img alt=&quot;Making a prototype&quot; title=&quot;Making a prototype&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;prototype.44af50ef137c9083.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;prototype.b4caee9b268d3bfa.webp 512w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;making-the-prototype&quot;&gt;Making the prototype&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I used my dart library &lt;code&gt;deckorator&lt;&#x2F;code&gt; to generate all the cards. That reminds I need to open source that, if anyone wants a copy, nudge me and I&#x27;ll do it.&lt;&#x2F;li&gt;
+&lt;li&gt;I cut out my cards with a craft knife which is much better than scissors or an average guillatine. I also purchased a corner cutter which rounds the corners, it makes such a difference and really finishes the cards off nicely.&lt;&#x2F;li&gt;
+&lt;li&gt;To keep the prototype in good condition I put the cards in mayday premium sleeves&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;so-how-does-it-play&quot;&gt;So how does it play?&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve made quite a few games now, and encouraged friends, family, my partner and even strangers to play them, and although some of my games have been really enjoayable, most haven&#x27;t lived up to my expectations. However this game is different, it actually feels really great. It feels like it all just fits together so harmously, the game plays so smoothly and feels really thematic. A friend described it saying it&#x27;s got just the right balance of simplicity and strategy.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m hoping to approach Eurovision with this game, and maybe get permission to Kickstart it or somehow get it published. I&#x27;m super hyped about this game so watch this space!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Storm, 17&#x2F;31, Inktober 2020</title>
+          <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/gallery/inktober-storm/</link>
+          <guid>https://www.jimmyff.co.uk/gallery/inktober-storm/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/gallery/inktober-storm/">
+
+
+
+&lt;img alt=&quot;Storm&quot; title=&quot;Storm&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;storm.7ded9056678052b8.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;storm.348407a35b2ac3c3.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;storm.7ded9056678052b8.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;storm.c845afea4fb2fd10.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;The incredibly talented SuRie performing Storm at the 2018 Eurovision Song Contest. An inspirational performace, we were there in Lisboa!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Building a web app, the progressive way</title>
+          <pubDate>Mon, 25 Jun 2018 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/</link>
+          <guid>https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/">&lt;p&gt;&lt;strong&gt;And finding an unconventional solution to a challenging objective&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;(&lt;em&gt;I&#x27;ve also posted this article &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;building-a-web-app-the-progressive-way-e81177e95738&quot;&gt;over on Medium&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;As a passionate developer I’m aways juggling side projects alongside my pay-the-bills work. Earlier this year I secured some great tickets to the Eurovision Song Contest and in the excitement I decided to build a modern web app to explore and discover the history of the annual show. I set myself some objectives:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It should utilise the very latest and greatest web technology.&lt;&#x2F;li&gt;
+&lt;li&gt;It should contain Eurovision Song Contests historic results and the information should be available in the most used languages in Europe.&lt;&#x2F;li&gt;
+&lt;li&gt;The data must be easy to maintain (this was the tricky bit!).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;em&gt;Tldr: &lt;del&gt;Here’s the app&lt;&#x2F;del&gt; (as of 2020 I&#x27;ve retired this version in favour of my newer flutter app) I built and below are the details of how I put it together &amp;amp; the challenge I encountered, video demo at the bottom.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The finished app&quot; title=&quot;The finished app&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.ba770c960187c9aa.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.9d9ea840c73ded56.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.ba770c960187c9aa.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;a-progressive-app-and-a-progressive-attitude&quot;&gt;A progressive app and a progressive attitude&lt;&#x2F;h2&gt;
+&lt;p&gt;‘Progressive Web Apps’ (or ‘PWAs’) are essentially shining exemplars of modern web technologies. They feel more like native apps than they do their creaky website ancestors. PWAs have the ability to work offline, be installed on your devices, and even receive push notifications. I’m a huge advocate of PWAs and I’ve done talks on the subject for my local tech community.&lt;&#x2F;p&gt;
+&lt;p&gt;Over the last year a large part of my everyday work has been building a large PWA to replace a complex established website. For my new Eurovision pet-project I wanted something much leaner and simpler. As well as building the app as PWA, I would challenge myself to approach every decision from the UI to the back-end with a modern progressive attitude.
+A progressive language &amp;amp; framework&lt;&#x2F;p&gt;
+&lt;p&gt;My language of choice is Dart. It’s strongly typed, fully object orientated and a language that makes me really productive. For web it compiles down to JavaScript. You can even use it to build native mobile apps with Flutter or run Dart on your server or development machine using the Dart VM -it’s the genuine holy grail!&lt;&#x2F;p&gt;
+&lt;p&gt;For the framework I chose Angular Dart, it’s a great framework that allows you to build robust and sophisticated web apps in a structured and opinionated way. I utilised ‘angular_components’ which are the same battle-hardened material design components that Google use on their own products. I also used the ‘intl’ library which allowed me to extract the text into dictionary files which could then be translated in to various languages.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;backend-as-a-service&quot;&gt;Backend as a service&lt;&#x2F;h2&gt;
+&lt;p&gt;In keeping with the progressive philosophy I chose Firebase for the backend. Firebase is a fully managed platform for building applications, these kind of platforms are often referred to as ‘backend as a service’ (‘baas’). With a solution like this, the jobs that traditional servers would do are broken down in to numerous services and you simply pay for what you use. It’s a really hassle-free, modern &amp;amp; progressive approach to application infrastructure and I love it!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-challenge-of-maintaining-the-data&quot;&gt;The challenge of maintaining the data&lt;&#x2F;h2&gt;
+&lt;p&gt;The biggest challenge I faced building this app was how to maintain the data. I really wanted a simple and elegant solution to updating the app but my choice of database-technology made this tricky. As I was using the Firebase backend I choose to use its new fancy Firestore database, however this is a ‘NoSQL’ datastore that doesn’t allow realtime complex querying or aggregating of data across relationships. I would be storing data that has lots of relationships and needed lots of aggregated statistics. Ideally I‘d use a relational database for this kind of dataset but as my objective was to be modern, simple and progressive, I really wanted to avoid the traditional database+server combo.&lt;&#x2F;p&gt;
+&lt;p&gt;Using Firestore meant I would need to compute all the relationships in my data ahead of time and cache these relationship &amp;amp; aggregated values in my data objects. Doing this also makes updating the data challenging as changing one object would likely have knock on effects to other objects that held a cache of the modified data.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-frugal-solution&quot;&gt;A frugal solution&lt;&#x2F;h2&gt;
+&lt;p&gt;The solution I came up with to maintain the data was to export it all to a Google Spreadsheet (yes …you read that correctly) and this would become my ‘source of truth’. Using the Spreadsheet I could then rebuild my database whenever required. I essentially use Firestore as a glorified cache. It feels like an unconventional yet rather elegant solution. Here’s is a breakdown of the build process:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the CSV files from the Google spreadsheet.&lt;&#x2F;li&gt;
+&lt;li&gt;Using the CSV files rebuild all the objects.&lt;&#x2F;li&gt;
+&lt;li&gt;From ‘Firebase Cloud Storage’ download the current snapshot of all the objects that are currently stored in the database.&lt;&#x2F;li&gt;
+&lt;li&gt;Diff the newly built objects with the downloaded database snapshot.&lt;&#x2F;li&gt;
+&lt;li&gt;Prompt the user with a summary of changes asking them if they wish to apply these changes.&lt;&#x2F;li&gt;
+&lt;li&gt;Apply the diff to the Firestore database.&lt;&#x2F;li&gt;
+&lt;li&gt;Upload the newly built objects to ‘Firebase Cloud Storage’ as the latest database snapshot. This will be used next time the build process is run.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;I love this solution for the following reasons:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;I didn’t have to write loads of data-management code: logic, forms, validation etc. I just setup some validation rules and conditional formatting on the spreadsheet. This left my codebase nice, clean and simple.&lt;&#x2F;li&gt;
+&lt;li&gt;Rebuilding from scratch every time inadvertently solves one of my main gripes with NoSQL data stores: when you refactor your data structures you can end up with inconsistencies across a collection due to the lack of collection-wide schemas. This mitigates the problem by simply patching any changes you make across the entire dataset.&lt;&#x2F;li&gt;
+&lt;li&gt;The thing that blows my mind is that this runs in the client browser (as there is no conventional server in this equation). It feels like only a short-while ago that browsers would struggle to do anything complex client-side and now they’re capable compiling thousands of objects from a remote collection of CSVs, diffing, patching then reuploading without even breaking a sweat. The entire process takes seconds to run and it builds and diffs over 3,000 objects. It also feels a really simple, efficient &amp;amp; frugal solution to harness the processing power of the administrators device &amp;amp; browser.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;the-finished-app&quot;&gt;The finished app&lt;&#x2F;h2&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;-MPWaxSBLPo&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;del&gt;You can try the finished app here&lt;&#x2F;del&gt; (as of 2020 I&#x27;ve retired this version in favour of my newer flutter app). It’s been so much fun to approach a project with a progressive attitude and a fresh set of eyes. I enjoyed it so much I’ll continue to develop the app (and I have some great ideas for it). I also plan to do more projects like this over the next 12 months so watch this space!&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

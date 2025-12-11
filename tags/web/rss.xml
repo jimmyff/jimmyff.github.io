@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - web</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/web/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Zap: A fast, ultra-minimal Zola theme</title>
+          <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/zap-theme/</link>
+          <guid>https://www.jimmyff.co.uk/blog/zap-theme/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/zap-theme/">
+
+
+
+&lt;img alt=&quot;Zap theme&quot; title=&quot;Zap theme&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.330104f3ba45de51.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.63d4867385304493.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.330104f3ba45de51.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;zap.5aa396a18d6c917c.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Ever since I went minimal with my last website theme (&lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;themes&#x2F;inky&#x2F;&quot;&gt;Inky&lt;&#x2F;a&gt;), I&#x27;ve been wanting to go ultra-minimal. I wanted to see how much I could strip back to get TUI vibes: fast, lightweight with zero bloat.&lt;&#x2F;p&gt;
+&lt;p&gt;This weekend I finally built &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmyff&#x2F;zola-zap&quot;&gt;Zap&lt;&#x2F;a&gt;, an ultra-minimal theme for &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; (the wonderful Rust-based static site generator). It&#x27;s designed to be as minimal as possible while still being functional: light&#x2F;dark mode toggle, optional inline SVG icons via a sprite sheet, responsive images, and vibrant &lt;a href=&quot;&#x2F;blog&#x2F;prism-dart-flutter-color-package&#x2F;&quot;&gt;OKLCH&lt;&#x2F;a&gt; colors. The entire base CSS is inlined in the HTML—no external stylesheet requests. I also replaced the old search index with Fuse.js, which generates a significantly smaller index.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The old theme &amp;#x27;Inky&amp;#x27; on the left, new &amp;#x27;Zap&amp;#x27; theme in dark mode central and light mode right.&quot; title=&quot;The old theme &amp;#x27;Inky&amp;#x27; on the left, new &amp;#x27;Zap&amp;#x27; theme in dark mode central and light mode right.&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.efb4f7c8fd725418.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.626ce955212dc725.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.efb4f7c8fd725418.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;blog-post.2f02f03dacc93934.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;&lt;em&gt;Comparison showing (from left) the old Inky theme and Zap dark + light mode.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;does-it-live-up-to-its-name&quot;&gt;Does it live up to its name?&lt;&#x2F;h2&gt;
+&lt;p&gt;Perfect scores from PageSpeed Insights! 100 across the board for performance, accessibility, best practices, and SEO.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;PageSpeed Insights showing perfect 100 scores&quot; title=&quot;PageSpeed Insights showing perfect 100 scores&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;results.2f6f14dba51f336c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;results.48bac00d82a1fa0f.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;results.2f6f14dba51f336c.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;bonus-analytics&quot;&gt;Bonus: Analytics&lt;&#x2F;h2&gt;
+&lt;p&gt;I took the opportunity to add support for &lt;a href=&quot;https:&#x2F;&#x2F;umami.is&#x2F;&quot;&gt;Umami&lt;&#x2F;a&gt; analytics. It&#x27;s privacy-focused and lightweight—a nice change from the usual suspects.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Looking forward to publishing more content on my shiny refreshed site in 2026!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Building a web app, the progressive way</title>
+          <pubDate>Mon, 25 Jun 2018 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/</link>
+          <guid>https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/building-a-web-app-the-progressive-way/">&lt;p&gt;&lt;strong&gt;And finding an unconventional solution to a challenging objective&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;(&lt;em&gt;I&#x27;ve also posted this article &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@jimmyff&#x2F;building-a-web-app-the-progressive-way-e81177e95738&quot;&gt;over on Medium&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;As a passionate developer I’m aways juggling side projects alongside my pay-the-bills work. Earlier this year I secured some great tickets to the Eurovision Song Contest and in the excitement I decided to build a modern web app to explore and discover the history of the annual show. I set myself some objectives:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It should utilise the very latest and greatest web technology.&lt;&#x2F;li&gt;
+&lt;li&gt;It should contain Eurovision Song Contests historic results and the information should be available in the most used languages in Europe.&lt;&#x2F;li&gt;
+&lt;li&gt;The data must be easy to maintain (this was the tricky bit!).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;em&gt;Tldr: &lt;del&gt;Here’s the app&lt;&#x2F;del&gt; (as of 2020 I&#x27;ve retired this version in favour of my newer flutter app) I built and below are the details of how I put it together &amp;amp; the challenge I encountered, video demo at the bottom.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The finished app&quot; title=&quot;The finished app&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.ba770c960187c9aa.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.9d9ea840c73ded56.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;eurovision_app.ba770c960187c9aa.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;a-progressive-app-and-a-progressive-attitude&quot;&gt;A progressive app and a progressive attitude&lt;&#x2F;h2&gt;
+&lt;p&gt;‘Progressive Web Apps’ (or ‘PWAs’) are essentially shining exemplars of modern web technologies. They feel more like native apps than they do their creaky website ancestors. PWAs have the ability to work offline, be installed on your devices, and even receive push notifications. I’m a huge advocate of PWAs and I’ve done talks on the subject for my local tech community.&lt;&#x2F;p&gt;
+&lt;p&gt;Over the last year a large part of my everyday work has been building a large PWA to replace a complex established website. For my new Eurovision pet-project I wanted something much leaner and simpler. As well as building the app as PWA, I would challenge myself to approach every decision from the UI to the back-end with a modern progressive attitude.
+A progressive language &amp;amp; framework&lt;&#x2F;p&gt;
+&lt;p&gt;My language of choice is Dart. It’s strongly typed, fully object orientated and a language that makes me really productive. For web it compiles down to JavaScript. You can even use it to build native mobile apps with Flutter or run Dart on your server or development machine using the Dart VM -it’s the genuine holy grail!&lt;&#x2F;p&gt;
+&lt;p&gt;For the framework I chose Angular Dart, it’s a great framework that allows you to build robust and sophisticated web apps in a structured and opinionated way. I utilised ‘angular_components’ which are the same battle-hardened material design components that Google use on their own products. I also used the ‘intl’ library which allowed me to extract the text into dictionary files which could then be translated in to various languages.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;backend-as-a-service&quot;&gt;Backend as a service&lt;&#x2F;h2&gt;
+&lt;p&gt;In keeping with the progressive philosophy I chose Firebase for the backend. Firebase is a fully managed platform for building applications, these kind of platforms are often referred to as ‘backend as a service’ (‘baas’). With a solution like this, the jobs that traditional servers would do are broken down in to numerous services and you simply pay for what you use. It’s a really hassle-free, modern &amp;amp; progressive approach to application infrastructure and I love it!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-challenge-of-maintaining-the-data&quot;&gt;The challenge of maintaining the data&lt;&#x2F;h2&gt;
+&lt;p&gt;The biggest challenge I faced building this app was how to maintain the data. I really wanted a simple and elegant solution to updating the app but my choice of database-technology made this tricky. As I was using the Firebase backend I choose to use its new fancy Firestore database, however this is a ‘NoSQL’ datastore that doesn’t allow realtime complex querying or aggregating of data across relationships. I would be storing data that has lots of relationships and needed lots of aggregated statistics. Ideally I‘d use a relational database for this kind of dataset but as my objective was to be modern, simple and progressive, I really wanted to avoid the traditional database+server combo.&lt;&#x2F;p&gt;
+&lt;p&gt;Using Firestore meant I would need to compute all the relationships in my data ahead of time and cache these relationship &amp;amp; aggregated values in my data objects. Doing this also makes updating the data challenging as changing one object would likely have knock on effects to other objects that held a cache of the modified data.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-frugal-solution&quot;&gt;A frugal solution&lt;&#x2F;h2&gt;
+&lt;p&gt;The solution I came up with to maintain the data was to export it all to a Google Spreadsheet (yes …you read that correctly) and this would become my ‘source of truth’. Using the Spreadsheet I could then rebuild my database whenever required. I essentially use Firestore as a glorified cache. It feels like an unconventional yet rather elegant solution. Here’s is a breakdown of the build process:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the CSV files from the Google spreadsheet.&lt;&#x2F;li&gt;
+&lt;li&gt;Using the CSV files rebuild all the objects.&lt;&#x2F;li&gt;
+&lt;li&gt;From ‘Firebase Cloud Storage’ download the current snapshot of all the objects that are currently stored in the database.&lt;&#x2F;li&gt;
+&lt;li&gt;Diff the newly built objects with the downloaded database snapshot.&lt;&#x2F;li&gt;
+&lt;li&gt;Prompt the user with a summary of changes asking them if they wish to apply these changes.&lt;&#x2F;li&gt;
+&lt;li&gt;Apply the diff to the Firestore database.&lt;&#x2F;li&gt;
+&lt;li&gt;Upload the newly built objects to ‘Firebase Cloud Storage’ as the latest database snapshot. This will be used next time the build process is run.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;I love this solution for the following reasons:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;I didn’t have to write loads of data-management code: logic, forms, validation etc. I just setup some validation rules and conditional formatting on the spreadsheet. This left my codebase nice, clean and simple.&lt;&#x2F;li&gt;
+&lt;li&gt;Rebuilding from scratch every time inadvertently solves one of my main gripes with NoSQL data stores: when you refactor your data structures you can end up with inconsistencies across a collection due to the lack of collection-wide schemas. This mitigates the problem by simply patching any changes you make across the entire dataset.&lt;&#x2F;li&gt;
+&lt;li&gt;The thing that blows my mind is that this runs in the client browser (as there is no conventional server in this equation). It feels like only a short-while ago that browsers would struggle to do anything complex client-side and now they’re capable compiling thousands of objects from a remote collection of CSVs, diffing, patching then reuploading without even breaking a sweat. The entire process takes seconds to run and it builds and diffs over 3,000 objects. It also feels a really simple, efficient &amp;amp; frugal solution to harness the processing power of the administrators device &amp;amp; browser.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;the-finished-app&quot;&gt;The finished app&lt;&#x2F;h2&gt;
+&lt;div class=&quot;yt&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;-MPWaxSBLPo&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;del&gt;You can try the finished app here&lt;&#x2F;del&gt; (as of 2020 I&#x27;ve retired this version in favour of my newer flutter app). It’s been so much fun to approach a project with a progressive attitude and a fresh set of eyes. I enjoyed it so much I’ll continue to develop the app (and I have some great ideas for it). I also plan to do more projects like this over the next 12 months so watch this space!&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
