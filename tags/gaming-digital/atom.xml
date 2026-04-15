@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - gaming-digital</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/gaming-digital/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/gaming-digital/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Fantasy MiSTer FPGA console</title>
+        <published>2026-04-02T00:00:00+00:00</published>
+        <updated>2026-04-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/fantasy-mister-fpga-console/"/>
+        <id>https://www.jimmyff.co.uk/blog/fantasy-mister-fpga-console/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/fantasy-mister-fpga-console/">&lt;p&gt;After Richard and Neil (from &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.retrocollective.co.uk&#x2F;&quot;&gt;Retro Collective&lt;&#x2F;a&gt;) &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=7DZ8gtORx-Y&amp;amp;t=2586s&quot;&gt;mentioned&lt;&#x2F;a&gt; they were open to ideas for the form-factor of the &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.mistermultisystem.com&#x2F;&quot;&gt;MiSTer Multisystem&lt;&#x2F;a&gt; FPGA console, it got me thinking: what would my dream console look like?&lt;&#x2F;p&gt;
+&lt;p&gt;Taking what they already have in the Multisystem, I figured I&#x27;d make the display module a permanent fixture - but instead of pointing upwards, angle everything to face either front or back - keeping the top and sides clean. That had a hi-fi look about it, which led me to retro hi-fi stacking systems (I remember my dad being very proud of his 90s hi-fi stack!). The core layer would sit on top, and beneath it you&#x27;d stack expansion layers with generic caddy bays. Multisystem could design and sell modules (SNACs) for controllers, or even modules for their new floppy disk drive or their Game Boy cart reader, letting people build their own dream machines!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;MiSTer Multisystem Stack concept showing the core layer with OLED display, NFC reader, and expansion bay, plus a diagram of the 2-bay expansion layer layout&quot; title=&quot;MiSTer Multisystem Stack concept showing the core layer with OLED display, NFC reader, and expansion bay, plus a diagram of the 2-bay expansion layer layout&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.42b1fda34fce89f1.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.d6ec9a7251909027.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.42b1fda34fce89f1.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.b599cbe6d5a99dc7.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The core layer and expansion bay concept.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;There could be different layer sizes too - a 1-bay XL layer big enough for a CD&#x2F;DVD-RW drive, or a standard 2-bay layer for cartridge interfaces, floppy drives, extra ports, whatever you want. Mix and match to suit your setup.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Illustration of the MiSTer Multisystem Stack in a retro Amiga-style desk setup with CRT monitor, joystick and keyboard&quot; title=&quot;Illustration of the MiSTer Multisystem Stack in a retro Amiga-style desk setup with CRT monitor, joystick and keyboard&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.85664a63654bb88a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.4e6f9fc8e1b09ff4.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.85664a63654bb88a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.b0e51ffdf5e57f9f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A retro computing setup with the stack at its centre.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+
+
+
+
+&lt;img alt=&quot;Illustration of a purple MiSTer Multisystem Stack with NES&amp;#x2F;SNES interface, Game Boy cart slot, and N64 cart slot expansion layers&quot; title=&quot;Illustration of a purple MiSTer Multisystem Stack with NES&amp;#x2F;SNES interface, Game Boy cart slot, and N64 cart slot expansion layers&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.74c69341caaa3d13.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.f832a113d0fb8fd0.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.74c69341caaa3d13.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.dfda2b27b75a81a1.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A Nintendo fan&#x27;s dream stack in Nebula Purple.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Had a lot of fun with this little thought experiment - what would your stack look like? Let me know over in my &lt;a href=&quot;&#x2F;guestbook&#x2F;&quot;&gt;guestbook&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fantasy MiSTer FPGA console</title>
+        <published>2026-04-02T00:00:00+00:00</published>
+        <updated>2026-04-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/gallery/fantasy-mister-fpga-console/"/>
+        <id>https://www.jimmyff.co.uk/gallery/fantasy-mister-fpga-console/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/gallery/fantasy-mister-fpga-console/">&lt;p&gt;Fantasy console designs for a stackable MiSTer Multisystem FPGA console. See the &lt;a href=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;fantasy-mister-fpga-console&#x2F;&quot;&gt;blog post&lt;&#x2F;a&gt; for the full write-up.&lt;&#x2F;p&gt;
+&lt;p&gt;
+
+
+
+&lt;img alt=&quot;MiSTer Multisystem Stack concept with OLED display, NFC reader, and modular expansion bays&quot; title=&quot;MiSTer Multisystem Stack concept with OLED display, NFC reader, and modular expansion bays&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.42b1fda34fce89f1.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.d6ec9a7251909027.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.42b1fda34fce89f1.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;concept.b599cbe6d5a99dc7.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+
+
+
+
+
+&lt;img alt=&quot;MiSTer Multisystem Stack in a retro Amiga-style desk setup&quot; title=&quot;MiSTer Multisystem Stack in a retro Amiga-style desk setup&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.85664a63654bb88a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.4e6f9fc8e1b09ff4.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.85664a63654bb88a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;amiga-setup.b0e51ffdf5e57f9f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+
+
+
+
+
+&lt;img alt=&quot;Purple MiSTer Multisystem Stack with Nintendo expansion layers&quot; title=&quot;Purple MiSTer Multisystem Stack with Nintendo expansion layers&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.74c69341caaa3d13.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.f832a113d0fb8fd0.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.74c69341caaa3d13.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;nintendo-stack.dfda2b27b75a81a1.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My shrine to Nintendo</title>
+        <published>2022-03-31T00:00:00+00:00</published>
+        <updated>2022-03-31T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/nintendo-shrine/"/>
+        <id>https://www.jimmyff.co.uk/blog/nintendo-shrine/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/nintendo-shrine/">
+
+
+
+&lt;img alt=&quot;Game shelf&quot; title=&quot;Game shelf&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf.cedd823539497920.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf.b270ce50fb23ae7d.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf.cedd823539497920.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I’ve been Nintendo fan since I was 8 years old and my brother got a Super Nintendo, I&#x27;ve been hooked for life. A couple of years ago I realised that I’ve amassed quite a collection. I’ve now finally got around to putting some shelving up in my office to display it. I’ve sadly had to leave some games in storage so I’ll probably have to expand the shelving at some point!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Game shelf&quot; title=&quot;Game shelf&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;short_shelves.12f824f0d7c03764.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;short_shelves.a6b7244fd98a66b2.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;short_shelves.12f824f0d7c03764.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I also got a couple of narrower shelves near my desk. I like having Amiibo dotted around. They really do lift my mood!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Game shelf&quot; title=&quot;Game shelf&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf2.cf1644444b4926dc.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf2.354a01cb08f92c9c.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;shelf2.cf1644444b4926dc.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;It&#x27;s crazy to think I&#x27;ve been playing Nintendo games for over 30 years. I probably like them as much now than I did back when I was a kid!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fixing my Xbox 360 red rings for £3</title>
+        <published>2012-06-11T00:00:00+00:00</published>
+        <updated>2012-06-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/xbox-red-rings-of-death/"/>
+        <id>https://www.jimmyff.co.uk/blog/xbox-red-rings-of-death/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/xbox-red-rings-of-death/">&lt;p&gt;My Xbox 360 sat gartering dust for a couple of months, fallen ill to the dreaded &#x27;Red Rings of Death&#x27; and out of warranty. With the Skyrim DLC out at the end of the month my options were to pay to get it repaired (£50), buy a second-hand replacement (£85 - £130 depending on model) or repair it myself (ended up costing £2.51).&lt;&#x2F;p&gt;
+&lt;p&gt;I implemented the well documented &#x27;Penny Fix&#x27;, in essence this involves adding thermal paste &amp;amp; insulated pennies to your xbox&#x27;s x4 RAM chips. The scary part is that in order for tricking your Xbox to forget that it&#x27;s previously registered the ROD error you have to cause another temporary error by deliberately overheating your xbox! This is dangerous, I take no responsibility if you try this! Read on for more details...&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Photos showing the process&quot; title=&quot;Photos showing the process&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.342bf63e25e35028.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.dca85f9683078ce0.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.342bf63e25e35028.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;photos.c0e0611b8b0ef457.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;overview-of-the-process&quot;&gt;Overview of the process&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Disassemble your Xbox 360&lt;&#x2F;li&gt;
+&lt;li&gt;Paint a little thermal heat on each of the x4 ram chips&lt;&#x2F;li&gt;
+&lt;li&gt;Stick a parcel of x2 pennies wrapped in electrical tape to each of the 4 ram chips&lt;&#x2F;li&gt;
+&lt;li&gt;Reassemble your Xbox 360&lt;&#x2F;li&gt;
+&lt;li&gt;Overheat your xbox by wrapping it in a towel or two while plugged, let it bake for about 20 minutes. &lt;strong&gt;Caution: This is the scary part and quite silly and very dangerous; I take no responsibility for if this goes wrong. Be careful if you try this!&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Let Xbox fully cool down for an hour&lt;&#x2F;li&gt;
+&lt;li&gt;Voila, your xbox &#x2F;may&#x2F; be fixed!&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+        
+    </entry>
+</feed>

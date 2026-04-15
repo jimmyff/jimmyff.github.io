@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - lang-lua</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/lang-lua/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Playdate</title>
+          <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/projects/playdate/</link>
+          <guid>https://www.jimmyff.co.uk/projects/playdate/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/projects/playdate/"></description>
+      </item>
+      <item>
+          <title>Painting asteroids</title>
+          <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/painting-asteroids/</link>
+          <guid>https://www.jimmyff.co.uk/blog/painting-asteroids/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/painting-asteroids/">&lt;p&gt;I&#x27;ve been stewing on how I could fill the asteroids to make my &lt;a href=&quot;&#x2F;tags&#x2F;space_game&#x2F;&quot;&gt;space game&lt;&#x2F;a&gt; look better. It&#x27;s a tricky problem as I only know terrain lines and nothing else (so I don&#x27;t know which side is supposed to be solid and which is supposed to be the empty void of space). This shows what I have and what I want to achieve:&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;The problem&quot; title=&quot;The problem&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.7b9e19ad3dd9c01f.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.dd0eff4fb0908e95.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;problem.7b9e19ad3dd9c01f.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I can trust that the space ship will always be in space (even if it&#x27;s hit an asteroid, it should never actually be in the asteroid!). Using that piece of truth I&#x27;ve came up with an idea, if I projected from the ship to the corners and count the terrain line intersections I should be able to figure out what&#x27;s solid. If the number of intersections is even, I know the corner should be in also in space, if the intersection count was odd, then the corner is in an asteroid.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Possible solution&quot; title=&quot;Possible solution&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.8a0e597594df834c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.5fcbb2418a9a32cb.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;possible_solution.8a0e597594df834c.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Once I knew if the corners were in an asteroid or not, I should then be able to move along each edge and join up the lines.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;&#x2F;h2&gt;
+&lt;img alt=&quot;Implementing the intersection counting&quot; title=&quot;Implementing the intersection counting&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;1-corners.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve implemented the intersection counting, if the line is green then there is an even number of intersections which means the corner is in space, if red then there is an odd number of intersections so this is in the asteroid.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve cut the terrain line at the scren edge (and highlighting it with a circle), this is so I can make a nice clean edge on each polygon.&lt;&#x2F;p&gt;
+&lt;p&gt;(Oh you might also notice I&#x27;ve implemented asteroid rotation too!)&lt;&#x2F;p&gt;
+&lt;img alt=&quot;Triangulation!&quot; title=&quot;Triangulation!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;2-triangulate.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;Here I have implemented the algorithm that combines all the edges in to polygons. At the top there is text that says something like &#x27;P: 2&#x27;, this means 2 polygons found.&lt;&#x2F;p&gt;
+&lt;p&gt;At first I was getting a weird graphical glitch when filling my polygons which I realised was due to the fact my polygons are concave. Filling concave polygons turns out is a technically tricky as the polygon needed triangulating (chopping in to simple triangles). Luckily Love2d has a triangulate feature that I could use. I coloured the triangles random colours to highlight the triangulation process.&lt;&#x2F;p&gt;
+&lt;img alt=&quot;It worked!&quot; title=&quot;It worked!&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;blog&#x2F;painting-asteroids&#x2F;3-done.gif&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;p&gt;...ta-dah! Here is the finished product. I&#x27;m super happy (&amp;amp; surprised) that my crazy idea worked!&lt;&#x2F;p&gt;
+&lt;p&gt;I now need to reimplement the ship, but I&#x27;m a little hesitant to continue with Lua due to it being so difficult to debug (and I&#x27;m really missing static-typing!). I&#x27;m thinking about switching to C or possibly Rust to continue my playdate journey.&lt;&#x2F;p&gt;
+&lt;p&gt;I apologise for the noisy strangely coloured gif&#x27;s -I really need to level up by gif skills!&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
