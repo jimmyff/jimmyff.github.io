@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - Lego</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/medium/lego/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 13 Jan 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Lego Kirby</title>
+          <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/gallery/lego-kirby/</link>
+          <guid>https://www.jimmyff.co.uk/gallery/lego-kirby/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/gallery/lego-kirby/">&lt;p&gt;&lt;em&gt;Head over to the blog to see a little write up of &lt;a href=&quot;&#x2F;blog&#x2F;lego-kirby&quot;&gt;the making of this&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Lego Kirby artwork hanging on wall&quot; title=&quot;Lego Kirby artwork hanging on wall&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kirby.076cb6cec36de63c.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kirby.bd56641accdc6134.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kirby.076cb6cec36de63c.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;kirby.73d90573cf196b4f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Here you can see the finished Kirby image made out of Lego dots.&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Lego Kirby artwork hanging on wall&quot; title=&quot;Lego Kirby artwork hanging on wall&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onwall.f4e460dfed640fc4.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onwall.92138f167a19731f.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onwall.f4e460dfed640fc4.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;onwall.c96f0cf8d3a65e48.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I didn&#x27;t have enough dots of each colour so ended up using some 1x1 round plates which make the piece a lovely tactile thing to have on the wall. I also love the way each of the Lego pieces catches the light.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

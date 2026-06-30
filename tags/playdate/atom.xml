@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - playdate</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/playdate/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-08-08T19:05:59+01:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/playdate/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Frogger &#x2F; Crossy road Playdate remake</title>
+        <published>2021-08-08T19:05:59+01:00</published>
+        <updated>2021-08-08T19:05:59+01:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/frogger/"/>
+        <id>https://www.jimmyff.co.uk/blog/frogger/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/frogger/">&lt;p&gt;I got super excited when the idea to make a frogger &#x2F; crossy-road game for the playdate hit me. The crank would be perrrfect! I can imagine the frantic cranking as you try to rush in front of 4 lanes of traffic and a train!&lt;&#x2F;p&gt;
+&lt;p&gt;I also figured it would be a fun project to learn Rust on. So without further adieu, behold... the first thing I&#x27;ve ever made in rust!&lt;&#x2F;p&gt;
+&lt;p&gt;(TODO: Imgur GIF expired. Replace with Webassembly demo at some point)&lt;&#x2F;p&gt;
+&lt;p&gt;I thought it would be a really nice fit to go for an isometric projection, also it means you make maximum use of the screen real estate as you can hopefully see oncomming traffic in the diagonal corners of the display.&lt;&#x2F;p&gt;
+&lt;p&gt;Rust is really fun and can&#x27;t wait to level up my skills!&lt;&#x2F;p&gt;
+&lt;p&gt;p.s. Maybe this can be goose themed? It would be a nice little nod to Panic &amp;amp; their Goose game!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

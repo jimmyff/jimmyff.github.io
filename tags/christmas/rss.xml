@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - christmas</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/christmas/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 15 Nov 2022 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Home Alone</title>
+          <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/gallery/home-alone/</link>
+          <guid>https://www.jimmyff.co.uk/gallery/home-alone/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/gallery/home-alone/">
+
+
+
+&lt;img alt=&quot;Home alone&quot; title=&quot;Home alone&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;home-alone.e7dfae408a6d0e28.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;home-alone.0b89348c4ec26c76.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;home-alone.e7dfae408a6d0e28.webp 1024w&quot; class=&quot;framed&quot; &#x2F;&gt;
+
+&lt;p&gt;Went for something a little Christmasy at tonight&#x27;s oil painting class. 🎄 Ran out of time as usual! 😅&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

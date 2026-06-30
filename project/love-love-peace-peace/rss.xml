@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - Love Love Peace Peace</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/project/love-love-peace-peace/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Eurovision game 2.0 - The card game!</title>
+          <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/eurovision-game-2-the-card-game/</link>
+          <guid>https://www.jimmyff.co.uk/blog/eurovision-game-2-the-card-game/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/eurovision-game-2-the-card-game/">&lt;p&gt;My previous Eurovision game took around two of prototyping countless versions and lots and lots of playtesting but I never felt I was tottally satisfied with it. About 6 weeks ago I started working on a tottally new reminaged game and today I&#x27;ve finally finished creating the first proper protoytpe complete with artwork. Read on to here about how it plays!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Play testing&quot; title=&quot;Play testing&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;game.28dfe2ff05802994.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;game.bec8445f18d34171.webp 512w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;game-design&quot;&gt;Game design&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bringing some succesful parts of the previous game forward:&lt;&#x2F;strong&gt; There was a lot of really good stuff in the previous game so I brought forward the bits that I were portable and would fit in to this new game. I rescued quite a few bits (including the scoring system), but sadly not all of the good bits were compatible with the new game.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Swithing to a card game&lt;&#x2F;strong&gt;: The previous game had a lots of classic Eurovision moments in, however they never actually felt like those had consequence in the context of the game. Pyrotechnics, vocalists, it just felt like box-ticking. This version I decided to move the majority of the gameplay &amp;amp; combo-building in to cards. By doing this I could really make each of these classic Eurovision moments feel unique and feel right (For instance Yodelling is a great additional genre, but doesn&#x27;t work so well on it&#x27;s own!) and smoke machines combo nicely with ballads.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Adding a spacial puzzle&lt;&#x2F;strong&gt;: This gameplay mechanism was born out of the theme. As I thought-through the logistics of putting a Eurovision act together I realised that there is a bit of spcial puzzle at play. You lights need to be pointing at your performers and they dont want to be directly over your pyrotechnicals! This would make a full little tetris puzzle as you piece of your act together.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+
+
+
+&lt;img alt=&quot;Making a prototype&quot; title=&quot;Making a prototype&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;prototype.44af50ef137c9083.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;prototype.b4caee9b268d3bfa.webp 512w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;making-the-prototype&quot;&gt;Making the prototype&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I used my dart library &lt;code&gt;deckorator&lt;&#x2F;code&gt; to generate all the cards. That reminds I need to open source that, if anyone wants a copy, nudge me and I&#x27;ll do it.&lt;&#x2F;li&gt;
+&lt;li&gt;I cut out my cards with a craft knife which is much better than scissors or an average guillatine. I also purchased a corner cutter which rounds the corners, it makes such a difference and really finishes the cards off nicely.&lt;&#x2F;li&gt;
+&lt;li&gt;To keep the prototype in good condition I put the cards in mayday premium sleeves&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;so-how-does-it-play&quot;&gt;So how does it play?&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve made quite a few games now, and encouraged friends, family, my partner and even strangers to play them, and although some of my games have been really enjoayable, most haven&#x27;t lived up to my expectations. However this game is different, it actually feels really great. It feels like it all just fits together so harmously, the game plays so smoothly and feels really thematic. A friend described it saying it&#x27;s got just the right balance of simplicity and strategy.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m hoping to approach Eurovision with this game, and maybe get permission to Kickstart it or somehow get it published. I&#x27;m super hyped about this game so watch this space!&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

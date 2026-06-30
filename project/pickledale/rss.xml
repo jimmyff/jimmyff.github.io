@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - Pickledale</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/project/pickledale/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 24 Sep 2019 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Yoga card game</title>
+          <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/blog/yoga-game/</link>
+          <guid>https://www.jimmyff.co.uk/blog/yoga-game/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/blog/yoga-game/">&lt;blockquote&gt;
+&lt;p&gt;You are the residents of Pickledale village hall. Living under the floorboards you are treated to a highly diverse activity schedule provided by the over-floor frequenters. Poppy calls everyone together “It’s 5pm Monday which means it’s...”, “Yoga night!” Emanuel exclaims excitedly. “That’s right” Poppy continues, “Everyone, get your leaf mats rolled out, there are cheese support blocks if you need them, have fun and remember ...don’t overstretch!”.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Let me introduce you to &#x27;Yoga night for the Pickledale Village Hall Residents&#x27;. This is a game about a community of mice that live under the floorboards of a quaint little imaginary village hall. Once a week it&#x27;s Yoga night at the village hall and whilst the elderly human villagers are practicing Yoga in the main hall, under the floorboards the mice are following along too!&lt;&#x2F;p&gt;
+&lt;p&gt;The aim of the game is to see how good a practice you can have. Your success is reflected by how many &#x27;Om&#x27; tokens you can collector but careful not overexert yourself!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Yoga game&quot; title=&quot;Yoga game&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.196aa664ec9a6f66.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.6bc848b945dfd476.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.196aa664ec9a6f66.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;yoga-game.3cce75fb61daa8e6.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Here you can a page of cards from the game, it&#x27;s been generated using my &lt;a href=&quot;&#x2F;blog&#x2F;deckorator&quot;&gt;Decorator&lt;&#x2F;a&gt; package which feeds from a spreadsheet and combines art assets to produce a print and play game. I had load of fun illustrating the little mice people doing yoga!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Playtesting an early version with 4 players&quot; title=&quot;Playtesting an early version with 4 players&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest1.b5c74b00b13ede93.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest1.eff094a080f02a1e.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest1.b5c74b00b13ede93.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve been play testing the game all month, iterating quickly based on feedback. Thankfully I share an office with a load of equally keen gamers that are happy to try my creations!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Playtesting the game in 2 players&quot; title=&quot;Playtesting the game in 2 players&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest2.2084962c1e55f14e.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest2.c55c780a1fd74fd7.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;playtest2.2084962c1e55f14e.webp 1024w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I think the game actually works really well in 2 player, it is simple yet has good deal of strategy. In higher player counts it becomes a little more chaotic. My biggest niggle with it is the setup is a little fiddly to ensure that the session starts gradually and gradually increases in intensity before reaching the apex pose. I&#x27;m happy with the game for now but do intend to continue developing the game.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
