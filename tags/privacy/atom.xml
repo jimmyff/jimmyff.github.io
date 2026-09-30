@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - privacy</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/privacy/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-04-13T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/privacy/atom.xml</id>
+    <entry xml:lang="en">
+        <title>An open letter to the UK Government on digital privacy</title>
+        <published>2026-04-13T00:00:00+00:00</published>
+        <updated>2026-04-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/open-letter-uk-digital-privacy/"/>
+        <id>https://www.jimmyff.co.uk/blog/open-letter-uk-digital-privacy/</id>
+        
+        <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Privacy isn&#x27;t about having something to hide. It&#x27;s about having the right to choose what you share, with whom, and when.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;</summary>
+        
+    </entry>
+</feed>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>jimmyff - project-eurovision-app</title>
+    <subtitle>Fun loving creative (he&#x2F;him) 🏳️‍🌈</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.jimmyff.co.uk/tags/project-eurovision-app/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-06-01T00:00:00+00:00</updated>
+    <id>https://www.jimmyff.co.uk/tags/project-eurovision-app/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Feature drop: Social Scoring, accounts and more!</title>
+        <published>2023-06-01T00:00:00+00:00</published>
+        <updated>2023-06-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/"/>
+        <id>https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/</id>
+        
+        <content type="html" xml:base="https://www.jimmyff.co.uk/blog/eurovision-app-2023-updates/">&lt;p&gt;It was a big effort getting this update together in time for Eurovision 2023 but I&#x27;m so glad I did. This updates was really well received and I personally think it&#x27;s a &lt;em&gt;huge&lt;&#x2F;em&gt; step forward for the app! The app has received some lovely reviews over the week of Eurovision and is now 4.8⭐️&#x2F;5⭐️ on both Google Play and Apple App Store!&lt;&#x2F;p&gt;
+
+
+
+
+&lt;img alt=&quot;Promotion details&quot; title=&quot;Promotion details&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.b852fa40d72106a0.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.92cba6367bf1c40b.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;update.b852fa40d72106a0.webp 1024w&quot; class=&quot;small&quot; &#x2F;&gt;
+
+&lt;h2 id=&quot;social-scorecards-and-account-system&quot;&gt;Social scorecards and account system&lt;&#x2F;h2&gt;
+&lt;p&gt;The headline feature for this year is social scorecards. I came up with this idea last year when a friend casually asked if at her Eurovision party they could all score together on my app? I told her she couldn&#x27;t but that was a fabulous idea! (Thanks Ellie!) Group scoring is an addition to the scorecard system for 2 years back. It allows you to create a &#x27;Group&#x27;. During the development of this I was chatting to another friend (Queenie this time) and they asked if the group would have a combined scorecard -another fab idea! Initially I had planned for it to just allow you to see each others scorecards and share your realtime reactions (with emoji) but this would elevate the feature so I pushed to add this and prioritised it over seeing each others scorecards.&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to make this work for large groups. As a member of OGAE UK (The UK&#x27;s official Eurovision fan club) which around 1k members - I wanted to make sure that if a club used it, then it would work. I decided on setting a limit of 500 members for each group and worked backwards from that. Each minute a cloud function would trigger which would look for any active group scorecards, and generate the latest scorecard for that group. I could increase this to every 30 seconds during the week of Eurovision - maybe this is something I&#x27;ll do in the future. People can also add emoji reactions which are shown to the group in realtime. There is a limit on the frequency these can be posted by individuals based on the group size. I added some simple management tools to the UI so the group owner manage their group.&lt;&#x2F;p&gt;
+&lt;p&gt;I really think this feature is my apps &#x27;Killer feature&#x27;, it&#x27;s something that no other app does and something I don&#x27;t anticipate anyone else doing. It&#x27;s quite a complex thing, and with this not being a money making app it would take someone as crazy as me to invest time in to making it work!!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;(To do: Add a video of the group scorecard feature)&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;everything-is-now-free-money-with-wings&quot;&gt;Everything is now free! 💸&lt;&#x2F;h2&gt;
+&lt;p&gt;Speaking of this app not making much money -I&#x27;ve decided to make everything free this year. When I first implemented scorecards I set a restriction that the current&#x2F;latest year required a paid &#x27;VIP Pass&#x27; (£2.99 one off for a year or £1.99 per&#x2F;year subscription). The app has always made very little money and if I want my scorecard feature to be used by lots of people then I need to life that restriction. So this year I&#x27;ve kept the concept of a &#x27;VIP Pass&#x27; but I give people the choice: Watch an advert for a temporary pass or buy a subscription (£1.99 for the year or £10.99 for life). I&#x27;m really happy with this change as now the people can download my app and use it fully without paying a penny, it also works for those that don&#x27;t want to watch an advert so would rather subscribe or just buy it once and own it forever. The little bit of revenue I receive contributes towards the running costs of the app.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;new-scorecard-themes-layouts&quot;&gt;New scorecard themes &amp;amp; layouts&lt;&#x2F;h2&gt;
+
+
+
+
+&lt;img alt=&quot;Scorecards showcasing different themes and layouts&quot; title=&quot;Scorecards showcasing different themes and layouts&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.694048aeb29bf31a.webp&quot; srcset=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.3847711c6d6638a4.webp 512w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.694048aeb29bf31a.webp 1024w, https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;processed_images&#x2F;themes.f2b19a3e784ced8f.webp 2048w&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;I&#x27;ve added a 4 new scorecard themes and 2 scorecard layouts. I intend to add more in the future but this is a decent upgrade over the single theme and layout up to now.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;So that wraps up my updates for 2023, if you haven&#x27;t downloaded ESC Party yet then what the heck are you waiting for? -download it now, the links are available on my apps &lt;a href=&quot;&#x2F;projects&#x2F;eurovision-app&#x2F;&quot;&gt;project page&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

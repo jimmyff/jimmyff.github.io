@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>jimmyff - animation</title>
+      <link>https://www.jimmyff.co.uk</link>
+      <description>Fun loving creative (he&#x2F;him) 🏳️‍🌈</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.jimmyff.co.uk/tags/animation/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Faehound Games</title>
+          <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.jimmyff.co.uk/gallery/faehound-games/</link>
+          <guid>https://www.jimmyff.co.uk/gallery/faehound-games/</guid>
+          <description xml:base="https://www.jimmyff.co.uk/gallery/faehound-games/">&lt;img alt=&quot;Faehound Games&quot; title=&quot;Faehound Games&quot; src=&quot;https:&#x2F;&#x2F;www.jimmyff.co.uk&#x2F;gallery&#x2F;faehound-games&#x2F;faehound-games.gif&quot; class=&quot;&quot; &#x2F;&gt;
+
+&lt;p&gt;Had a go at animating a hound. I&#x27;ll use this name &amp;amp; logo on a teaser video and website about a very exciting board game that I&#x27;m working on! 🎲&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
